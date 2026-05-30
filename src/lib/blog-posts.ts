@@ -1281,14 +1281,26 @@ function colorPair(category: string) {
   return pairs[category] ?? { accentColor: "#d6608a", secondaryColor: "#5577c8" };
 }
 
-function diversifySections(plan: ContentPlan, sections: BlogSection[]): BlogSection[] {
-  const variants: Record<ContentPlan["structure"], Array<BlogSection["kind"]>> = {
-    checklist: ["summary", "checklist", "steps", "warning", "source", "compare"],
-    faq: ["summary", "compare", "checklist", "source", "warning", "steps"],
-    howto: ["summary", "steps", "checklist", "compare", "source", "warning"],
-    comparison: ["summary", "compare", "checklist", "warning", "source", "steps"],
-    warning: ["summary", "warning", "checklist", "steps", "source", "compare"],
-  };
+const sectionKindPatterns: Array<Array<NonNullable<BlogSection["kind"]>>> = [
+  ["summary", "checklist", "steps", "warning", "source", "compare"],
+  ["summary", "steps", "checklist", "compare", "source", "warning"],
+  ["summary", "compare", "checklist", "source", "warning", "steps"],
+  ["summary", "warning", "checklist", "steps", "source", "compare"],
+  ["summary", "compare", "steps", "checklist", "warning", "source"],
+  ["summary", "source", "checklist", "compare", "steps", "warning"],
+  ["summary", "checklist", "compare", "warning", "steps", "source"],
+  ["summary", "steps", "source", "checklist", "compare", "warning"],
+  ["summary", "warning", "source", "compare", "checklist", "steps"],
+  ["summary", "compare", "warning", "steps", "checklist", "source"],
+  ["summary", "source", "steps", "warning", "checklist", "compare"],
+  ["summary", "checklist", "source", "steps", "compare", "warning"],
+];
+
+function diversifySections(
+  plan: ContentPlan,
+  sections: BlogSection[],
+  postIndex: number,
+): BlogSection[] {
   const headingSets: Record<ContentPlan["structure"], string[]> = {
     checklist: [
       `${plan.mainKeyword} 핵심 판단 기준`,
@@ -1331,7 +1343,7 @@ function diversifySections(plan: ContentPlan, sections: BlogSection[]): BlogSect
       `${plan.mainKeyword} 위험 신호 메모`,
     ],
   };
-  const kinds = variants[plan.structure];
+  const kinds = sectionKindPatterns[postIndex % sectionKindPatterns.length];
   const headings = headingSets[plan.structure];
 
   return sections.map((section, index) => ({
@@ -1372,7 +1384,7 @@ function buildPost(plan: ContentPlan, index: number): BlogPost {
       `${plan.mainKeyword}에서 먼저 확인할 것은 무엇인가요?`,
       `${plan.relatedKeywords[0]}는 어떤 기준으로 판단하나요?`,
     ],
-    sections: diversifySections(plan, buildSections(plan)),
+    sections: diversifySections(plan, buildSections(plan), index),
     faq: buildFaq(plan),
     sources: sourceSlice(plan),
     ...colorPair(plan.category),

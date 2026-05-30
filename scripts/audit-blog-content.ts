@@ -16,6 +16,7 @@ interface AuditIssue {
 const outputDir = join(process.cwd(), "content");
 const schedule = getBlogSchedule();
 const expectedGeneratedCount = 500;
+const maxSectionPatternShare = 0.2;
 const issues: AuditIssue[] = [];
 
 function addIssue(post: BlogPost, field: string, message: string) {
@@ -57,6 +58,41 @@ function checklistItemCount(post: BlogPost) {
 assertUnique(blogPosts, "slug");
 assertUnique(blogPosts, "title");
 assertUnique(generatedBlogPosts, "mainKeyword");
+
+const sectionPatternCounts = new Map<string, number>();
+for (const post of generatedBlogPosts) {
+  const pattern = post.sections.map((section) => section.kind ?? "body").join(">");
+  sectionPatternCounts.set(pattern, (sectionPatternCounts.get(pattern) ?? 0) + 1);
+}
+
+for (const [pattern, count] of sectionPatternCounts) {
+  if (count / generatedBlogPosts.length > maxSectionPatternShare) {
+    addIssue(
+      generatedBlogPosts.find(
+        (post) => post.sections.map((section) => section.kind ?? "body").join(">") === pattern,
+      ) ?? generatedBlogPosts[0],
+      "sectionPattern",
+      `section pattern repeats too often: ${count}/${generatedBlogPosts.length}`,
+    );
+  }
+}
+
+let repeatedHeadingPatternCount = 1;
+let previousHeadingPattern = "";
+for (const post of generatedBlogPosts) {
+  const currentHeadingPattern = post.sections
+    .map((section) => section.heading.replace(post.mainKeyword, "{main}"))
+    .join(">");
+  if (currentHeadingPattern === previousHeadingPattern) {
+    repeatedHeadingPatternCount += 1;
+  } else {
+    repeatedHeadingPatternCount = 1;
+    previousHeadingPattern = currentHeadingPattern;
+  }
+  if (repeatedHeadingPatternCount >= 10) {
+    addIssue(post, "headingPattern", "same H2 pattern repeated for 10 consecutive posts");
+  }
+}
 
 for (const post of generatedBlogPosts) {
   if (post.qualityScore < 93) {
