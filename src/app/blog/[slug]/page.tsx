@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { getBlogPost, getPublishedBlogPost } from "@/lib/blog-posts";
+import { getBlogPost, getPublishedBlogPost, type BlogSection } from "@/lib/blog-posts";
 import { SITE_NAME, SITE_URL } from "@/lib/utils";
 
 interface PageProps {
@@ -9,6 +9,88 @@ interface PageProps {
 }
 
 export const dynamic = "force-dynamic";
+
+function tint(hex: string, opacity = "1a") {
+  return `${hex}${opacity}`;
+}
+
+function sectionLabel(kind: BlogSection["kind"]) {
+  const labels: Record<NonNullable<BlogSection["kind"]>, string> = {
+    summary: "핵심",
+    checklist: "체크",
+    steps: "순서",
+    warning: "주의",
+    compare: "비교",
+    source: "확인",
+  };
+  return kind ? labels[kind] : "본문";
+}
+
+function SectionSupport({
+  section,
+  accentColor,
+  secondaryColor,
+}: {
+  section: BlogSection;
+  accentColor: string;
+  secondaryColor: string;
+}) {
+  if (!section.checklist?.length) return null;
+
+  if (section.kind === "steps") {
+    return (
+      <ol className="mt-4 space-y-3 rounded-lg border border-neutral-200 bg-white p-4 text-sm text-neutral-700">
+        {section.checklist.map((item, index) => (
+          <li key={item} className="flex gap-3">
+            <span
+              className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold text-white"
+              style={{ backgroundColor: accentColor }}
+            >
+              {index + 1}
+            </span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ol>
+    );
+  }
+
+  if (section.kind === "compare") {
+    return (
+      <div className="mt-4 grid gap-3 sm:grid-cols-3">
+        {section.checklist.map((item, index) => (
+          <div
+            key={item}
+            className="rounded-lg border p-3 text-sm leading-relaxed text-neutral-700"
+            style={{
+              borderColor: index % 2 === 0 ? tint(accentColor, "55") : tint(secondaryColor, "55"),
+              backgroundColor: index % 2 === 0 ? tint(accentColor, "0f") : tint(secondaryColor, "0f"),
+            }}
+          >
+            {item}
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  return (
+    <ul
+      className="mt-4 space-y-2 rounded-lg border bg-white p-4 text-sm text-neutral-700"
+      style={{ borderColor: tint(accentColor, "55") }}
+    >
+      {section.checklist.map((item) => (
+        <li key={item} className="flex gap-2">
+          <span
+            className="mt-1 h-2 w-2 shrink-0 rounded-full"
+            style={{ backgroundColor: section.kind === "warning" ? secondaryColor : accentColor }}
+          />
+          <span>{item}</span>
+        </li>
+      ))}
+    </ul>
+  );
+}
 
 export async function generateMetadata({
   params,
@@ -91,7 +173,10 @@ export default async function BlogPostPage({ params }: PageProps) {
       />
       <header className="border-b border-neutral-200 pb-6">
         <div className="flex flex-wrap items-center gap-2 text-sm text-neutral-500">
-          <span className="rounded-full bg-brand-soft px-2 py-1 font-medium text-brand">
+          <span
+            className="rounded-full px-2 py-1 font-medium"
+            style={{ backgroundColor: tint(post.accentColor), color: post.accentColor }}
+          >
             {post.category}
           </span>
           <span>{post.updatedAt}</span>
@@ -100,7 +185,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         <h1 className="mt-4 text-3xl font-bold leading-tight text-ink sm:text-4xl">
           {post.title}
         </h1>
-        <p className="mt-3 text-xl font-semibold leading-relaxed text-brand">
+        <p className="mt-3 text-xl font-semibold leading-relaxed" style={{ color: post.secondaryColor }}>
           {post.subtitle}
         </p>
         <p className="mt-3 text-lg leading-relaxed text-neutral-700">
@@ -109,14 +194,16 @@ export default async function BlogPostPage({ params }: PageProps) {
         <img
           src={post.thumbnail}
           alt={`${post.title} 대표 이미지`}
-          className="mt-6 aspect-video w-full rounded-lg border border-neutral-200 object-cover"
+          className="mt-6 aspect-video w-full rounded-lg border object-cover"
+          style={{ borderColor: tint(post.accentColor, "66") }}
         />
         <div className="mt-4 flex flex-wrap gap-2">
           {[post.mainKeyword, ...post.relatedKeywords, ...post.expandedKeywords.slice(0, 3)].map(
-            (keyword) => (
+            (keyword, index) => (
               <span
                 key={keyword}
-                className="rounded-full bg-neutral-100 px-2.5 py-1 text-xs font-medium text-neutral-600"
+                className="rounded-full px-2.5 py-1 text-xs font-medium text-neutral-700"
+                style={{ backgroundColor: tint(index % 2 === 0 ? post.accentColor : post.secondaryColor, "14") }}
               >
                 {keyword}
               </span>
@@ -125,12 +212,21 @@ export default async function BlogPostPage({ params }: PageProps) {
         </div>
       </header>
 
-      <nav className="my-6 rounded-lg border border-neutral-200 bg-white p-4">
+      <nav
+        className="my-6 rounded-lg border bg-white p-4"
+        style={{ borderColor: tint(post.accentColor, "55") }}
+      >
         <h2 className="text-sm font-bold text-ink">목차</h2>
         <ol className="mt-3 space-y-2 text-sm text-neutral-700">
           {post.sections.map((section) => (
             <li key={section.id}>
-              <a href={`#${section.id}`} className="hover:text-brand">
+              <a href={`#${section.id}`} className="flex items-center gap-2 hover:text-brand">
+                <span
+                  className="rounded-full px-2 py-0.5 text-[11px] font-semibold"
+                  style={{ backgroundColor: tint(post.secondaryColor, "16"), color: post.secondaryColor }}
+                >
+                  {sectionLabel(section.kind)}
+                </span>
                 {section.heading}
               </a>
             </li>
@@ -140,8 +236,31 @@ export default async function BlogPostPage({ params }: PageProps) {
 
       <div className="space-y-8">
         {post.sections.map((section) => (
-          <section key={section.id} id={section.id} className="scroll-mt-24">
-            <h2 className="text-2xl font-bold leading-snug text-ink">
+          <section
+            key={section.id}
+            id={section.id}
+            className="scroll-mt-24 rounded-lg border p-5"
+            style={{
+              borderColor:
+                section.kind === "warning" ? tint(post.secondaryColor, "66") : tint(post.accentColor, "55"),
+              backgroundColor:
+                section.kind === "summary" || section.kind === "warning"
+                  ? tint(section.kind === "warning" ? post.secondaryColor : post.accentColor, "0f")
+                  : "#ffffff",
+            }}
+          >
+            <div className="flex flex-wrap items-center gap-2">
+              <span
+                className="rounded-full px-2 py-1 text-xs font-bold"
+                style={{
+                  backgroundColor: tint(section.kind === "warning" ? post.secondaryColor : post.accentColor),
+                  color: section.kind === "warning" ? post.secondaryColor : post.accentColor,
+                }}
+              >
+                {sectionLabel(section.kind)}
+              </span>
+            </div>
+            <h2 className="mt-3 text-2xl font-bold leading-snug text-ink">
               {section.heading}
             </h2>
             <div className="mt-3 space-y-3 text-neutral-700">
@@ -149,16 +268,11 @@ export default async function BlogPostPage({ params }: PageProps) {
                 <p key={paragraph}>{paragraph}</p>
               ))}
             </div>
-            {section.checklist && (
-              <ul className="mt-4 space-y-2 rounded-lg border border-neutral-200 bg-white p-4 text-sm text-neutral-700">
-                {section.checklist.map((item) => (
-                  <li key={item} className="flex gap-2">
-                    <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-brand" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            )}
+            <SectionSupport
+              section={section}
+              accentColor={post.accentColor}
+              secondaryColor={post.secondaryColor}
+            />
           </section>
         ))}
       </div>
@@ -190,14 +304,21 @@ export default async function BlogPostPage({ params }: PageProps) {
         </ul>
       </section>
 
-      <aside className="mt-10 rounded-lg border border-brand/30 bg-brand-soft/50 p-5">
+      <aside
+        className="mt-10 rounded-lg border p-5"
+        style={{
+          borderColor: tint(post.accentColor, "66"),
+          backgroundColor: tint(post.accentColor, "12"),
+        }}
+      >
         <h2 className="text-lg font-bold text-ink">관련 가이드</h2>
         <p className="mt-2 text-sm text-neutral-700">
           이 주제와 연결된 주차별 가이드에서 검사 일정과 준비 항목을 함께 확인할 수 있습니다.
         </p>
         <Link
           href={post.relatedHref}
-          className="mt-4 inline-block rounded-lg bg-brand px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
+          className="mt-4 inline-block rounded-lg px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
+          style={{ backgroundColor: post.accentColor }}
         >
           관련 가이드 보기
         </Link>

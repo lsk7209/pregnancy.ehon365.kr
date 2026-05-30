@@ -56,14 +56,27 @@ for (const post of generatedBlogPosts) {
   if (!includesKeyword(post.title, post.mainKeyword)) {
     addIssue(post, "title", "title must include main keyword");
   }
+  if (!post.expandedKeywords.some((keyword) => includesKeyword(post.title, keyword))) {
+    addIssue(post, "title", "title must include at least one expanded keyword");
+  }
   if (!includesKeyword(post.subtitle, post.mainKeyword)) {
     addIssue(post, "subtitle", "subtitle must include main keyword");
   }
   if (!post.relatedKeywords.some((keyword) => includesKeyword(post.subtitle, keyword))) {
     addIssue(post, "subtitle", "subtitle must include at least one related keyword");
   }
+  if (!post.expandedKeywords.some((keyword) => includesKeyword(post.subtitle, keyword))) {
+    addIssue(post, "subtitle", "subtitle must include at least one expanded keyword");
+  }
+  if (!post.accentColor || !post.secondaryColor) {
+    addIssue(post, "colors", "article must have accent and secondary colors");
+  }
   if (post.sections.length < 5) {
     addIssue(post, "sections", "article must have at least five sections");
+  }
+  const sectionKinds = new Set(post.sections.map((section) => section.kind));
+  if (sectionKinds.size < 4) {
+    addIssue(post, "sections", "article must use at least four section types");
   }
   if (post.faq.length < 3) {
     addIssue(post, "faq", "article must have at least three FAQ items");
@@ -117,7 +130,13 @@ const titleMap = {
     cannibalization_status: "clear",
     next_content_angle: post.sections[0]?.heading ?? post.subtitle,
     recommended_format: post.category,
-    supporting_elements: ["toc", "summary_box", "checklist", "faq", "source_box"],
+    supporting_elements: [
+      "toc",
+      ...Array.from(new Set(post.sections.map((section) => section.kind ?? "body"))),
+      "faq",
+      "source_box",
+      "color_accent",
+    ],
     content_type_reason: `${post.category} 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성`,
     research_seed: `${post.mainKeyword} ${post.relatedKeywords.join(" ")} 공식 안내`,
     source_hint: post.sources.map((source) => source.name),

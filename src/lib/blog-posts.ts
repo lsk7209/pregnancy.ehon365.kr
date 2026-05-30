@@ -3,6 +3,7 @@ export interface BlogSection {
   heading: string;
   body: string[];
   checklist?: string[];
+  kind?: "summary" | "checklist" | "steps" | "warning" | "compare" | "source";
 }
 
 export interface BlogFaq {
@@ -35,6 +36,8 @@ export interface BlogPost {
   sections: BlogSection[];
   faq: BlogFaq[];
   sources: BlogSource[];
+  accentColor: string;
+  secondaryColor: string;
 }
 
 interface ContentPlan {
@@ -52,6 +55,8 @@ interface ContentPlan {
   relatedHref: string;
   structure: "checklist" | "faq" | "howto" | "comparison" | "warning";
 }
+
+type BlogPostSeed = Omit<BlogPost, "accentColor" | "secondaryColor">;
 
 const publicationStart =
   process.env.BLOG_PUBLICATION_START ?? "2026-05-30T14:00:00+09:00";
@@ -80,7 +85,7 @@ const commonSources: BlogSource[] = [
   },
 ];
 
-const existingPosts: BlogPost[] = [
+const existingPosts: BlogPostSeed[] = [
   {
     slug: "second-trimester-screening-checklist",
     title: "임신 중기 산전검사 체크리스트",
@@ -309,20 +314,29 @@ function textIncludesKeyword(text: string, keyword: string) {
   return text.toLowerCase().includes(keyword.toLowerCase());
 }
 
-function ensureTitleKeyword(title: string, mainKeyword: string) {
-  return textIncludesKeyword(title, mainKeyword) ? title : `${mainKeyword} ${title}`;
+function ensureTitleKeyword(title: string, mainKeyword: string, expandedKeywords: string[]) {
+  const expanded = expandedKeywords.find((keyword) => keyword !== mainKeyword) ?? expandedKeywords[0];
+  const withMain = textIncludesKeyword(title, mainKeyword) ? title : `${mainKeyword} ${title}`;
+  return expanded && !textIncludesKeyword(withMain, expanded)
+    ? `${withMain}: ${expanded}`
+    : withMain;
 }
 
 function ensureSubtitleKeywords(
   subtitle: string,
   mainKeyword: string,
   relatedKeywords: string[],
+  expandedKeywords: string[],
 ) {
   const withMain = textIncludesKeyword(subtitle, mainKeyword)
     ? subtitle
     : `${mainKeyword}와 ${subtitle}`;
   const hasRelated = relatedKeywords.some((keyword) => textIncludesKeyword(withMain, keyword));
-  return hasRelated ? withMain : `${withMain}: ${relatedKeywords[0]} 함께 확인`;
+  const withRelated = hasRelated ? withMain : `${withMain}: ${relatedKeywords[0]} 함께 확인`;
+  const expanded = expandedKeywords.find((keyword) => keyword !== mainKeyword) ?? expandedKeywords[0];
+  return expanded && !textIncludesKeyword(withRelated, expanded)
+    ? `${withRelated}, ${expanded}까지`
+    : withRelated;
 }
 
 const pregnancyWeekPlans = [
@@ -576,13 +590,82 @@ function sourceSlice(plan: ContentPlan) {
   return [commonSources[2], commonSources[4], commonSources[0]];
 }
 
+function colorPair(category: string) {
+  const pairs: Record<string, { accentColor: string; secondaryColor: string }> = {
+    "주차별 임신": { accentColor: "#d6608a", secondaryColor: "#5577c8" },
+    생활관리: { accentColor: "#4f9f78", secondaryColor: "#d6608a" },
+    산전검사: { accentColor: "#5577c8", secondaryColor: "#4f9f78" },
+    정부지원: { accentColor: "#d08a32", secondaryColor: "#5577c8" },
+    출산준비: { accentColor: "#8167c9", secondaryColor: "#d08a32" },
+    태아보험: { accentColor: "#3d8bb5", secondaryColor: "#8167c9" },
+    FAQ: { accentColor: "#c66a4a", secondaryColor: "#4f9f78" },
+  };
+  return pairs[category] ?? { accentColor: "#d6608a", secondaryColor: "#5577c8" };
+}
+
+function diversifySections(plan: ContentPlan, sections: BlogSection[]): BlogSection[] {
+  const variants: Record<ContentPlan["structure"], Array<BlogSection["kind"]>> = {
+    checklist: ["summary", "checklist", "steps", "warning", "source"],
+    faq: ["summary", "compare", "checklist", "source", "warning"],
+    howto: ["summary", "steps", "checklist", "compare", "source"],
+    comparison: ["summary", "compare", "checklist", "warning", "source"],
+    warning: ["summary", "warning", "checklist", "steps", "source"],
+  };
+  const headingSets: Record<ContentPlan["structure"], string[]> = {
+    checklist: [
+      `${plan.mainKeyword} 핵심 판단 기준`,
+      `${plan.relatedKeywords[0]} 확인 체크리스트`,
+      `${plan.expandedKeywords[0]} 준비 순서`,
+      `${plan.mainKeyword}에서 놓치기 쉬운 부분`,
+      `${plan.expandedKeywords[1] ?? plan.relatedKeywords[1]} 다음 행동`,
+    ],
+    faq: [
+      `${plan.mainKeyword} 바로 답변`,
+      `${plan.relatedKeywords[0]}와 함께 보는 차이`,
+      `${plan.expandedKeywords[0]} 확인 질문`,
+      `${plan.mainKeyword} 공식 확인 경로`,
+      `${plan.relatedKeywords[1]} 주의할 점`,
+    ],
+    howto: [
+      `${plan.mainKeyword} 실행 순서`,
+      `${plan.relatedKeywords[0]} 먼저 확인하기`,
+      `${plan.expandedKeywords[0]} 단계별 메모`,
+      `${plan.relatedKeywords[1]} 비교 기준`,
+      `${plan.mainKeyword} 신청 전 마무리`,
+    ],
+    comparison: [
+      `${plan.mainKeyword} 상담 전 기준`,
+      `${plan.relatedKeywords[0]} 비교 질문`,
+      `${plan.expandedKeywords[0]} 확인표`,
+      `${plan.relatedKeywords[1]}에서 피할 표현`,
+      `${plan.mainKeyword} 다음 상담 메모`,
+    ],
+    warning: [
+      `${plan.mainKeyword} 먼저 볼 위험 신호`,
+      `${plan.relatedKeywords[0]}와 함께 확인할 증상`,
+      `${plan.expandedKeywords[0]} 기록 체크`,
+      `${plan.mainKeyword}에서 바로 문의할 상황`,
+      `${plan.relatedKeywords[1]} 이후 행동`,
+    ],
+  };
+  const kinds = variants[plan.structure];
+  const headings = headingSets[plan.structure];
+
+  return sections.map((section, index) => ({
+    ...section,
+    kind: kinds[index % kinds.length],
+    heading: headings[index] ?? section.heading,
+  }));
+}
+
 function buildPost(plan: ContentPlan, index: number): BlogPost {
   const publishedAt = scheduledAt(index);
-  const title = ensureTitleKeyword(plan.title, plan.mainKeyword);
+  const title = ensureTitleKeyword(plan.title, plan.mainKeyword, plan.expandedKeywords);
   const subtitle = ensureSubtitleKeywords(
     plan.subtitle,
     plan.mainKeyword,
     plan.relatedKeywords,
+    plan.expandedKeywords,
   );
   const description = `${subtitle}. ${plan.mainKeyword}, ${plan.relatedKeywords.join(", ")}를 기준으로 지금 확인할 항목을 정리했습니다.`;
 
@@ -606,15 +689,19 @@ function buildPost(plan: ContentPlan, index: number): BlogPost {
       `${plan.mainKeyword}에서 먼저 확인할 것은 무엇인가요?`,
       `${plan.relatedKeywords[0]}는 어떤 기준으로 판단하나요?`,
     ],
-    sections: buildSections(plan),
+    sections: diversifySections(plan, buildSections(plan)),
     faq: buildFaq(plan),
     sources: sourceSlice(plan),
+    ...colorPair(plan.category),
   };
 }
 
 export const generatedBlogPosts: BlogPost[] = contentPlans.map(buildPost);
 
-export const blogPosts: BlogPost[] = [...existingPosts, ...generatedBlogPosts];
+export const blogPosts: BlogPost[] = [
+  ...existingPosts.map((post) => ({ ...post, ...colorPair(post.category) })),
+  ...generatedBlogPosts,
+];
 
 export function getAllBlogPosts(): BlogPost[] {
   return [...blogPosts].sort(

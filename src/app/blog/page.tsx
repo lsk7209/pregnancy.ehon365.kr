@@ -10,6 +10,10 @@ export const metadata: Metadata = {
     "임신·출산 준비 과정에서 자주 확인하는 검사, 생활관리, 정부지원, 태아보험 일반 정보를 카드형 목록으로 정리했습니다.",
 };
 
+function tint(hex: string, opacity = "1a") {
+  return `${hex}${opacity}`;
+}
+
 export default function BlogPage() {
   const posts = getPublishedBlogPosts();
   const schedule = getBlogSchedule();
@@ -34,6 +38,7 @@ export default function BlogPage() {
             key={post.slug}
             href={`/blog/${post.slug}`}
             className="flex min-h-64 flex-col overflow-hidden rounded-lg border border-neutral-200 bg-white transition hover:border-brand/50 hover:shadow-sm"
+            style={{ borderTopColor: post.accentColor, borderTopWidth: 4 }}
           >
             <img
               src={post.thumbnail}
@@ -42,34 +47,38 @@ export default function BlogPage() {
               loading="lazy"
             />
             <div className="flex flex-1 flex-col p-5">
-            <div className="flex items-center justify-between gap-3 text-xs text-neutral-500">
-              <span className="rounded-full bg-brand-soft px-2 py-1 font-medium text-brand">
-                {post.category}
-              </span>
-              <span>{post.readMinutes}분 읽기</span>
-            </div>
-            <h2 className="mt-4 text-lg font-bold leading-snug text-ink">
-              {post.title}
-            </h2>
-            <p className="mt-2 text-sm font-medium text-brand">
-              {post.subtitle}
-            </p>
-            <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-neutral-700">
-              {post.description}
-            </p>
-            <div className="mt-4 flex flex-wrap gap-1.5">
-              {[post.mainKeyword, ...post.relatedKeywords.slice(0, 2)].map((keyword) => (
+              <div className="flex items-center justify-between gap-3 text-xs text-neutral-500">
                 <span
-                  key={keyword}
-                  className="rounded-full bg-neutral-100 px-2 py-1 text-xs text-neutral-600"
+                  className="rounded-full px-2 py-1 font-medium"
+                  style={{ backgroundColor: tint(post.accentColor), color: post.accentColor }}
                 >
-                  {keyword}
+                  {post.category}
                 </span>
-              ))}
-            </div>
-            <span className="mt-auto pt-5 text-sm font-semibold text-brand">
-              글 보기
-            </span>
+                <span>{post.readMinutes}분 읽기</span>
+              </div>
+              <h2 className="mt-4 text-lg font-bold leading-snug text-ink">
+                {post.title}
+              </h2>
+              <p className="mt-2 text-sm font-medium" style={{ color: post.secondaryColor }}>
+                {post.subtitle}
+              </p>
+              <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-neutral-700">
+                {post.description}
+              </p>
+              <div className="mt-4 flex flex-wrap gap-1.5">
+                {[post.mainKeyword, ...post.relatedKeywords.slice(0, 2)].map((keyword) => (
+                  <span
+                    key={keyword}
+                    className="rounded-full px-2 py-1 text-xs text-neutral-700"
+                    style={{ backgroundColor: tint(post.secondaryColor, "14") }}
+                  >
+                    {keyword}
+                  </span>
+                ))}
+              </div>
+              <span className="mt-auto pt-5 text-sm font-semibold" style={{ color: post.accentColor }}>
+                글 보기
+              </span>
             </div>
           </Link>
         ))}
