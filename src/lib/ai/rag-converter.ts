@@ -16,20 +16,27 @@ export async function getSourceContext(
   week: number,
   category: Category,
 ): Promise<string[]> {
-  const rows = await db
-    .select()
-    .from(sourceExtracts)
-    .where(
-      and(
-        eq(sourceExtracts.status, "verified"),
-        eq(sourceExtracts.category, category),
-        or(
-          eq(sourceExtracts.weekNumber, week),
-          isNull(sourceExtracts.weekNumber),
+  let rows: { summary: string; citationFormat: string }[];
+
+  try {
+    rows = await db
+      .select()
+      .from(sourceExtracts)
+      .where(
+        and(
+          eq(sourceExtracts.status, "verified"),
+          eq(sourceExtracts.category, category),
+          or(
+            eq(sourceExtracts.weekNumber, week),
+            isNull(sourceExtracts.weekNumber),
+          ),
         ),
-      ),
-    )
-    .limit(3);
+      )
+      .limit(3);
+  } catch (error) {
+    console.warn("getSourceContext fallback:", error);
+    return [];
+  }
 
   return rows.map((r) => `${r.summary} ${r.citationFormat}`);
 }

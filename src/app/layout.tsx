@@ -2,7 +2,13 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { Header } from "@/components/layout/Header";
 import { ComplianceFooter } from "@/components/layout/ComplianceFooter";
-import { SITE_NAME, SITE_URL } from "@/lib/utils";
+import {
+  ADSENSE_PUB_ID,
+  GA4_ID,
+  NAVER_VERIFICATION,
+  SITE_NAME,
+  SITE_URL,
+} from "@/lib/utils";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -22,9 +28,9 @@ export const metadata: Metadata = {
     type: "website",
     url: SITE_URL,
   },
-  verification: process.env.NAVER_VERIFICATION
-    ? { other: { "naver-site-verification": process.env.NAVER_VERIFICATION } }
-    : undefined,
+  verification: {
+    other: { "naver-site-verification": NAVER_VERIFICATION },
+  },
 };
 
 export default function RootLayout({
@@ -32,8 +38,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const adsenseId = process.env.NEXT_PUBLIC_ADSENSE_PUB_ID;
-  const ga4Id = process.env.NEXT_PUBLIC_GA4_ID;
   const websiteJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -57,10 +61,10 @@ export default function RootLayout({
         <Header />
         <main className="mx-auto max-w-3xl px-4 py-6">{children}</main>
         <ComplianceFooter />
-        {ga4Id && (
+        {GA4_ID && (
           <>
             <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${ga4Id}`}
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}
               strategy="afterInteractive"
             />
             <Script id="ga4-config" strategy="afterInteractive">
@@ -68,15 +72,15 @@ export default function RootLayout({
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', '${ga4Id}', { anonymize_ip: true });
+                gtag('config', '${GA4_ID}', { anonymize_ip: true });
               `}
             </Script>
           </>
         )}
-        {adsenseId && (
+        {ADSENSE_PUB_ID && (
           <Script
             async
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUB_ID}`}
             crossOrigin="anonymous"
             strategy="afterInteractive"
           />

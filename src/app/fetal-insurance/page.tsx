@@ -2,7 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { and, eq } from "drizzle-orm";
 import { db } from "@/db/client";
-import { cpaOffers } from "@/db/schema";
+import { cpaOffers, type CpaOffer } from "@/db/schema";
+import { fallbackFetalInsuranceOffer } from "@/lib/db-fallbacks";
 
 export const metadata: Metadata = {
   title: "태아보험 일반 가이드",
@@ -10,16 +11,29 @@ export const metadata: Metadata = {
     "태아보험의 기본 개념, 확인할 항목, 상담 전 준비할 내용을 정리한 일반 정보 페이지입니다.",
 };
 
+async function getActiveOffer(): Promise<CpaOffer | null> {
+  try {
+    const offers = await db
+      .select()
+      .from(cpaOffers)
+      .where(
+        and(
+          eq(cpaOffers.vertical, "fetal_insurance"),
+          eq(cpaOffers.status, "active"),
+        ),
+      )
+      .orderBy(cpaOffers.priority)
+      .limit(1);
+
+    return offers[0] ?? fallbackFetalInsuranceOffer;
+  } catch (error) {
+    console.warn("getActiveOffer fallback:", error);
+    return fallbackFetalInsuranceOffer;
+  }
+}
+
 export default async function FetalInsurancePage() {
-  const offers = await db
-    .select()
-    .from(cpaOffers)
-    .where(
-      and(eq(cpaOffers.vertical, "fetal_insurance"), eq(cpaOffers.status, "active")),
-    )
-    .orderBy(cpaOffers.priority)
-    .limit(1);
-  const offer = offers[0];
+  const offer = await getActiveOffer();
 
   return (
     <article className="space-y-8">
