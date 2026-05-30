@@ -1,7 +1,9 @@
 import type { MetadataRoute } from "next";
-import { blogPosts } from "@/lib/blog-posts";
+import { getPublishedBlogPosts } from "@/lib/blog-posts";
 import { CORE_WEEKS } from "@/lib/week-data";
 import { SITE_URL } from "@/lib/utils";
+
+export const dynamic = "force-dynamic";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -22,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${SITE_URL}/pregnancy/${week}`,
       lastModified: now,
     })),
-    ...blogPosts.map((post) => ({
+    ...getPublishedBlogPosts(now).map((post) => ({
       url: `${SITE_URL}/blog/${post.slug}`,
       lastModified: new Date(post.updatedAt),
     })),

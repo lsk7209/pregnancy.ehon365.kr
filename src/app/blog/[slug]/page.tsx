@@ -1,16 +1,14 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { blogPosts, getBlogPost } from "@/lib/blog-posts";
+import { getBlogPost, getPublishedBlogPost } from "@/lib/blog-posts";
 import { SITE_NAME, SITE_URL } from "@/lib/utils";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
-export function generateStaticParams() {
-  return blogPosts.map((post) => ({ slug: post.slug }));
-}
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,
@@ -22,6 +20,11 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.description,
+    keywords: [post.mainKeyword, ...post.relatedKeywords, ...post.expandedKeywords],
+    robots:
+      new Date(post.publishedAt).getTime() <= Date.now()
+        ? undefined
+        : { index: false, follow: false },
     alternates: {
       canonical: `/blog/${post.slug}`,
     },
@@ -36,7 +39,7 @@ export async function generateMetadata({
 
 export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params;
-  const post = getBlogPost(slug);
+  const post = getPublishedBlogPost(slug);
   if (!post) notFound();
 
   const jsonLd = {
@@ -45,13 +48,26 @@ export default async function BlogPostPage({ params }: PageProps) {
     headline: post.title,
     description: post.description,
     dateModified: post.updatedAt,
-    datePublished: post.updatedAt,
+    datePublished: post.publishedAt,
     inLanguage: "ko-KR",
     mainEntityOfPage: `${SITE_URL}/blog/${post.slug}`,
+    keywords: [post.mainKeyword, ...post.relatedKeywords, ...post.expandedKeywords],
     publisher: {
       "@type": "Organization",
       name: SITE_NAME,
     },
+  };
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: post.faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
   };
 
   return (
@@ -59,6 +75,10 @@ export default async function BlogPostPage({ params }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <header className="border-b border-neutral-200 pb-6">
         <div className="flex flex-wrap items-center gap-2 text-sm text-neutral-500">
@@ -71,12 +91,27 @@ export default async function BlogPostPage({ params }: PageProps) {
         <h1 className="mt-4 text-3xl font-bold leading-tight text-ink sm:text-4xl">
           {post.title}
         </h1>
+        <p className="mt-3 text-xl font-semibold leading-relaxed text-brand">
+          {post.subtitle}
+        </p>
         <p className="mt-3 text-lg leading-relaxed text-neutral-700">
           {post.description}
         </p>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {[post.mainKeyword, ...post.relatedKeywords, ...post.expandedKeywords.slice(0, 3)].map(
+            (keyword) => (
+              <span
+                key={keyword}
+                className="rounded-full bg-neutral-100 px-2.5 py-1 text-xs font-medium text-neutral-600"
+              >
+                {keyword}
+              </span>
+            ),
+          )}
+        </div>
       </header>
 
-      <nav className="my-6 rounded-xl border border-neutral-200 bg-white p-4">
+      <nav className="my-6 rounded-lg border border-neutral-200 bg-white p-4">
         <h2 className="text-sm font-bold text-ink">목차</h2>
         <ol className="mt-3 space-y-2 text-sm text-neutral-700">
           {post.sections.map((section) => (
@@ -100,15 +135,51 @@ export default async function BlogPostPage({ params }: PageProps) {
                 <p key={paragraph}>{paragraph}</p>
               ))}
             </div>
+            {section.checklist && (
+              <ul className="mt-4 space-y-2 rounded-lg border border-neutral-200 bg-white p-4 text-sm text-neutral-700">
+                {section.checklist.map((item) => (
+                  <li key={item} className="flex gap-2">
+                    <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-brand" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
           </section>
         ))}
       </div>
 
-      <aside className="mt-10 rounded-xl border border-brand/30 bg-brand-soft/50 p-5">
+      <section className="mt-10 rounded-lg border border-neutral-200 bg-white p-5">
+        <h2 className="text-lg font-bold text-ink">자주 묻는 질문</h2>
+        <div className="mt-4 space-y-4">
+          {post.faq.map((item) => (
+            <div key={item.question}>
+              <h3 className="font-semibold text-ink">{item.question}</h3>
+              <p className="mt-1 text-sm leading-relaxed text-neutral-700">
+                {item.answer}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-6 rounded-lg border border-neutral-200 bg-white p-5">
+        <h2 className="text-lg font-bold text-ink">확인한 공식 경로</h2>
+        <ul className="mt-3 space-y-2 text-sm text-neutral-700">
+          {post.sources.map((source) => (
+            <li key={source.url}>
+              <a className="font-medium text-brand hover:underline" href={source.url}>
+                {source.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <aside className="mt-10 rounded-lg border border-brand/30 bg-brand-soft/50 p-5">
         <h2 className="text-lg font-bold text-ink">관련 가이드</h2>
         <p className="mt-2 text-sm text-neutral-700">
-          이 주제와 연결된 주차별 가이드에서 검사 일정과 지원 정보를 함께
-          확인할 수 있습니다.
+          이 주제와 연결된 주차별 가이드에서 검사 일정과 준비 항목을 함께 확인할 수 있습니다.
         </p>
         <Link
           href={post.relatedHref}

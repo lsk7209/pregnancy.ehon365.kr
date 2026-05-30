@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "임신 주차별 태아 발달, 엄마 몸의 변화, 산전검사 일정, 정부지원 정보를 한눈에 안내하는 임신·출산 준비 가이드입니다.",
+    "임신 주차별 태아 발달, 산모 몸의 변화, 산전검사 일정, 정부지원 정보를 한눈에 안내하는 임신·출산 준비 가이드입니다.",
   alternates: {
     canonical: "/",
   },
