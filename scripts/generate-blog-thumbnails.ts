@@ -1,5 +1,6 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import sharp from "sharp";
 import { blogPosts } from "../src/lib/blog-posts";
 
 const outDir = join(process.cwd(), "public", "blog-thumbnails");
@@ -126,10 +127,22 @@ function render(post: (typeof blogPosts)[number]) {
 `;
 }
 
-mkdirSync(outDir, { recursive: true });
+async function main() {
+  mkdirSync(outDir, { recursive: true });
 
-for (const post of blogPosts) {
-  writeFileSync(join(outDir, `${post.slug}.svg`), render(post), "utf8");
+  for (const post of blogPosts) {
+    const svg = render(post);
+    writeFileSync(join(outDir, `${post.slug}.svg`), svg, "utf8");
+    await sharp(Buffer.from(svg))
+      .resize(1200, 675, { fit: "cover" })
+      .webp({ quality: 84, effort: 5 })
+      .toFile(join(outDir, `${post.slug}.webp`));
+  }
+
+  console.log(`Generated ${blogPosts.length} SVG and WebP blog thumbnails in public/blog-thumbnails.`);
 }
 
-console.log(`Generated ${blogPosts.length} blog thumbnails in public/blog-thumbnails.`);
+main().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});

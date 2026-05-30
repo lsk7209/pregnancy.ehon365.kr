@@ -87,7 +87,7 @@ const existingPosts: BlogPost[] = [
     subtitle: "임신 중기 산전검사와 정밀초음파 준비를 한 번에 확인하기",
     description:
       "2차 선별검사, 정밀초음파, 임신성 당뇨검사처럼 중기에 자주 안내받는 검사를 주차별로 정리했습니다.",
-    thumbnail: "/blog-thumbnails/second-trimester-screening-checklist.svg",
+    thumbnail: "/blog-thumbnails/second-trimester-screening-checklist.webp",
     category: "산전검사",
     mainKeyword: "임신 중기 산전검사",
     relatedKeywords: ["정밀초음파", "임신성 당뇨검사"],
@@ -143,7 +143,7 @@ const existingPosts: BlogPost[] = [
     subtitle: "국민행복카드와 보건소 지원을 임신 주차별로 점검하기",
     description:
       "국민행복카드, 보건소 지원, 산모·신생아 건강관리 지원처럼 놓치기 쉬운 제도를 정리했습니다.",
-    thumbnail: "/blog-thumbnails/pregnancy-support-benefits.svg",
+    thumbnail: "/blog-thumbnails/pregnancy-support-benefits.webp",
     category: "정부지원",
     mainKeyword: "임신 출산 진료비 지원",
     relatedKeywords: ["국민행복카드", "보건소 임산부 지원"],
@@ -199,7 +199,7 @@ const existingPosts: BlogPost[] = [
     subtitle: "태아보험 가입시기와 보장 확인 질문을 상담 전 정리하기",
     description:
       "가입 가능 시기, 보장 항목, 상담 전 질문을 특정 상품 추천 없이 일반 정보 기준으로 정리했습니다.",
-    thumbnail: "/blog-thumbnails/fetal-insurance-before-consulting.svg",
+    thumbnail: "/blog-thumbnails/fetal-insurance-before-consulting.webp",
     category: "태아보험",
     mainKeyword: "태아보험 상담",
     relatedKeywords: ["태아보험 가입시기", "태아보험 보장"],
@@ -591,7 +591,7 @@ function buildPost(plan: ContentPlan, index: number): BlogPost {
     title,
     subtitle,
     description,
-    thumbnail: `/blog-thumbnails/${plan.slug}.svg`,
+    thumbnail: `/blog-thumbnails/${plan.slug}.webp`,
     category: plan.category,
     mainKeyword: plan.mainKeyword,
     relatedKeywords: plan.relatedKeywords,
