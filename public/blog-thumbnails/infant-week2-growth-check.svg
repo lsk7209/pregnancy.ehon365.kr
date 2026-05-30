@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="생후 2주 성장 확인: 수유 횟수 대표 이미지">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f9f7ff"/>
+      <stop offset="1" stop-color="#ded5ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#463179" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="976" cy="142" r="180" fill="#ffffff" opacity="0.38"/>
+  <circle cx="1004" cy="491" r="120" fill="#8167c9" opacity="0.13"/>
+  <path d="M0 560C180 500 260 610 420 550C560 498 630 455 805 505C960 550 1030 610 1200 545V675H0Z" fill="#ffffff" opacity="0.46"/>
+  <g filter="url(#shadow)">
+    
+      <rect x="760" y="250" width="285" height="210" rx="32" fill="#ffffff" opacity="0.82"/>
+      <path d="M830 250c0-54 38-88 74-88s74 34 74 88" fill="none" stroke="#463179" stroke-width="18" stroke-linecap="round"/>
+      <path d="M815 325h185M815 382h142" stroke="#8167c9" stroke-width="15" stroke-linecap="round"/>
+    
+  </g>
+  <rect x="72" y="86" width="610" height="500" rx="34" fill="#ffffff" opacity="0.86"/>
+  <text x="88" y="145" font-family="Pretendard, Arial, sans-serif" font-size="30" font-weight="700" fill="#8167c9">출산준비</text>
+  <text x="88" y="250" font-family="Pretendard, Arial, sans-serif" font-size="56" font-weight="800" fill="#463179" letter-spacing="-1"><tspan x="88" dy="0">생후 2주 성장 확인: 수유</tspan><tspan x="88" dy="64">횟수</tspan></text>
+  <rect x="88" y="475" width="294" height="58" rx="29" fill="#ded5ff"/>
+  <text x="116" y="512" font-family="Pretendard, Arial, sans-serif" font-size="26" font-weight="700" fill="#463179">생후 2주 성장</text>
+</svg>

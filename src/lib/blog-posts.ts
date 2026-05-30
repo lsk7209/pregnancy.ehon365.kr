@@ -582,6 +582,127 @@ const insuranceExtraPlans: readonly PlanTuple[] = [
   ["insurance-family-budget-balance", "태아보험 가족예산 균형", "태아보험 가족예산과 출산 후 고정비 비교", "태아보험 가족예산", "출산 후 고정비", "보험료 한도"],
 ];
 
+const recoveryRoutinePlans: readonly PlanTuple[] = [
+  ["recovery-week2-bleeding-pattern", "산후 2주 오로 변화 기록", "산후 2주 오로 변화와 회복 진료 질문", "산후 2주 오로 변화", "회복 진료", "출혈 패턴"],
+  ["recovery-week3-walk-start", "산후 3주 걷기 시작 기준", "산후 3주 걷기와 골반 통증 확인", "산후 3주 걷기", "골반 통증", "운동 재개"],
+  ["recovery-week4-sleep-debt", "산후 4주 수면부채 관리", "산후 4주 수면부채와 야간 수유 분담", "산후 4주 수면부채", "야간 수유 분담", "회복 루틴"],
+  ["recovery-week5-breast-pain", "산후 5주 유방통 확인", "산후 5주 유방통과 수유 자세 점검", "산후 5주 유방통", "수유 자세", "젖몸살 예방"],
+  ["recovery-week6-checkup-questions", "산후 6주 검진 질문표", "산후 6주 검진 질문표와 피임 상담 준비", "산후 6주 검진 질문표", "피임 상담", "운동 허가"],
+  ["recovery-week7-mood-log", "산후 7주 기분 기록", "산후 7주 기분 기록과 상담 필요 신호", "산후 7주 기분 기록", "상담 필요 신호", "산후우울"],
+  ["recovery-week8-core-exercise", "산후 8주 복부운동 기준", "산후 8주 복부운동과 복직 전 체력 점검", "산후 8주 복부운동", "복직 전 체력", "복직 준비"],
+  ["recovery-week9-hair-skin", "산후 9주 피부 모발 변화", "산후 9주 피부 모발 변화와 영양 상담", "산후 9주 피부 모발 변화", "영양 상담", "호르몬 변화"],
+  ["recovery-week10-back-pain", "산후 10주 허리통증 관리", "산후 10주 허리통증과 아기 안는 자세", "산후 10주 허리통증", "아기 안는 자세", "근골격 회복"],
+  ["recovery-week11-return-work", "산후 11주 복직 루틴", "산후 11주 복직 루틴과 수유 계획 정리", "산후 11주 복직 루틴", "수유 계획", "업무 복귀"],
+  ["recovery-week12-health-baseline", "산후 12주 건강 기준선", "산후 12주 건강 기준선과 다음 검진 메모", "산후 12주 건강 기준선", "다음 검진", "회복 평가"],
+  ["recovery-pelvic-floor-symptom", "산후 골반저 증상 구분", "산후 골반저 증상과 요실금 상담 기준", "산후 골반저 증상", "요실금 상담", "골반저 운동"],
+  ["recovery-c-section-numbness", "제왕절개 감각저하 확인", "제왕절개 감각저하와 흉터 회복 질문", "제왕절개 감각저하", "흉터 회복", "상처 감각"],
+  ["recovery-postpartum-anemia", "산후 빈혈 증상 체크", "산후 빈혈 증상과 철분 복용 상담", "산후 빈혈 증상", "철분 복용", "어지럼 기록"],
+  ["recovery-breastfeeding-posture", "수유 자세 통증 줄이기", "수유 자세 통증과 손목 어깨 보호", "수유 자세 통증", "손목 어깨", "수유 쿠션"],
+  ["recovery-night-sweats", "산후 식은땀 기록 기준", "산후 식은땀과 발열 구분 질문", "산후 식은땀", "발열 구분", "체온 기록"],
+  ["recovery-postpartum-sexual-health", "산후 부부관계 상담 기준", "산후 부부관계 상담과 회복 상태 확인", "산후 부부관계 상담", "회복 상태", "통증 확인"],
+  ["recovery-babywearing-back", "아기띠 허리통증 예방", "아기띠 허리통증과 착용 시간 조절", "아기띠 허리통증", "착용 시간", "육아 자세"],
+  ["recovery-postpartum-dental", "산후 치과 진료 준비", "산후 치과 진료와 수유 중 약 상담", "산후 치과 진료", "수유 중 약", "치아 통증"],
+  ["recovery-mom-health-record", "산모 건강기록표 만들기", "산모 건강기록표와 병원 상담 메모", "산모 건강기록표", "병원 상담 메모", "회복 체크"],
+];
+
+const infantGrowthPlans: readonly PlanTuple[] = [
+  ["infant-week2-growth-check", "생후 2주 성장 확인", "생후 2주 성장과 수유 횟수 기록", "생후 2주 성장", "수유 횟수", "체중 증가"],
+  ["infant-week3-sleep-cycle", "생후 3주 수면주기 기록", "생후 3주 수면주기와 낮밤 구분 시작", "생후 3주 수면주기", "낮밤 구분", "수면 환경"],
+  ["infant-week4-one-month-check", "생후 4주 1개월 검진", "생후 4주 1개월 검진과 예방접종 질문", "생후 4주 1개월 검진", "예방접종 질문", "성장 평가"],
+  ["infant-week5-colic-record", "생후 5주 영아산통 기록", "생후 5주 영아산통과 수유 트림 확인", "생후 5주 영아산통", "수유 트림", "울음 패턴"],
+  ["infant-week6-bath-routine", "생후 6주 목욕 루틴", "생후 6주 목욕 루틴과 피부 보습 기준", "생후 6주 목욕 루틴", "피부 보습", "목욕 시간"],
+  ["infant-week7-tummy-time", "생후 7주 터미타임 시작", "생후 7주 터미타임과 안전한 바닥 환경", "생후 7주 터미타임", "바닥 환경", "목 가누기"],
+  ["infant-week8-vaccine-reaction", "생후 8주 예방접종 반응", "생후 8주 예방접종 반응과 체온 기록", "생후 8주 예방접종 반응", "체온 기록", "병원 문의"],
+  ["infant-week9-feeding-gap", "생후 9주 수유간격 조정", "생후 9주 수유간격과 수면 패턴 비교", "생후 9주 수유간격", "수면 패턴", "수유량"],
+  ["infant-week10-skin-rash", "생후 10주 피부발진 확인", "생후 10주 피부발진과 진료 사진 기록", "생후 10주 피부발진", "진료 사진", "피부 관리"],
+  ["infant-week11-development-note", "생후 11주 발달 메모", "생후 11주 발달 메모와 시선 반응 확인", "생후 11주 발달 메모", "시선 반응", "놀이 시간"],
+  ["infant-week12-hundred-days", "생후 12주 백일 준비", "생후 12주 백일 준비와 아기 컨디션 우선순위", "생후 12주 백일 준비", "아기 컨디션", "외출 계획"],
+  ["infant-reflux-position", "아기 역류 자세 관리", "아기 역류 자세와 게워냄 상담 기준", "아기 역류 자세", "게워냄 상담", "수유 후 자세"],
+  ["infant-diaper-output-chart", "아기 기저귀 기록표", "아기 기저귀 기록표와 탈수 신호 확인", "아기 기저귀 기록표", "탈수 신호", "소변 횟수"],
+  ["infant-room-temperature", "아기 방 온습도 기준", "아기 방 온습도와 수면복 선택 체크", "아기 방 온습도", "수면복 선택", "실내 환경"],
+  ["infant-car-seat-crying", "카시트에서 우는 아기 대처", "카시트에서 우는 아기와 이동 시간 조절", "카시트 아기 울음", "이동 시간", "안전 이동"],
+  ["infant-stroller-first-outing", "유모차 첫 외출 준비", "유모차 첫 외출과 예방접종 전후 일정", "유모차 첫 외출", "예방접종 전후", "외출 준비"],
+  ["infant-baby-acne", "신생아 여드름 구분", "신생아 여드름과 피부 진료 질문", "신생아 여드름", "피부 진료", "얼굴 발진"],
+  ["infant-head-shape", "아기 머리모양 관찰", "아기 머리모양과 수면 자세 조정", "아기 머리모양", "수면 자세 조정", "두상 관찰"],
+  ["infant-crying-language", "아기 울음 종류 기록", "아기 울음 종류와 배고픔 졸림 구분", "아기 울음 종류", "배고픔 졸림", "육아 기록"],
+  ["infant-growth-photo", "아기 성장사진 기록법", "아기 성장사진과 월령별 발달 메모", "아기 성장사진", "월령별 발달", "사진 정리"],
+];
+
+const feedingSleepPlans: readonly PlanTuple[] = [
+  ["feeding-breast-pain-latch", "젖 물림 통증 확인", "젖 물림 통증과 수유 상담 질문 정리", "젖 물림 통증", "수유 상담", "올바른 래치"],
+  ["feeding-formula-amount-log", "분유량 기록 기준", "분유량 기록과 수유 간격 조정", "분유량 기록", "수유 간격", "분유 보충"],
+  ["feeding-mixed-feeding-ratio", "혼합수유 비율 조정", "혼합수유 비율과 아기 체중 변화 확인", "혼합수유 비율", "아기 체중", "수유 계획"],
+  ["feeding-pumped-milk-storage", "유축 모유 보관 기준", "유축 모유 보관과 해동 시간 체크", "유축 모유 보관", "해동 시간", "수유 위생"],
+  ["feeding-bottle-nipple-size", "젖병 젖꼭지 단계 확인", "젖병 젖꼭지 단계와 사레 들림 구분", "젖병 젖꼭지 단계", "사레 들림", "수유 속도"],
+  ["feeding-burping-trouble", "트림이 어려운 아기 대처", "트림이 어려운 아기와 게워냄 기록", "트림 어려운 아기", "게워냄 기록", "수유 자세"],
+  ["feeding-night-feeding-plan", "밤수유 줄이는 준비", "밤수유 줄이는 준비와 체중 증가 확인", "밤수유 줄이는 준비", "체중 증가", "수면 루틴"],
+  ["feeding-growth-spurt", "급성장기 수유 증가", "급성장기 수유 증가와 울음 패턴 구분", "급성장기 수유 증가", "울음 패턴", "수유 요구"],
+  ["sleep-bedtime-routine-start", "아기 잠자리 루틴 시작", "아기 잠자리 루틴과 낮잠 시간 기록", "아기 잠자리 루틴", "낮잠 시간", "수면 신호"],
+  ["sleep-contact-nap", "안아 재우기 줄이기", "안아 재우기 줄이기와 등센서 대처", "안아 재우기 줄이기", "등센서 대처", "수면 습관"],
+  ["sleep-day-night-confusion", "낮밤 바뀐 아기 조정", "낮밤 바뀐 아기와 빛 소리 환경 조절", "낮밤 바뀐 아기", "빛 소리 환경", "수면 교육"],
+  ["sleep-swaddle-transition", "속싸개 졸업 시기", "속싸개 졸업 시기와 뒤집기 전 안전", "속싸개 졸업 시기", "뒤집기 전 안전", "수면 안전"],
+  ["sleep-safe-crib-check", "아기 침대 안전 점검", "아기 침대 안전 점검과 질식 위험 줄이기", "아기 침대 안전 점검", "질식 위험", "수면 공간"],
+  ["sleep-wake-window", "아기 깨어있는 시간표", "아기 깨어있는 시간표와 과피로 신호 확인", "아기 깨어있는 시간표", "과피로 신호", "낮잠 루틴"],
+  ["sleep-white-noise-use", "백색소음 사용 기준", "백색소음 사용 기준과 볼륨 거리 확인", "백색소음 사용 기준", "볼륨 거리", "수면 환경"],
+];
+
+const workCarePlans: readonly PlanTuple[] = [
+  ["work-return-breastfeeding-plan", "복직 후 모유수유 계획", "복직 후 모유수유 계획과 유축 시간 확보", "복직 후 모유수유 계획", "유축 시간", "직장 복귀"],
+  ["work-childcare-leave-pay-check", "육아휴직 급여 확인표", "육아휴직 급여 확인표와 신청 일정 정리", "육아휴직 급여 확인표", "신청 일정", "고용보험"],
+  ["work-shortened-hours-parenting", "육아기 근로시간 단축 준비", "육아기 근로시간 단축과 회사 제출서류", "육아기 근로시간 단축", "회사 제출서류", "근무 조정"],
+  ["work-daycare-before-return", "복직 전 어린이집 적응", "복직 전 어린이집 적응과 등하원 동선 점검", "복직 전 어린이집 적응", "등하원 동선", "입소 준비"],
+  ["work-caregiver-backup-plan", "대체 돌봄 계획 세우기", "대체 돌봄 계획과 아기 아플 때 연락망", "대체 돌봄 계획", "아기 아플 때", "비상 연락망"],
+  ["work-pumping-room-check", "직장 유축 공간 확인", "직장 유축 공간과 모유 보관 준비", "직장 유축 공간", "모유 보관", "근무 중 수유"],
+  ["work-maternity-return-docs", "출산휴가 복귀 서류", "출산휴가 복귀 서류와 급여 정산 확인", "출산휴가 복귀 서류", "급여 정산", "회사 인사"],
+  ["work-partner-leave-schedule", "배우자 육아휴직 일정", "배우자 육아휴직 일정과 가족 돌봄 분담", "배우자 육아휴직 일정", "가족 돌봄 분담", "휴직 계획"],
+  ["work-grandparent-care-contract", "조부모 돌봄 약속표", "조부모 돌봄 약속표와 생활 규칙 공유", "조부모 돌봄 약속표", "생활 규칙", "가족 돌봄"],
+  ["work-nanny-interview-questions", "아이돌보미 면접 질문", "아이돌보미 면접 질문과 돌봄 기록 공유", "아이돌보미 면접 질문", "돌봄 기록", "신뢰 확인"],
+  ["work-first-sick-day", "복직 후 아기 아픈 날", "복직 후 아기 아픈 날과 병가 돌봄 분담", "복직 후 아기 아픈 날", "병가 돌봄", "응급 계획"],
+  ["work-commute-feeding-bag", "출근 수유가방 준비", "출근 수유가방과 유축 소모품 체크", "출근 수유가방", "유축 소모품", "복직 준비"],
+  ["work-postpartum-fatigue-office", "복직 후 산후피로 관리", "복직 후 산후피로와 업무량 조정 질문", "복직 후 산후피로", "업무량 조정", "건강 관리"],
+  ["work-daycare-waitlist-strategy", "어린이집 대기 순번 관리", "어린이집 대기 순번과 입소 상담 질문", "어린이집 대기 순번", "입소 상담", "보육 계획"],
+  ["work-family-calendar", "육아 가족 일정표 만들기", "육아 가족 일정표와 예방접종 검진 공유", "육아 가족 일정표", "예방접종 검진", "공동 캘린더"],
+];
+
+const supportAdminFollowupPlans: readonly PlanTuple[] = [
+  ["support-childcare-subsidy-start", "보육료 지원 전환 확인", "보육료 지원 전환과 어린이집 입소 전 신청", "보육료 지원 전환", "어린이집 입소", "아이사랑 신청"],
+  ["support-homecare-allowance-change", "양육수당 전환 기준", "양육수당 전환 기준과 부모급여 차이 확인", "양육수당 전환 기준", "부모급여 차이", "가정양육"],
+  ["support-vaccine-record-check", "예방접종 기록 확인", "예방접종 기록 확인과 누락 접종 상담", "예방접종 기록 확인", "누락 접종 상담", "예방접종도우미"],
+  ["support-health-checkup-infant", "영유아검진 예약 준비", "영유아검진 예약과 문진표 작성 기준", "영유아검진 예약", "문진표 작성", "건강검진"],
+  ["support-postpartum-care-extend", "산후도우미 연장 문의", "산후도우미 연장 문의와 본인부담금 확인", "산후도우미 연장 문의", "본인부담금", "서비스 기간"],
+  ["support-emergency-childcare", "긴급돌봄 지원 확인", "긴급돌봄 지원과 신청 사유 정리", "긴급돌봄 지원", "신청 사유", "돌봄 공백"],
+  ["support-medical-bill-folder", "아기 병원비 영수증 정리", "아기 병원비 영수증과 보험 청구 자료", "아기 병원비 영수증", "보험 청구 자료", "의료비 기록"],
+  ["support-local-birth-gift", "지자체 출산축하용품 확인", "지자체 출산축하용품과 신청 기한 점검", "지자체 출산축하용품", "신청 기한", "주소지 기준"],
+  ["support-public-postpartum-center", "공공산후조리원 신청", "공공산후조리원 신청과 우선순위 확인", "공공산후조리원 신청", "우선순위", "이용료"],
+  ["support-mom-health-program", "보건소 산모 건강교실", "보건소 산모 건강교실과 수유 교육 신청", "보건소 산모 건강교실", "수유 교육", "지역 프로그램"],
+];
+
+const insuranceClaimPlans: readonly PlanTuple[] = [
+  ["insurance-newborn-claim-first", "태아보험 첫 보험금 청구", "태아보험 첫 보험금 청구와 병원서류 준비", "태아보험 첫 보험금 청구", "병원서류", "청구 절차"],
+  ["insurance-policy-review-after-birth", "출생 후 보험증권 점검", "출생 후 보험증권 점검과 피보험자 정보 확인", "출생 후 보험증권 점검", "피보험자 정보", "계약 변경"],
+  ["insurance-rider-delete-check", "태아특약 삭제 시점 확인", "태아특약 삭제 시점과 출생 후 보장 조정", "태아특약 삭제 시점", "출생 후 보장", "보험료 조정"],
+  ["insurance-child-policy-switch", "어린이보험 전환 질문", "어린이보험 전환 질문과 보장 공백 확인", "어린이보험 전환 질문", "보장 공백", "계약 전환"],
+  ["insurance-claim-app-upload", "보험 청구 앱 업로드 준비", "보험 청구 앱 업로드와 진료비 세부내역서 확인", "보험 청구 앱 업로드", "진료비 세부내역서", "모바일 청구"],
+  ["insurance-hospital-record-copy", "보험청구 진료기록 사본", "보험청구 진료기록 사본과 발급 비용 확인", "보험청구 진료기록 사본", "발급 비용", "청구 서류"],
+  ["insurance-denial-question", "보험금 부지급 질문", "보험금 부지급 질문과 약관 근거 확인", "보험금 부지급 질문", "약관 근거", "이의 신청"],
+  ["insurance-premium-after-birth-budget", "출생 후 보험료 예산", "출생 후 보험료 예산과 양육비 고정지출 비교", "출생 후 보험료 예산", "양육비 고정지출", "가계 점검"],
+  ["insurance-agent-followup-record", "보험 상담 사후기록", "보험 상담 사후기록과 설명의무 확인", "보험 상담 사후기록", "설명의무 확인", "상담 메모"],
+  ["insurance-medical-history-update", "아기 진료이력 고지 질문", "아기 진료이력 고지와 추가 가입 상담", "아기 진료이력 고지", "추가 가입 상담", "고지의무"],
+];
+
+const familyHomePlans: readonly PlanTuple[] = [
+  ["home-baby-laundry-routine", "아기 빨래 루틴 만들기", "아기 빨래 루틴과 세제 보관 기준", "아기 빨래 루틴", "세제 보관", "위생 관리"],
+  ["home-humidity-mold-check", "아기방 곰팡이 예방", "아기방 곰팡이 예방과 습도 기록", "아기방 곰팡이 예방", "습도 기록", "실내 공기"],
+  ["home-pet-baby-zone", "반려동물 아기 공간 분리", "반려동물 아기 공간 분리와 위생 규칙", "반려동물 아기 공간", "위생 규칙", "생활 동선"],
+  ["home-visitor-gift-boundary", "출산 선물 요청 리스트", "출산 선물 요청 리스트와 중복 물품 줄이기", "출산 선물 요청 리스트", "중복 물품", "가족 공유"],
+  ["home-freezer-meal-plan", "산후 냉동식 준비", "산후 냉동식 준비와 보호자 식사 분담", "산후 냉동식 준비", "보호자 식사", "집밥 루틴"],
+  ["home-baby-medicine-box", "아기 상비약 보관함", "아기 상비약 보관함과 체온계 사용 기준", "아기 상비약 보관함", "체온계 사용", "응급 준비"],
+  ["home-night-light-safety", "수유등 안전 위치", "수유등 안전 위치와 야간 동선 점검", "수유등 안전 위치", "야간 동선", "낙상 예방"],
+  ["home-diaper-station", "기저귀 교환대 구성", "기저귀 교환대 구성과 손 닿는 물품 정리", "기저귀 교환대 구성", "손 닿는 물품", "육아 동선"],
+  ["home-budget-consumables", "육아 소모품 예산표", "육아 소모품 예산표와 월별 구매 주기", "육아 소모품 예산표", "월별 구매", "가계 관리"],
+  ["home-family-meeting", "육아 가족회의 안건", "육아 가족회의 안건과 역할 조정 문장", "육아 가족회의 안건", "역할 조정", "가족 소통"],
+];
+
 function tuplePlans(
   rows: readonly PlanTuple[],
   category: string,
@@ -622,6 +743,13 @@ const contentPlans: ContentPlan[] = [
   ...tuplePlans(familyExtraPlans, "생활관리", "/pregnancy/36", "faq"),
   ...tuplePlans(supportExtraPlans, "정부지원", "/pregnancy/28", "checklist"),
   ...tuplePlans(insuranceExtraPlans, "태아보험", "/fetal-insurance", "comparison"),
+  ...tuplePlans(recoveryRoutinePlans, "생활관리", "/pregnancy/36", "howto"),
+  ...tuplePlans(infantGrowthPlans, "출산준비", "/pregnancy/36", "checklist"),
+  ...tuplePlans(feedingSleepPlans, "생활관리", "/pregnancy/36", "faq"),
+  ...tuplePlans(workCarePlans, "정부지원", "/pregnancy/36", "howto"),
+  ...tuplePlans(supportAdminFollowupPlans, "정부지원", "/pregnancy/28", "checklist"),
+  ...tuplePlans(insuranceClaimPlans, "태아보험", "/fetal-insurance", "comparison"),
+  ...tuplePlans(familyHomePlans, "생활관리", "/pregnancy/36", "faq"),
 ];
 
 function buildSections(plan: ContentPlan): BlogSection[] {
