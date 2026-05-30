@@ -15,7 +15,7 @@ interface AuditIssue {
 
 const outputDir = join(process.cwd(), "content");
 const schedule = getBlogSchedule();
-const expectedGeneratedCount = 400;
+const expectedGeneratedCount = 500;
 const issues: AuditIssue[] = [];
 
 function addIssue(post: BlogPost, field: string, message: string) {
