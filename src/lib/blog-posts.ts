@@ -57,6 +57,7 @@ interface ContentPlan {
 }
 
 type BlogPostSeed = Omit<BlogPost, "accentColor" | "secondaryColor">;
+type PlanTuple = readonly [string, string, string, string, string, string];
 
 const publicationStart =
   process.env.BLOG_PUBLICATION_START ?? "2026-05-30T14:00:00+09:00";
@@ -460,8 +461,129 @@ const faqPlans = [
   ["pregnancy-photo-record", "임신 기록 남기는 방법", "임신 기록과 주차별 사진 정리 팁", "임신 기록", "주차별 사진", "태동 기록"],
 ] as const;
 
+const latePregnancyExtraPlans: readonly PlanTuple[] = [
+  ["late-pregnancy-25-weeks-leg-swelling", "임신 25주 다리부종 기록", "임신 25주 다리부종과 혈압 확인을 함께 보는 기준", "임신 25주 다리부종", "혈압 확인", "부종 기록"],
+  ["late-pregnancy-26-weeks-fetal-movement", "임신 26주 태동 기록법", "임신 26주 태동 기록과 진료 질문 정리", "임신 26주 태동 기록", "진료 질문", "태동 패턴"],
+  ["late-pregnancy-27-weeks-glucose-result", "임신 27주 당검사 결과 질문", "임신 27주 당검사 결과와 식단 상담 준비", "임신 27주 당검사 결과", "식단 상담", "재검 기준"],
+  ["late-pregnancy-28-weeks-rh-injection", "임신 28주 Rh 주사 확인", "임신 28주 Rh 주사와 혈액형 검사 질문", "임신 28주 Rh 주사", "혈액형 검사", "면역글로불린"],
+  ["late-pregnancy-29-weeks-braxton-hicks", "임신 29주 배뭉침 구분", "임신 29주 배뭉침과 조기진통 신호 비교", "임신 29주 배뭉침", "조기진통 신호", "수축 간격"],
+  ["late-pregnancy-30-weeks-growth-scan", "임신 30주 성장초음파 질문", "임신 30주 성장초음파와 태아 체중 확인", "임신 30주 성장초음파", "태아 체중", "양수량"],
+  ["late-pregnancy-31-weeks-sleep-breathing", "임신 31주 수면 숨참 관리", "임신 31주 수면 숨참과 옆으로 눕기 기준", "임신 31주 수면 숨참", "옆으로 눕기", "호흡 불편"],
+  ["late-pregnancy-32-weeks-hospital-bag-start", "임신 32주 출산가방 시작", "임신 32주 출산가방과 병원 안내문 비교", "임신 32주 출산가방", "병원 안내문", "입원 준비"],
+  ["late-pregnancy-33-weeks-pelvic-pressure", "임신 33주 골반압박 체크", "임신 33주 골반압박과 태아 위치 확인", "임신 33주 골반압박", "태아 위치", "골반 통증"],
+  ["late-pregnancy-34-weeks-nst-prepare", "임신 34주 태동검사 준비", "임신 34주 태동검사와 NST 결과 질문", "임신 34주 태동검사", "NST 결과", "태아 안녕"],
+  ["late-pregnancy-35-weeks-gbs-culture", "임신 35주 GBS 검사 준비", "임신 35주 GBS 검사와 분만 항생제 질문", "임신 35주 GBS 검사", "분만 항생제", "질 분비물 검사"],
+  ["late-pregnancy-36-weeks-delivery-plan", "임신 36주 분만계획 점검", "임신 36주 분만계획과 병원 연락 기준", "임신 36주 분만계획", "병원 연락", "출산 예정일"],
+  ["late-pregnancy-37-weeks-labor-count", "임신 37주 진통 간격 재기", "임신 37주 진통 간격과 양수 파수 대처", "임신 37주 진통 간격", "양수 파수", "분만 신호"],
+  ["late-pregnancy-38-weeks-cervix-check", "임신 38주 내진 질문", "임신 38주 내진과 자궁경부 변화 확인", "임신 38주 내진", "자궁경부 변화", "분만 진행"],
+  ["late-pregnancy-39-weeks-induction-question", "임신 39주 유도분만 질문", "임신 39주 유도분만과 예정일 초과 상담", "임신 39주 유도분만", "예정일 초과", "분만 상담"],
+  ["late-pregnancy-40-weeks-overdue-check", "임신 40주 예정일 이후 점검", "임신 40주 예정일 이후와 태동 확인 기준", "임신 40주 예정일 이후", "태동 확인", "추가 검사"],
+  ["late-pregnancy-edema-red-flags", "임신 후기 부종 위험신호", "임신 후기 부종과 두통 혈압 동반 증상", "임신 후기 부종 위험신호", "두통 혈압", "진료 문의"],
+  ["late-pregnancy-fetal-position-question", "태아 자세 확인 질문", "태아 자세 확인과 역아 상담 준비", "태아 자세 확인", "역아 상담", "분만 방법"],
+  ["late-pregnancy-birth-plan-template", "출산계획서 작성 기준", "출산계획서와 의료진 상담 질문 정리", "출산계획서 작성", "의료진 상담", "분만 선택"],
+  ["late-pregnancy-night-contractions", "밤에 배뭉침 대처 기준", "밤에 배뭉침과 진통 간격 기록 방법", "밤 배뭉침 대처", "진통 간격 기록", "휴식 후 변화"],
+];
+
+const postpartumExtraPlans: readonly PlanTuple[] = [
+  ["postpartum-day1-bleeding", "출산 1일차 오로 확인", "출산 1일차 오로와 출혈량 기록 기준", "출산 1일차 오로", "출혈량 기록", "산후 회복"],
+  ["postpartum-uterus-pain", "산후 훗배앓이 구분", "산후 훗배앓이와 자궁수축 통증 확인", "산후 훗배앓이", "자궁수축 통증", "통증 기록"],
+  ["postpartum-fever-warning", "산후 발열 위험신호", "산후 발열과 유방통 동반 증상 체크", "산후 발열 위험신호", "유방통", "감염 의심"],
+  ["postpartum-perineal-care", "회음부 상처 관리 질문", "회음부 상처 관리와 좌욕 시기 확인", "회음부 상처 관리", "좌욕 시기", "통증 완화"],
+  ["postpartum-cesarean-incision", "제왕절개 상처 확인", "제왕절개 상처와 진물 붓기 상담 기준", "제왕절개 상처 확인", "진물 붓기", "상처 관리"],
+  ["postpartum-breast-engorgement", "젖몸살 초기 대처", "젖몸살 초기 대처와 수유 상담 연결", "젖몸살 초기 대처", "수유 상담", "유방 울혈"],
+  ["postpartum-milk-supply-record", "모유량 기록 방법", "모유량 기록과 아기 소변 횟수 함께 보기", "모유량 기록", "아기 소변 횟수", "수유 패턴"],
+  ["postpartum-formula-mix-question", "혼합수유 질문 정리", "혼합수유 질문과 분유 보충량 기록", "혼합수유 질문", "분유 보충량", "수유 간격"],
+  ["postpartum-sleep-deprivation", "산후 수면부족 관리", "산후 수면부족과 보호자 교대표 만들기", "산후 수면부족", "보호자 교대표", "회복 시간"],
+  ["postpartum-meal-recovery", "산후 식사 회복 체크", "산후 식사 회복과 철분 수분 섭취 기준", "산후 식사 회복", "철분 수분", "영양 보충"],
+  ["postpartum-constipation", "산후 변비 대처 질문", "산후 변비와 배변 통증 상담 기준", "산후 변비 대처", "배변 통증", "수분 섭취"],
+  ["postpartum-urinary-leakage", "산후 요실금 상담 기준", "산후 요실금과 골반저 운동 시작 질문", "산후 요실금 상담", "골반저 운동", "회복 기록"],
+  ["postpartum-mood-check", "산후 우울감 체크", "산후 우울감과 도움 요청 신호 정리", "산후 우울감 체크", "도움 요청", "기분 기록"],
+  ["postpartum-two-week-checkup", "산후 2주 진료 질문", "산후 2주 진료와 회복 상태 메모", "산후 2주 진료", "회복 상태", "오로 변화"],
+  ["postpartum-six-week-checkup", "산후 6주 검진 준비", "산후 6주 검진과 피임 상담 질문", "산후 6주 검진", "피임 상담", "운동 재개"],
+  ["postpartum-exercise-return", "산후 운동 재개 기준", "산후 운동 재개와 복직 전 체력 점검", "산후 운동 재개", "복직 전 체력", "무리 신호"],
+  ["postpartum-hair-loss", "산후 탈모 시기 확인", "산후 탈모 시기와 영양 상담 질문", "산후 탈모 시기", "영양 상담", "모발 변화"],
+  ["postpartum-scar-massage", "제왕절개 흉터 관리", "제왕절개 흉터 관리와 마사지 시작 시점", "제왕절개 흉터 관리", "마사지 시작", "피부 회복"],
+  ["postpartum-support-visit", "산후도우미 방문 전 준비", "산후도우미 방문과 집안 동선 정리", "산후도우미 방문 준비", "집안 동선", "돌봄 요청"],
+  ["postpartum-emergency-bag", "산후 응급 방문 준비", "산후 응급 방문과 증상 기록 가져가기", "산후 응급 방문", "증상 기록", "병원 연락"],
+];
+
+const newbornExtraPlans: readonly PlanTuple[] = [
+  ["newborn-first-week-pee-poop", "신생아 소변 대변 기록", "신생아 소변 대변과 수유량 함께 확인", "신생아 소변 대변 기록", "수유량", "탈수 신호"],
+  ["newborn-jaundice-check", "신생아 황달 확인 기준", "신생아 황달과 병원 재방문 질문", "신생아 황달 확인", "병원 재방문", "피부색 변화"],
+  ["newborn-weight-loss", "신생아 체중감소 질문", "신생아 체중감소와 수유 상담 기준", "신생아 체중감소", "수유 상담", "체중 회복"],
+  ["newborn-umbilical-cord-care", "신생아 배꼽 관리", "신생아 배꼽 관리와 진물 냄새 확인", "신생아 배꼽 관리", "진물 냄새", "소독 방법"],
+  ["newborn-sleep-position", "신생아 수면 자세 확인", "신생아 수면 자세와 침구 안전 점검", "신생아 수면 자세", "침구 안전", "수면 환경"],
+  ["newborn-temperature-check", "신생아 체온 재는 법", "신생아 체온 재는 법과 발열 상담 기준", "신생아 체온 재는 법", "발열 상담", "실내 온도"],
+  ["newborn-bath-first", "신생아 첫 목욕 준비", "신생아 첫 목욕과 배꼽 관리 주의사항", "신생아 첫 목욕", "배꼽 관리", "목욕 시간"],
+  ["newborn-car-seat-home", "신생아 퇴원 카시트 점검", "신생아 퇴원 카시트와 이동 동선 확인", "신생아 퇴원 카시트", "이동 동선", "안전벨트"],
+  ["newborn-vaccine-bcg", "신생아 BCG 접종 확인", "신생아 BCG 접종과 예방접종도우미 기록", "신생아 BCG 접종", "예방접종도우미", "접종 일정"],
+  ["newborn-hearing-test", "신생아 청각검사 질문", "신생아 청각검사와 재검 안내 확인", "신생아 청각검사", "재검 안내", "선별검사"],
+  ["newborn-heel-prick-test", "신생아 선천성대사검사", "신생아 선천성대사검사와 결과 확인일", "신생아 선천성대사검사", "결과 확인일", "채혈 검사"],
+  ["newborn-colic-evening", "신생아 저녁 울음 대처", "신생아 저녁 울음과 수유 트림 기록", "신생아 저녁 울음", "수유 트림", "복부 불편"],
+  ["newborn-spit-up", "신생아 게워냄 구분", "신생아 게워냄과 분수토 상담 기준", "신생아 게워냄", "분수토 상담", "수유 자세"],
+  ["newborn-diaper-rash", "신생아 기저귀발진 관리", "신생아 기저귀발진과 피부 진료 질문", "신생아 기저귀발진", "피부 진료", "기저귀 교체"],
+  ["newborn-one-month-checkup", "신생아 1개월 검진 준비", "신생아 1개월 검진과 성장 질문 정리", "신생아 1개월 검진", "성장 질문", "예방접종"],
+];
+
+const adminExtraPlans: readonly PlanTuple[] = [
+  ["admin-birth-registration-order", "출생신고 순서 정리", "출생신고 순서와 주민센터 제출서류 확인", "출생신고 순서", "주민센터 제출서류", "가족관계등록"],
+  ["admin-birth-certificate-check", "출생증명서 확인 항목", "출생증명서 확인과 출생신고 오류 예방", "출생증명서 확인", "출생신고 오류", "병원 서류"],
+  ["admin-baby-health-insurance", "신생아 건강보험 등록", "신생아 건강보험 등록과 피부양자 확인", "신생아 건강보험 등록", "피부양자 확인", "보험 자격"],
+  ["admin-childcare-portal-setup", "아이사랑 포털 가입 준비", "아이사랑 포털 가입과 예방접종 기록 연결", "아이사랑 포털 가입", "예방접종 기록", "육아 서비스"],
+  ["admin-postpartum-care-application", "산모신생아 서비스 신청서류", "산모신생아 서비스 신청서류와 판정 기준", "산모신생아 서비스 신청서류", "판정 기준", "바우처 신청"],
+  ["admin-first-meeting-voucher-use", "첫만남이용권 사용 전 확인", "첫만남이용권 사용 전 확인과 사용처 질문", "첫만남이용권 사용 전 확인", "사용처 질문", "바우처 잔액"],
+  ["admin-parent-benefit-bankbook", "부모급여 계좌 준비", "부모급여 계좌와 아동수당 신청 순서", "부모급여 계좌 준비", "아동수당 신청", "급여 지급일"],
+  ["admin-child-allowance-missed", "아동수당 늦게 신청할 때", "아동수당 늦게 신청할 때와 소급 지급 확인", "아동수당 늦게 신청", "소급 지급", "신청 기한"],
+  ["admin-local-postpartum-grant", "지자체 산후지원금 확인", "지자체 산후지원금과 거주기간 기준 정리", "지자체 산후지원금", "거주기간 기준", "출산지원"],
+  ["admin-birth-tax-deduction", "출산 의료비 연말정산 준비", "출산 의료비 연말정산과 영수증 보관 기준", "출산 의료비 연말정산", "영수증 보관", "공제 자료"],
+  ["admin-maternity-pay-documents", "출산전후휴가 급여 서류", "출산전후휴가 급여 서류와 회사 확인사항", "출산전후휴가 급여 서류", "회사 확인사항", "고용보험"],
+  ["admin-spouse-leave-documents", "배우자 출산휴가 서류", "배우자 출산휴가 서류와 회사 제출 일정", "배우자 출산휴가 서류", "회사 제출 일정", "휴가 급여"],
+  ["admin-childcare-leave-start", "육아휴직 시작 전 체크", "육아휴직 시작 전 체크와 급여 신청 흐름", "육아휴직 시작 전 체크", "급여 신청", "회사 통보"],
+  ["admin-daycare-waitlist", "어린이집 대기신청 준비", "어린이집 대기신청과 입소 우선순위 확인", "어린이집 대기신청", "입소 우선순위", "아이사랑"],
+  ["admin-family-document-folder", "출산 후 서류 보관법", "출산 후 서류 보관법과 지원금 신청 증빙", "출산 후 서류 보관법", "지원금 신청 증빙", "문서 폴더"],
+];
+
+const familyExtraPlans: readonly PlanTuple[] = [
+  ["family-partner-night-shift", "배우자 야간 돌봄표", "배우자 야간 돌봄표와 수유 교대 기준", "배우자 야간 돌봄표", "수유 교대", "수면 확보"],
+  ["family-grandparents-boundary", "조부모 도움 요청 기준", "조부모 도움 요청과 산모 회복 우선순위", "조부모 도움 요청", "산모 회복", "방문 시간"],
+  ["family-visitor-rule", "신생아 방문객 규칙", "신생아 방문객 규칙과 예방접종 확인 질문", "신생아 방문객 규칙", "예방접종 확인", "면회 기준"],
+  ["family-sibling-preparation", "첫째 아이 출산 준비", "첫째 아이 출산 준비와 동생 맞이 설명", "첫째 아이 출산 준비", "동생 맞이", "가족 대화"],
+  ["family-house-cleaning-zone", "산후 집안 동선 정리", "산후 집안 동선 정리와 신생아 공간 분리", "산후 집안 동선 정리", "신생아 공간", "청소 구역"],
+  ["family-meal-support-plan", "산후 식사 지원표", "산후 식사 지원표와 장보기 역할 나누기", "산후 식사 지원표", "장보기 역할", "회복 식단"],
+  ["family-budget-after-birth", "출산 후 생활비 점검", "출산 후 생활비와 바우처 사용 계획", "출산 후 생활비 점검", "바우처 사용", "월 예산"],
+  ["family-emergency-contact", "출산 후 비상연락망", "출산 후 비상연락망과 병원 연락 기준", "출산 후 비상연락망", "병원 연락", "보호자 역할"],
+  ["family-return-home-check", "퇴원 후 첫날 체크", "퇴원 후 첫날 체크와 가족 역할 분담", "퇴원 후 첫날 체크", "가족 역할 분담", "신생아 돌봄"],
+  ["family-postpartum-conflict", "산후 가족 갈등 줄이기", "산후 가족 갈등과 도움 요청 문장 정리", "산후 가족 갈등", "도움 요청 문장", "역할 조정"],
+];
+
+const supportExtraPlans: readonly PlanTuple[] = [
+  ["support-nutrient-health-center", "보건소 임산부 영양제 확인", "보건소 임산부 영양제와 수령 조건 점검", "보건소 임산부 영양제", "수령 조건", "엽산 철분"],
+  ["support-taxi-pregnancy-card", "임산부 교통비 지원 확인", "임산부 교통비 지원과 지역별 신청 경로", "임산부 교통비 지원", "지역별 신청", "교통카드"],
+  ["support-high-risk-bedrest", "고위험 임신 안정 지원", "고위험 임신 안정 지원과 진단서 확인", "고위험 임신 안정 지원", "진단서 확인", "의료비 신청"],
+  ["support-multiple-pregnancy-extra", "다태아 추가 지원 질문", "다태아 추가 지원과 바우처 금액 확인", "다태아 추가 지원", "바우처 금액", "쌍둥이 임신"],
+  ["support-low-income-birth", "저소득층 출산지원 확인", "저소득층 출산지원과 복지로 신청 기준", "저소득층 출산지원", "복지로 신청", "소득 기준"],
+  ["support-single-parent-birth", "한부모 출산지원 경로", "한부모 출산지원과 주민센터 상담 준비", "한부모 출산지원", "주민센터 상담", "양육지원"],
+  ["support-premature-baby", "미숙아 의료비 지원", "미숙아 의료비 지원과 신청서류 확인", "미숙아 의료비 지원", "신청서류", "퇴원 영수증"],
+  ["support-congenital-test-cost", "선천성검사비 지원 확인", "선천성검사비 지원과 검사 결과 제출", "선천성검사비 지원", "검사 결과 제출", "의료비 지원"],
+  ["support-breast-pump-rental", "유축기 대여 지원 확인", "유축기 대여 지원과 보건소 문의 기준", "유축기 대여 지원", "보건소 문의", "수유 지원"],
+  ["support-postpartum-depression-help", "산후우울 상담 지원", "산후우울 상담 지원과 정신건강복지센터 연결", "산후우울 상담 지원", "정신건강복지센터", "상담 예약"],
+];
+
+const insuranceExtraPlans: readonly PlanTuple[] = [
+  ["insurance-after-consulting-notes", "태아보험 상담 후 메모 정리", "태아보험 상담 후 메모와 비교 질문 다시 보기", "태아보험 상담 후 메모", "비교 질문", "보장 요약"],
+  ["insurance-premium-change-scenario", "태아보험 보험료 변동 질문", "태아보험 보험료 변동과 갱신 조건 확인", "태아보험 보험료 변동", "갱신 조건", "납입 계획"],
+  ["insurance-hospitalization-coverage", "태아보험 입원비 보장 질문", "태아보험 입원비 보장과 면책 조건 확인", "태아보험 입원비 보장", "면책 조건", "보장 한도"],
+  ["insurance-surgery-coverage", "태아보험 수술비 보장 확인", "태아보험 수술비 보장과 특약 중복 질문", "태아보험 수술비 보장", "특약 중복", "보장 범위"],
+  ["insurance-birth-defect-rider", "태아보험 선천이상 특약 질문", "태아보험 선천이상 특약과 보장 제외 확인", "태아보험 선천이상 특약", "보장 제외", "약관 확인"],
+  ["insurance-nicu-coverage", "태아보험 신생아중환자실 보장", "태아보험 신생아중환자실 보장과 입원 기준", "태아보험 신생아중환자실 보장", "입원 기준", "NICU"],
+  ["insurance-claim-documents", "태아보험 청구서류 미리보기", "태아보험 청구서류와 출생 후 병원서류 확인", "태아보험 청구서류", "병원서류", "보험금 청구"],
+  ["insurance-cooling-off", "태아보험 청약철회 확인", "태아보험 청약철회와 계약 확인서 검토", "태아보험 청약철회", "계약 확인서", "소비자 권리"],
+  ["insurance-agent-disclosure", "태아보험 설계사 고지 확인", "태아보험 설계사 고지와 광고 상담 구분", "태아보험 설계사 고지", "광고 상담", "모집 경로"],
+  ["insurance-family-budget-balance", "태아보험 가족예산 균형", "태아보험 가족예산과 출산 후 고정비 비교", "태아보험 가족예산", "출산 후 고정비", "보험료 한도"],
+];
+
 function tuplePlans(
-  rows: readonly (readonly [string, string, string, string, string, string])[],
+  rows: readonly PlanTuple[],
   category: string,
   relatedHref: string,
   structure: ContentPlan["structure"],
@@ -493,6 +615,13 @@ const contentPlans: ContentPlan[] = [
   ...tuplePlans(birthPlans, "출산준비", "/pregnancy/36", "checklist"),
   ...tuplePlans(insurancePlans, "태아보험", "/fetal-insurance", "comparison"),
   ...tuplePlans(faqPlans, "FAQ", "/pregnancy/32", "faq"),
+  ...tuplePlans(latePregnancyExtraPlans, "주차별 임신", "/pregnancy/32", "warning"),
+  ...tuplePlans(postpartumExtraPlans, "생활관리", "/pregnancy/36", "howto"),
+  ...tuplePlans(newbornExtraPlans, "출산준비", "/pregnancy/36", "checklist"),
+  ...tuplePlans(adminExtraPlans, "정부지원", "/pregnancy/36", "howto"),
+  ...tuplePlans(familyExtraPlans, "생활관리", "/pregnancy/36", "faq"),
+  ...tuplePlans(supportExtraPlans, "정부지원", "/pregnancy/28", "checklist"),
+  ...tuplePlans(insuranceExtraPlans, "태아보험", "/fetal-insurance", "comparison"),
 ];
 
 function buildSections(plan: ContentPlan): BlogSection[] {

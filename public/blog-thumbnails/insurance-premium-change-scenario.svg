@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="태아보험 보험료 변동 질문: 갱신 조건 대표 이미지">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7fbff"/>
+      <stop offset="1" stop-color="#c9e8f5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#1f526e" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="940" cy="138" r="180" fill="#ffffff" opacity="0.38"/>
+  <circle cx="950" cy="535" r="120" fill="#3d8bb5" opacity="0.13"/>
+  <path d="M0 560C180 500 260 610 420 550C560 498 630 455 805 505C960 550 1030 610 1200 545V675H0Z" fill="#ffffff" opacity="0.46"/>
+  <g filter="url(#shadow)">
+    
+      <path d="M880 205c-72 0-130 55-130 124 0 111 130 178 130 178s130-67 130-178c0-69-58-124-130-124z" fill="#ffffff" opacity="0.82"/>
+      <path d="M828 315h104M828 365h80" stroke="#1f526e" stroke-width="15" stroke-linecap="round"/>
+      <circle cx="958" cy="330" r="28" fill="#3d8bb5" opacity="0.75"/>
+    
+  </g>
+  <rect x="72" y="86" width="610" height="500" rx="34" fill="#ffffff" opacity="0.86"/>
+  <text x="88" y="145" font-family="Pretendard, Arial, sans-serif" font-size="30" font-weight="700" fill="#3d8bb5">태아보험</text>
+  <text x="88" y="250" font-family="Pretendard, Arial, sans-serif" font-size="56" font-weight="800" fill="#1f526e" letter-spacing="-1"><tspan x="88" dy="0">태아보험 보험료 변동 질문:</tspan><tspan x="88" dy="64">갱신 조건</tspan></text>
+  <rect x="88" y="475" width="348" height="58" rx="29" fill="#c9e8f5"/>
+  <text x="116" y="512" font-family="Pretendard, Arial, sans-serif" font-size="26" font-weight="700" fill="#1f526e">태아보험 보험료 변동</text>
+</svg>

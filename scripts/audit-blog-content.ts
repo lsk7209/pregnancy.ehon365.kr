@@ -15,6 +15,7 @@ interface AuditIssue {
 
 const outputDir = join(process.cwd(), "content");
 const schedule = getBlogSchedule();
+const expectedGeneratedCount = 200;
 const issues: AuditIssue[] = [];
 
 function addIssue(post: BlogPost, field: string, message: string) {
@@ -109,12 +110,12 @@ const titleMap = {
   persona_source: "site-config/site-persona.yaml",
   published_title_source: "src/lib/blog-posts.ts",
   topic: "임신·출산 준비 가이드",
-  target_count: 100,
+  target_count: expectedGeneratedCount,
   generated_count: generatedBlogPosts.length,
   review_count: 0,
   failed_count: issues.length,
-  target_met: generatedBlogPosts.length === 100,
-  handoff_ready: generatedBlogPosts.length === 100 && issues.length === 0,
+  target_met: generatedBlogPosts.length === expectedGeneratedCount,
+  handoff_ready: generatedBlogPosts.length === expectedGeneratedCount && issues.length === 0,
   schedule,
   titles: generatedBlogPosts.map((post, index) => ({
     order: index + 1,
@@ -159,7 +160,7 @@ mkdirSync(outputDir, { recursive: true });
 writeJson(join(outputDir, "title-map.json"), titleMap);
 writeJson(join(outputDir, "content-audit-report.json"), auditReport);
 
-if (issues.length > 0 || generatedBlogPosts.length !== 100) {
+if (issues.length > 0 || generatedBlogPosts.length !== expectedGeneratedCount) {
   console.error(JSON.stringify(auditReport, null, 2));
   process.exit(1);
 }
