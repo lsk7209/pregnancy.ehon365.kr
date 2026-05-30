@@ -38,13 +38,35 @@ function includesKeyword(text: string, keyword: string) {
   return text.toLowerCase().includes(keyword.toLowerCase());
 }
 
+function articleTextLength(post: BlogPost) {
+  const sectionText = post.sections
+    .flatMap((section) => [
+      section.heading,
+      ...section.body,
+      ...(section.checklist ?? []),
+    ])
+    .join(" ");
+  const faqText = post.faq.flatMap((item) => [item.question, item.answer]).join(" ");
+  return `${post.title} ${post.subtitle} ${post.description} ${sectionText} ${faqText}`.length;
+}
+
+function checklistItemCount(post: BlogPost) {
+  return post.sections.reduce((count, section) => count + (section.checklist?.length ?? 0), 0);
+}
+
 assertUnique(blogPosts, "slug");
 assertUnique(blogPosts, "title");
 assertUnique(generatedBlogPosts, "mainKeyword");
 
 for (const post of generatedBlogPosts) {
-  if (post.qualityScore < 90) {
-    addIssue(post, "qualityScore", "quality score must be at least 90");
+  if (post.qualityScore < 93) {
+    addIssue(post, "qualityScore", "quality score must be at least 93 after density checks");
+  }
+  if (post.readMinutes < 8) {
+    addIssue(post, "readMinutes", "article must be at least 8 minutes after quality expansion");
+  }
+  if (articleTextLength(post) < 1800) {
+    addIssue(post, "contentLength", "article text must be at least 1800 characters");
   }
   if (!post.thumbnail) {
     addIssue(post, "thumbnail", "article must have a thumbnail");
@@ -72,15 +94,18 @@ for (const post of generatedBlogPosts) {
   if (!post.accentColor || !post.secondaryColor) {
     addIssue(post, "colors", "article must have accent and secondary colors");
   }
-  if (post.sections.length < 5) {
-    addIssue(post, "sections", "article must have at least five sections");
+  if (post.sections.length < 6) {
+    addIssue(post, "sections", "article must have at least six sections");
   }
   const sectionKinds = new Set(post.sections.map((section) => section.kind));
   if (sectionKinds.size < 4) {
     addIssue(post, "sections", "article must use at least four section types");
   }
-  if (post.faq.length < 3) {
-    addIssue(post, "faq", "article must have at least three FAQ items");
+  if (checklistItemCount(post) < 16) {
+    addIssue(post, "checklist", "article must have at least 16 checklist/support items");
+  }
+  if (post.faq.length < 5) {
+    addIssue(post, "faq", "article must have at least five FAQ items");
   }
   if (post.sources.length < 2) {
     addIssue(post, "sources", "article must have at least two source hints");

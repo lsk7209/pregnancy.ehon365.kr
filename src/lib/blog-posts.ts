@@ -1094,12 +1094,66 @@ function sectionCopy(plan: ContentPlan) {
   return shared;
 }
 
+function detailCopy(plan: ContentPlan) {
+  const [related, expanded] = plan.relatedKeywords;
+  const nextKeyword = plan.expandedKeywords[0];
+  const officialCheck =
+    plan.category === "정부지원"
+      ? "신청 전에는 복지로, 정부24, 거주지 보건소나 주민센터 안내에서 대상·금액·기한을 다시 확인합니다."
+      : plan.category === "태아보험"
+        ? "보험 상담 전에는 상품명보다 약관 문구, 보장 제외, 청구 서류, 납입 지속 가능성을 같은 표에 적습니다."
+        : plan.category === "산전검사"
+          ? "검사 결과는 수치만 떼어 보지 말고 이전 검사, 임신 주차, 담당의 설명과 함께 기록합니다."
+          : "몸 상태와 아기 상태는 날짜, 시간, 반복 여부, 동반 증상을 함께 남겨야 상담 때 설명이 쉬워집니다.";
+
+  const byStructure: Record<ContentPlan["structure"], string[]> = {
+    checklist: [
+      `${plan.mainKeyword}는 빠르게 훑는 목록보다 적용 조건을 하나씩 지우는 방식이 맞습니다.`,
+      `${related}를 확인한 뒤에는 ${expanded}가 실제로 필요한 상황인지 표시하고, 모호한 항목은 다음 상담 질문으로 넘깁니다.`,
+      officialCheck,
+    ],
+    faq: [
+      `${plan.mainKeyword}처럼 답이 갈리는 주제는 한 문장 결론보다 질문을 잘게 쪼개는 편이 정확합니다.`,
+      `${related}와 ${expanded}를 분리해 적으면 가족이나 기관에 같은 질문을 반복하지 않아도 됩니다.`,
+      officialCheck,
+    ],
+    howto: [
+      `${plan.mainKeyword}는 생각나는 대로 처리하면 빠진 항목이 생기기 쉬워 실행 순서를 먼저 정하는 편이 낫습니다.`,
+      `오늘 할 일은 ${related}, 이번 주 확인할 일은 ${expanded}, 다음 상담 때 물어볼 일은 ${nextKeyword}처럼 나누면 부담이 줄어듭니다.`,
+      officialCheck,
+    ],
+    comparison: [
+      `${plan.mainKeyword}는 좋아 보이는 선택지를 고르는 글이 아니라 같은 기준으로 비교할 질문을 만드는 글입니다.`,
+      `${related}와 ${expanded}는 금액, 시간, 예외 조건, 책임 주체를 맞춰 적어야 비교가 됩니다.`,
+      officialCheck,
+    ],
+    warning: [
+      `${plan.mainKeyword}는 불안을 키우는 표현보다 바로 확인할 신호와 기록할 신호를 구분하는 것이 핵심입니다.`,
+      `${related}가 동반되거나 ${expanded}가 반복되면 검색을 더 하기보다 진료기관이나 공식 상담 경로를 먼저 정합니다.`,
+      officialCheck,
+    ],
+  };
+
+  return byStructure[plan.structure];
+}
+
+function decisionChecklist(plan: ContentPlan) {
+  return [
+    `${plan.relatedKeywords[0]}가 현재 상황에 실제로 해당하는지 확인했다.`,
+    `${plan.relatedKeywords[1]}를 날짜나 금액, 증상 정도처럼 비교 가능한 형태로 적었다.`,
+    `${plan.expandedKeywords[0]} 관련 질문을 진료기관, 보건소, 보험사, 어린이집 등 문의처별로 나눴다.`,
+    "확실하지 않은 내용은 가족 단톡방이나 검색 결과가 아니라 공식 안내나 담당자 답변으로 다시 확인하기로 표시했다.",
+  ];
+}
+
 function buildSections(plan: ContentPlan): BlogSection[] {
   const copy = sectionCopy(plan);
+  const details = detailCopy(plan);
   const coreChecklist = [
     `${plan.mainKeyword}와 관련해 최근에 달라진 몸 상태나 행정 상황을 날짜별로 적습니다.`,
     `${plan.relatedKeywords[0]} 확인이 필요한지 진료기관 또는 공식 안내 페이지에서 다시 확인합니다.`,
     `${plan.decisionCriterion}를 기준으로 지금 할 일과 다음 진료 때 물어볼 일을 나눕니다.`,
+    `${plan.expandedKeywords[0]}와 관련된 비용, 시간, 증상, 서류 중 무엇이 빠졌는지 표시합니다.`,
   ];
 
   const warning =
@@ -1113,22 +1167,24 @@ function buildSections(plan: ContentPlan): BlogSection[] {
     {
       id: "answer",
       heading: `${plan.mainKeyword} 한눈에 보는 결론`,
-      body: copy.answerBody,
+      body: [...copy.answerBody, details[0]],
       checklist: coreChecklist,
     },
     {
       id: "timing",
       heading: `${plan.mainKeyword} 확인 시기와 우선순위`,
-      body: copy.timingBody,
+      body: [...copy.timingBody, details[1]],
     },
     {
       id: "checklist",
       heading: `${plan.relatedKeywords[0]}까지 놓치지 않는 체크리스트`,
-      body: copy.checklistBody,
+      body: [...copy.checklistBody, details[2]],
       checklist: [
         "현재 임신 주차와 예정일을 적었다.",
         "공식 기관 또는 진료기관 확인이 필요한 항목을 표시했다.",
         "다음 행동을 오늘 할 일, 이번 주 할 일, 다음 진료 때 질문으로 나눴다.",
+        `${plan.relatedKeywords[0]}와 ${plan.relatedKeywords[1]}를 각각 확인했다.`,
+        `${plan.expandedKeywords[0]}를 기준으로 가족에게 공유할 한 문장을 정했다.`,
       ],
     },
     {
@@ -1138,7 +1194,9 @@ function buildSections(plan: ContentPlan): BlogSection[] {
         warning,
         "검색 결과의 제목이 강하게 보이더라도 본문에서 근거, 날짜, 대상 조건, 예외 조건이 제시되는지 확인해야 합니다.",
         "의료 정보는 개인 상태에 따라 달라지고, 지원 제도는 거주지와 신청 시점에 따라 달라집니다.",
+        `${plan.mainKeyword} 관련 판단이 불안하면 검색 결과를 더 읽기보다 현재 기록을 들고 담당 기관에 같은 질문을 짧게 반복해 확인하세요.`,
       ],
+      checklist: decisionChecklist(plan),
     },
     {
       id: "next",
@@ -1147,6 +1205,27 @@ function buildSections(plan: ContentPlan): BlogSection[] {
         `${plan.expandedKeywords.slice(0, 3).join(", ")}까지 확인했다면 다음 단계는 기록을 남기는 것입니다.`,
         "증상 글은 날짜와 지속 시간을, 검사 글은 예약일과 결과 확인일을, 지원 글은 신청 기한과 제출서류를 적어두세요.",
         "태아보험 관련 글은 특정 상품을 고르기보다 상담에서 같은 질문을 반복해 비교 가능한 답변을 받는 데 초점을 맞추는 것이 좋습니다.",
+        `마지막으로 ${plan.mainKeyword}를 오늘 결정할 일, 이번 주 확인할 일, 전문가에게 넘길 일로 나누면 과잉 판단을 줄일 수 있습니다.`,
+      ],
+      checklist: [
+        "오늘 바로 할 일 1개를 정했다.",
+        "이번 주 안에 확인할 공식 경로를 정했다.",
+        "다음 상담 때 그대로 읽을 질문 1개를 적었다.",
+      ],
+    },
+    {
+      id: "memo",
+      heading: `${plan.mainKeyword} 상담 메모 예시`,
+      body: [
+        `메모는 "${plan.mainKeyword} 때문에 걱정됩니다"로 끝내지 말고, 언제부터 어떤 변화가 있었는지 먼저 적는 것이 좋습니다.`,
+        `예를 들면 "${plan.relatedKeywords[0]}는 확인했고, ${plan.relatedKeywords[1]}는 아직 모호합니다. ${plan.expandedKeywords[0]} 기준으로 다음 행동이 맞는지 알고 싶습니다"처럼 쓰면 상담자가 바로 답하기 쉽습니다.`,
+        "가족과 공유할 때도 같은 형식을 쓰면 의견 충돌이 줄어듭니다. 사실, 아직 모르는 점, 오늘 필요한 도움을 분리해 말하면 됩니다.",
+      ],
+      checklist: [
+        "사실로 확인한 내용",
+        "아직 모르는 내용",
+        "오늘 필요한 도움",
+        "공식 확인이 필요한 질문",
       ],
     },
   ];
@@ -1157,7 +1236,7 @@ function buildFaq(plan: ContentPlan): BlogFaq[] {
     {
       question: `${plan.mainKeyword}는 언제 병원이나 기관에 확인해야 하나요?`,
       answer:
-        "증상이 갑자기 심해지거나, 검사·지원 신청 기한이 걸려 있거나, 본인 상태에 따라 판단이 달라지는 경우에는 바로 확인하는 것이 좋습니다.",
+        `증상이 갑자기 심해지거나, 검사·지원 신청 기한이 걸려 있거나, ${plan.relatedKeywords[0]} 판단이 본인 상태에 따라 달라지는 경우에는 바로 확인하는 것이 좋습니다.`,
     },
     {
       question: `${plan.relatedKeywords[0]} 정보는 어디서 다시 확인하면 좋나요?`,
@@ -1165,7 +1244,17 @@ function buildFaq(plan: ContentPlan): BlogFaq[] {
         "의료 내용은 다니는 산부인과와 보건소, 지원 제도는 복지로·정부24·국민건강보험공단·거주지 보건소 안내를 우선 확인하세요.",
     },
     {
-      question: "이 글만 보고 최종 결정을 해도 되나요?",
+      question: `${plan.expandedKeywords[0]}는 가족과 어떻게 공유하면 좋나요?`,
+      answer:
+        `결론만 공유하기보다 ${plan.mainKeyword}, ${plan.relatedKeywords[0]}, ${plan.expandedKeywords[0]}를 각각 사실·미확인·도움 요청으로 나눠 전달하면 의견 충돌이 줄어듭니다.`,
+    },
+    {
+      question: `${plan.relatedKeywords[1]}를 기록할 때 무엇을 같이 적어야 하나요?`,
+      answer:
+        "날짜, 시간, 반복 여부, 비용, 담당자 답변, 사진이나 영수증처럼 나중에 확인 가능한 근거를 함께 남기는 것이 좋습니다.",
+    },
+    {
+      question: `${plan.mainKeyword} 글만 보고 최종 결정을 해도 되나요?`,
       answer:
         "아닙니다. 이 글은 상담과 신청 전 체크리스트이며, 개인 상태와 최신 기준은 담당 의료진 또는 공식 기관에서 최종 확인해야 합니다.",
     },
@@ -1194,11 +1283,11 @@ function colorPair(category: string) {
 
 function diversifySections(plan: ContentPlan, sections: BlogSection[]): BlogSection[] {
   const variants: Record<ContentPlan["structure"], Array<BlogSection["kind"]>> = {
-    checklist: ["summary", "checklist", "steps", "warning", "source"],
-    faq: ["summary", "compare", "checklist", "source", "warning"],
-    howto: ["summary", "steps", "checklist", "compare", "source"],
-    comparison: ["summary", "compare", "checklist", "warning", "source"],
-    warning: ["summary", "warning", "checklist", "steps", "source"],
+    checklist: ["summary", "checklist", "steps", "warning", "source", "compare"],
+    faq: ["summary", "compare", "checklist", "source", "warning", "steps"],
+    howto: ["summary", "steps", "checklist", "compare", "source", "warning"],
+    comparison: ["summary", "compare", "checklist", "warning", "source", "steps"],
+    warning: ["summary", "warning", "checklist", "steps", "source", "compare"],
   };
   const headingSets: Record<ContentPlan["structure"], string[]> = {
     checklist: [
@@ -1207,6 +1296,7 @@ function diversifySections(plan: ContentPlan, sections: BlogSection[]): BlogSect
       `${plan.expandedKeywords[0]} 준비 순서`,
       `${plan.mainKeyword}에서 놓치기 쉬운 부분`,
       `${plan.expandedKeywords[1] ?? plan.relatedKeywords[1]} 다음 행동`,
+      `${plan.mainKeyword} 상담 메모 예시`,
     ],
     faq: [
       `${plan.mainKeyword} 바로 답변`,
@@ -1214,6 +1304,7 @@ function diversifySections(plan: ContentPlan, sections: BlogSection[]): BlogSect
       `${plan.expandedKeywords[0]} 확인 질문`,
       `${plan.mainKeyword} 공식 확인 경로`,
       `${plan.relatedKeywords[1]} 주의할 점`,
+      `${plan.mainKeyword} 가족 공유 질문`,
     ],
     howto: [
       `${plan.mainKeyword} 실행 순서`,
@@ -1221,6 +1312,7 @@ function diversifySections(plan: ContentPlan, sections: BlogSection[]): BlogSect
       `${plan.expandedKeywords[0]} 단계별 메모`,
       `${plan.relatedKeywords[1]} 비교 기준`,
       `${plan.mainKeyword} 신청 전 마무리`,
+      `${plan.mainKeyword} 실행 메모 예시`,
     ],
     comparison: [
       `${plan.mainKeyword} 상담 전 기준`,
@@ -1228,6 +1320,7 @@ function diversifySections(plan: ContentPlan, sections: BlogSection[]): BlogSect
       `${plan.expandedKeywords[0]} 확인표`,
       `${plan.relatedKeywords[1]}에서 피할 표현`,
       `${plan.mainKeyword} 다음 상담 메모`,
+      `${plan.mainKeyword} 비교 메모 예시`,
     ],
     warning: [
       `${plan.mainKeyword} 먼저 볼 위험 신호`,
@@ -1235,6 +1328,7 @@ function diversifySections(plan: ContentPlan, sections: BlogSection[]): BlogSect
       `${plan.expandedKeywords[0]} 기록 체크`,
       `${plan.mainKeyword}에서 바로 문의할 상황`,
       `${plan.relatedKeywords[1]} 이후 행동`,
+      `${plan.mainKeyword} 위험 신호 메모`,
     ],
   };
   const kinds = variants[plan.structure];
@@ -1270,8 +1364,8 @@ function buildPost(plan: ContentPlan, index: number): BlogPost {
     expandedKeywords: plan.expandedKeywords,
     publishedAt,
     updatedAt: formatDate(new Date(publishedAt)),
-    readMinutes: plan.structure === "faq" ? 5 : 6,
-    qualityScore: 92,
+    readMinutes: plan.structure === "faq" ? 8 : 9,
+    qualityScore: 94,
     relatedHref: plan.relatedHref,
     geoTargets: ["대한민국", "보건소", "산부인과", "복지로"],
     aeoQuestions: [
