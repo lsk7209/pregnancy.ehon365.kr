@@ -17,13 +17,21 @@ export interface IndexingResult {
 }
 
 export const sitemapUrl = `${SITE_URL.replace(/\/$/, "")}/sitemap.xml`;
-const host = new URL(SITE_URL).host;
-const indexNowKey =
-  process.env.INDEXNOW_KEY ?? "pregnancy-ehon365-indexnow-20260530";
-const keyLocation = `${SITE_URL.replace(/\/$/, "")}/${indexNowKey}.txt`;
-const gscProperty = process.env.GSC_SITE_URL ?? `sc-domain:${host}`;
-const credentialsPath =
-  process.env.GSC_CREDENTIALS_PATH ?? "D:/env/gsc_credentials.json";
+
+function getIndexingConfig() {
+  const host = new URL(SITE_URL).host;
+  const indexNowKey =
+    process.env.INDEXNOW_KEY ?? "pregnancy-ehon365-indexnow-20260530";
+
+  return {
+    host,
+    indexNowKey,
+    keyLocation: `${SITE_URL.replace(/\/$/, "")}/${indexNowKey}.txt`,
+    gscProperty: process.env.GSC_SITE_URL?.trim() ?? `sc-domain:${host}`,
+    credentialsPath:
+      process.env.GSC_CREDENTIALS_PATH ?? "D:/env/gsc_credentials.json",
+  };
+}
 
 function base64Url(input: string | Buffer): string {
   return Buffer.from(input)
@@ -34,6 +42,8 @@ function base64Url(input: string | Buffer): string {
 }
 
 async function getServiceAccountCredentials(): Promise<ServiceAccountCredentials | null> {
+  const { credentialsPath } = getIndexingConfig();
+
   if (process.env.GSC_CREDENTIALS_JSON) {
     return JSON.parse(process.env.GSC_CREDENTIALS_JSON) as ServiceAccountCredentials;
   }
@@ -87,6 +97,7 @@ async function getGoogleAccessToken(): Promise<string | null> {
 }
 
 export async function submitGscSitemap(): Promise<string> {
+  const { gscProperty } = getIndexingConfig();
   const token = await getGoogleAccessToken();
   if (!token) return "GSC skipped: service account credentials not found.";
 
@@ -107,6 +118,7 @@ export async function submitGscSitemap(): Promise<string> {
 }
 
 export async function submitIndexNow(urls: string[]): Promise<string> {
+  const { host, indexNowKey, keyLocation } = getIndexingConfig();
   const uniqueUrls = Array.from(new Set(urls));
   const response = await fetch("https://api.indexnow.org/indexnow", {
     method: "POST",
