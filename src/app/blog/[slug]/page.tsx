@@ -33,6 +33,14 @@ export async function generateMetadata({
       description: post.description,
       url: `${SITE_URL}/blog/${post.slug}`,
       type: "article",
+      images: [
+        {
+          url: post.thumbnail,
+          width: 1200,
+          height: 675,
+          alt: `${post.title} 대표 이미지`,
+        },
+      ],
     },
   };
 }
@@ -49,6 +57,7 @@ export default async function BlogPostPage({ params }: PageProps) {
     description: post.description,
     dateModified: post.updatedAt,
     datePublished: post.publishedAt,
+    image: `${SITE_URL}${post.thumbnail}`,
     inLanguage: "ko-KR",
     mainEntityOfPage: `${SITE_URL}/blog/${post.slug}`,
     keywords: [post.mainKeyword, ...post.relatedKeywords, ...post.expandedKeywords],
@@ -97,6 +106,11 @@ export default async function BlogPostPage({ params }: PageProps) {
         <p className="mt-3 text-lg leading-relaxed text-neutral-700">
           {post.description}
         </p>
+        <img
+          src={post.thumbnail}
+          alt={`${post.title} 대표 이미지`}
+          className="mt-6 aspect-video w-full rounded-lg border border-neutral-200 object-cover"
+        />
         <div className="mt-4 flex flex-wrap gap-2">
           {[post.mainKeyword, ...post.relatedKeywords, ...post.expandedKeywords.slice(0, 3)].map(
             (keyword) => (

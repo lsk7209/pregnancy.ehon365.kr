@@ -10,6 +10,7 @@
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio",
     "db:seed": "tsx src/db/seed/index.ts",
+    "content:thumbs": "tsx scripts/generate-blog-thumbnails.ts",
     "content:audit": "tsx scripts/audit-blog-content.ts",
     "notify:indexing": "tsx scripts/notify-indexing.ts",
     "postpublish": "npm run notify:indexing"

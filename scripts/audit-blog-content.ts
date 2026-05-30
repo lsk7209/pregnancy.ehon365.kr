@@ -1,4 +1,4 @@
-import { mkdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import {
   blogPosts,
@@ -44,6 +44,14 @@ assertUnique(generatedBlogPosts, "mainKeyword");
 for (const post of generatedBlogPosts) {
   if (post.qualityScore < 90) {
     addIssue(post, "qualityScore", "quality score must be at least 90");
+  }
+  if (!post.thumbnail) {
+    addIssue(post, "thumbnail", "article must have a thumbnail");
+  } else {
+    const thumbnailPath = join(process.cwd(), "public", post.thumbnail.replace(/^\//, ""));
+    if (!existsSync(thumbnailPath)) {
+      addIssue(post, "thumbnail", `thumbnail file missing: ${post.thumbnail}`);
+    }
   }
   if (!includesKeyword(post.title, post.mainKeyword)) {
     addIssue(post, "title", "title must include main keyword");
@@ -113,6 +121,7 @@ const titleMap = {
     content_type_reason: `${post.category} 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성`,
     research_seed: `${post.mainKeyword} ${post.relatedKeywords.join(" ")} 공식 안내`,
     source_hint: post.sources.map((source) => source.name),
+    thumbnail: post.thumbnail,
     published_at: post.publishedAt,
     quality_score: post.qualityScore,
   })),

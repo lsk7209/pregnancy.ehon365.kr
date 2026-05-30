@@ -33,8 +33,15 @@ export default function BlogPage() {
           <Link
             key={post.slug}
             href={`/blog/${post.slug}`}
-            className="flex min-h-64 flex-col rounded-lg border border-neutral-200 bg-white p-5 transition hover:border-brand/50 hover:shadow-sm"
+            className="flex min-h-64 flex-col overflow-hidden rounded-lg border border-neutral-200 bg-white transition hover:border-brand/50 hover:shadow-sm"
           >
+            <img
+              src={post.thumbnail}
+              alt={`${post.title} 대표 이미지`}
+              className="aspect-video w-full object-cover"
+              loading="lazy"
+            />
+            <div className="flex flex-1 flex-col p-5">
             <div className="flex items-center justify-between gap-3 text-xs text-neutral-500">
               <span className="rounded-full bg-brand-soft px-2 py-1 font-medium text-brand">
                 {post.category}
@@ -63,6 +70,7 @@ export default function BlogPage() {
             <span className="mt-auto pt-5 text-sm font-semibold text-brand">
               글 보기
             </span>
+            </div>
           </Link>
         ))}
       </section>
