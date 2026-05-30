@@ -12,7 +12,7 @@ export const dynamic = "force-dynamic";
 const recentWindowHours = 6;
 
 function isAuthorized(request: Request) {
-  const secret = process.env.CRON_SECRET;
+  const secret = process.env.CRON_SECRET?.trim();
   if (!secret) return true;
   return request.headers.get("authorization") === `Bearer ${secret}`;
 }
