@@ -1,7 +1,12 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { getBlogPost, getPublishedBlogPost, type BlogSection } from "@/lib/blog-posts";
+import {
+  getBlogPost,
+  getPublishedBlogPost,
+  getRelatedBlogPosts,
+  type BlogSection,
+} from "@/lib/blog-posts";
 import { SITE_NAME, SITE_URL } from "@/lib/utils";
 
 interface PageProps {
@@ -131,6 +136,7 @@ export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params;
   const post = getPublishedBlogPost(slug);
   if (!post) notFound();
+  const relatedPosts = getRelatedBlogPosts(post, 3);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -323,6 +329,42 @@ export default async function BlogPostPage({ params }: PageProps) {
           관련 가이드 보기
         </Link>
       </aside>
+
+      {relatedPosts.length > 0 ? (
+        <section className="mt-8">
+          <div className="flex items-end justify-between gap-4">
+            <h2 className="text-lg font-bold text-ink">함께 읽으면 좋은 글</h2>
+            <Link href="/blog" className="text-sm font-semibold text-brand hover:underline">
+              전체 글 보기
+            </Link>
+          </div>
+          <div className="mt-4 grid gap-4 sm:grid-cols-3">
+            {relatedPosts.map((relatedPost) => (
+              <Link
+                key={relatedPost.slug}
+                href={`/blog/${relatedPost.slug}`}
+                className="group rounded-lg border border-neutral-200 bg-white p-4 transition hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-sm"
+              >
+                <span
+                  className="rounded-full px-2 py-1 text-xs font-semibold"
+                  style={{
+                    backgroundColor: tint(relatedPost.accentColor, "14"),
+                    color: relatedPost.accentColor,
+                  }}
+                >
+                  {relatedPost.category}
+                </span>
+                <h3 className="mt-3 line-clamp-2 text-sm font-bold leading-snug text-ink group-hover:text-brand">
+                  {relatedPost.title}
+                </h3>
+                <p className="mt-2 line-clamp-2 text-xs leading-relaxed text-neutral-600">
+                  {relatedPost.subtitle}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      ) : null}
     </article>
   );
 }

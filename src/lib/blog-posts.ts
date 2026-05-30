@@ -1422,6 +1422,38 @@ export function getPublishedBlogPost(slug: string, now = new Date()): BlogPost |
   return post;
 }
 
+export function getRelatedBlogPosts(post: BlogPost, limit = 3, now = new Date()): BlogPost[] {
+  const postKeywords = new Set([
+    post.mainKeyword,
+    ...post.relatedKeywords,
+    ...post.expandedKeywords,
+  ]);
+
+  return getPublishedBlogPosts(now)
+    .filter((candidate) => candidate.slug !== post.slug)
+    .map((candidate) => {
+      const keywordScore = [
+        candidate.mainKeyword,
+        ...candidate.relatedKeywords,
+        ...candidate.expandedKeywords,
+      ].filter((keyword) => postKeywords.has(keyword)).length;
+      const categoryScore = candidate.category === post.category ? 3 : 0;
+      const guideScore = candidate.relatedHref === post.relatedHref ? 2 : 0;
+
+      return {
+        post: candidate,
+        score: keywordScore + categoryScore + guideScore,
+      };
+    })
+    .filter((candidate) => candidate.score > 0)
+    .sort((a, b) => {
+      if (b.score !== a.score) return b.score - a.score;
+      return new Date(b.post.publishedAt).getTime() - new Date(a.post.publishedAt).getTime();
+    })
+    .slice(0, limit)
+    .map((candidate) => candidate.post);
+}
+
 export function getBlogSchedule() {
   return {
     publicationStart,
