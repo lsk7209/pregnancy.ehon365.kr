@@ -1,0 +1,38 @@
+{
+  "name": "pregnancy-guide",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "db:seed": "tsx src/db/seed/index.ts",
+    "notify:indexing": "tsx scripts/notify-indexing.ts",
+    "postpublish": "npm run notify:indexing"
+  },
+  "dependencies": {
+    "next": "15.3.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "drizzle-orm": "^0.43.1",
+    "@libsql/client": "^0.14.0",
+    "@google/genai": "^1.0.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5",
+    "drizzle-kit": "^0.31.1",
+    "tsx": "^4.19.4",
+    "tailwindcss": "^4.0.0",
+    "@tailwindcss/postcss": "^4.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.2"
+  }
+}

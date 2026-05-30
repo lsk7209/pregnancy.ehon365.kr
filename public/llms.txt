@@ -1,0 +1,8 @@
+# Pregnancy Guide
+
+This site provides Korean-language pregnancy and birth preparation information.
+It includes week-by-week pregnancy guides, screening schedule summaries,
+government support information, and a general fetal insurance guide.
+
+Medical content is general information only and does not replace professional
+medical diagnosis, treatment, or advice.

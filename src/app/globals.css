@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #d6608a;
+  --color-brand-soft: #fce7f0;
+  --color-ink: #2d2a32;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background: #fffdfe;
+  color: var(--color-ink);
+  font-family:
+    "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", sans-serif;
+  line-height: 1.7;
+}
+
+.prose-week h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose-week p {
+  margin-bottom: 0.75rem;
+}
