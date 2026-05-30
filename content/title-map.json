@@ -2,8 +2,8 @@
   "persona_source": "site-config/site-persona.yaml",
   "published_title_source": "src/lib/blog-posts.ts",
   "topic": "임신·출산 준비 가이드",
-  "target_count": 300,
-  "generated_count": 300,
+  "target_count": 400,
+  "generated_count": 400,
   "review_count": 0,
   "failed_count": 0,
   "target_met": true,
@@ -11,7 +11,7 @@
   "schedule": {
     "publicationStart": "2026-05-30T14:00:00+09:00",
     "scheduleIntervalHours": 5,
-    "totalGenerated": 300
+    "totalGenerated": 400
   },
   "titles": [
     {
@@ -13607,6 +13607,4511 @@
       ],
       "thumbnail": "/blog-thumbnails/home-family-meeting.webp",
       "published_at": "2026-07-31T12:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 301,
+      "title": "산후 감정기록 시작법: 상담 신호",
+      "subtitle": "산후 감정기록과 상담 신호 체크",
+      "slug": "mind-postpartum-day-record",
+      "main_keyword": "산후 감정기록",
+      "related_keywords": [
+        "상담 신호",
+        "기분 변화"
+      ],
+      "expanded_keywords": [
+        "산후 감정기록",
+        "상담 신호",
+        "기분 변화",
+        "산후 감정기록 체크리스트",
+        "산후 감정기록 질문"
+      ],
+      "search_intent": "산후 감정기록에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "산후 감정기록 먼저 볼 위험 신호",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "warning",
+        "checklist",
+        "steps",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "산후 감정기록 상담 신호 기분 변화 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/mind-postpartum-day-record.webp",
+      "published_at": "2026-07-31T17:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 302,
+      "title": "베이비블루스 구분 기준: 산후우울 상담",
+      "subtitle": "베이비블루스와 산후우울 상담 기준",
+      "slug": "mind-baby-blues-vs-depression",
+      "main_keyword": "베이비블루스",
+      "related_keywords": [
+        "산후우울 상담",
+        "정서 회복"
+      ],
+      "expanded_keywords": [
+        "베이비블루스",
+        "산후우울 상담",
+        "정서 회복",
+        "베이비블루스 체크리스트",
+        "베이비블루스 질문"
+      ],
+      "search_intent": "베이비블루스에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "베이비블루스 먼저 볼 위험 신호",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "warning",
+        "checklist",
+        "steps",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "베이비블루스 산후우울 상담 정서 회복 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/mind-baby-blues-vs-depression.webp",
+      "published_at": "2026-07-31T22:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 303,
+      "title": "배우자 야간대화 규칙: 수유 분담",
+      "subtitle": "배우자 야간대화와 수유 분담 조정",
+      "slug": "mind-partner-night-talk",
+      "main_keyword": "배우자 야간대화",
+      "related_keywords": [
+        "수유 분담",
+        "가족 소통"
+      ],
+      "expanded_keywords": [
+        "배우자 야간대화",
+        "수유 분담",
+        "가족 소통",
+        "배우자 야간대화 체크리스트",
+        "배우자 야간대화 질문"
+      ],
+      "search_intent": "배우자 야간대화에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "배우자 야간대화 먼저 볼 위험 신호",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "warning",
+        "checklist",
+        "steps",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "배우자 야간대화 수유 분담 가족 소통 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/mind-partner-night-talk.webp",
+      "published_at": "2026-08-01T03:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 304,
+      "title": "육아 죄책감 다루기: 도움 요청",
+      "subtitle": "육아 죄책감과 도움 요청 문장",
+      "slug": "mind-mother-guilt-check",
+      "main_keyword": "육아 죄책감",
+      "related_keywords": [
+        "도움 요청",
+        "정서 부담"
+      ],
+      "expanded_keywords": [
+        "육아 죄책감",
+        "도움 요청",
+        "정서 부담",
+        "육아 죄책감 체크리스트",
+        "육아 죄책감 질문"
+      ],
+      "search_intent": "육아 죄책감에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "육아 죄책감 먼저 볼 위험 신호",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "warning",
+        "checklist",
+        "steps",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "육아 죄책감 도움 요청 정서 부담 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/mind-mother-guilt-check.webp",
+      "published_at": "2026-08-01T08:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 305,
+      "title": "산후 불안 목록 정리: 병원 상담",
+      "subtitle": "산후 불안 목록과 병원 상담 질문",
+      "slug": "mind-postpartum-anxiety-list",
+      "main_keyword": "산후 불안 목록",
+      "related_keywords": [
+        "병원 상담",
+        "불안 신호"
+      ],
+      "expanded_keywords": [
+        "산후 불안 목록",
+        "병원 상담",
+        "불안 신호",
+        "산후 불안 목록 체크리스트",
+        "산후 불안 목록 질문"
+      ],
+      "search_intent": "산후 불안 목록에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "산후 불안 목록 먼저 볼 위험 신호",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "warning",
+        "checklist",
+        "steps",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "산후 불안 목록 병원 상담 불안 신호 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/mind-postpartum-anxiety-list.webp",
+      "published_at": "2026-08-01T13:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 306,
+      "title": "조부모 육아간섭 경계: 가족 규칙",
+      "subtitle": "조부모 육아간섭과 가족 규칙 합의",
+      "slug": "mind-grandparent-boundary",
+      "main_keyword": "조부모 육아간섭",
+      "related_keywords": [
+        "가족 규칙",
+        "관계 조정"
+      ],
+      "expanded_keywords": [
+        "조부모 육아간섭",
+        "가족 규칙",
+        "관계 조정",
+        "조부모 육아간섭 체크리스트",
+        "조부모 육아간섭 질문"
+      ],
+      "search_intent": "조부모 육아간섭에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "조부모 육아간섭 먼저 볼 위험 신호",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "warning",
+        "checklist",
+        "steps",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "조부모 육아간섭 가족 규칙 관계 조정 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/mind-grandparent-boundary.webp",
+      "published_at": "2026-08-01T18:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 307,
+      "title": "수면부족 짜증 대처: 보호자 교대",
+      "subtitle": "수면부족 짜증과 보호자 교대 기준",
+      "slug": "mind-sleep-deprivation-irritability",
+      "main_keyword": "수면부족 짜증",
+      "related_keywords": [
+        "보호자 교대",
+        "휴식 계획"
+      ],
+      "expanded_keywords": [
+        "수면부족 짜증",
+        "보호자 교대",
+        "휴식 계획",
+        "수면부족 짜증 체크리스트",
+        "수면부족 짜증 질문"
+      ],
+      "search_intent": "수면부족 짜증에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "수면부족 짜증 먼저 볼 위험 신호",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "warning",
+        "checklist",
+        "steps",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "수면부족 짜증 보호자 교대 휴식 계획 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/mind-sleep-deprivation-irritability.webp",
+      "published_at": "2026-08-01T23:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 308,
+      "title": "산후 상담기관 찾기: 정신건강복지센터",
+      "subtitle": "산후 상담기관과 정신건강복지센터 연결",
+      "slug": "mind-postpartum-counseling-route",
+      "main_keyword": "산후 상담기관",
+      "related_keywords": [
+        "정신건강복지센터",
+        "상담 예약"
+      ],
+      "expanded_keywords": [
+        "산후 상담기관",
+        "정신건강복지센터",
+        "상담 예약",
+        "산후 상담기관 체크리스트",
+        "산후 상담기관 질문"
+      ],
+      "search_intent": "산후 상담기관에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "산후 상담기관 먼저 볼 위험 신호",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "warning",
+        "checklist",
+        "steps",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "산후 상담기관 정신건강복지센터 상담 예약 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/mind-postpartum-counseling-route.webp",
+      "published_at": "2026-08-02T04:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 309,
+      "title": "혼자 돌보는 산모 지원: 긴급 도움",
+      "subtitle": "혼자 돌보는 산모와 긴급 도움 요청",
+      "slug": "mind-single-mom-support-talk",
+      "main_keyword": "혼자 돌보는 산모",
+      "related_keywords": [
+        "긴급 도움",
+        "돌봄 공백"
+      ],
+      "expanded_keywords": [
+        "혼자 돌보는 산모",
+        "긴급 도움",
+        "돌봄 공백",
+        "혼자 돌보는 산모 체크리스트",
+        "혼자 돌보는 산모 질문"
+      ],
+      "search_intent": "혼자 돌보는 산모에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "혼자 돌보는 산모 먼저 볼 위험 신호",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "warning",
+        "checklist",
+        "steps",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "혼자 돌보는 산모 긴급 도움 돌봄 공백 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/mind-single-mom-support-talk.webp",
+      "published_at": "2026-08-02T09:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 310,
+      "title": "복직 전 감정정리: 돌봄 불안",
+      "subtitle": "복직 전 감정정리와 돌봄 불안 낮추기",
+      "slug": "mind-return-work-emotion",
+      "main_keyword": "복직 전 감정정리",
+      "related_keywords": [
+        "돌봄 불안",
+        "업무 복귀"
+      ],
+      "expanded_keywords": [
+        "복직 전 감정정리",
+        "돌봄 불안",
+        "업무 복귀",
+        "복직 전 감정정리 체크리스트",
+        "복직 전 감정정리 질문"
+      ],
+      "search_intent": "복직 전 감정정리에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "복직 전 감정정리 먼저 볼 위험 신호",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "warning",
+        "checklist",
+        "steps",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "복직 전 감정정리 돌봄 불안 업무 복귀 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/mind-return-work-emotion.webp",
+      "published_at": "2026-08-02T14:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 311,
+      "title": "출산 기억 정리법: 트라우마 상담",
+      "subtitle": "출산 기억 정리와 트라우마 상담 기준",
+      "slug": "mind-birth-memory-rewrite",
+      "main_keyword": "출산 기억 정리",
+      "related_keywords": [
+        "트라우마 상담",
+        "회복 기록"
+      ],
+      "expanded_keywords": [
+        "출산 기억 정리",
+        "트라우마 상담",
+        "회복 기록",
+        "출산 기억 정리 체크리스트",
+        "출산 기억 정리 질문"
+      ],
+      "search_intent": "출산 기억 정리에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "출산 기억 정리 먼저 볼 위험 신호",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "warning",
+        "checklist",
+        "steps",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "출산 기억 정리 트라우마 상담 회복 기록 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/mind-birth-memory-rewrite.webp",
+      "published_at": "2026-08-02T19:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 312,
+      "title": "산후 부부갈등 대화: 역할 분담",
+      "subtitle": "산후 부부갈등과 역할 분담 문장",
+      "slug": "mind-postpartum-couple-conflict",
+      "main_keyword": "산후 부부갈등",
+      "related_keywords": [
+        "역할 분담",
+        "대화 규칙"
+      ],
+      "expanded_keywords": [
+        "산후 부부갈등",
+        "역할 분담",
+        "대화 규칙",
+        "산후 부부갈등 체크리스트",
+        "산후 부부갈등 질문"
+      ],
+      "search_intent": "산후 부부갈등에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "산후 부부갈등 먼저 볼 위험 신호",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "warning",
+        "checklist",
+        "steps",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "산후 부부갈등 역할 분담 대화 규칙 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/mind-postpartum-couple-conflict.webp",
+      "published_at": "2026-08-03T00:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 313,
+      "title": "산모 혼자있는 시간: 보호자 교대표",
+      "subtitle": "산모 혼자있는 시간과 보호자 교대표",
+      "slug": "mind-mom-alone-time",
+      "main_keyword": "산모 혼자있는 시간",
+      "related_keywords": [
+        "보호자 교대표",
+        "회복 시간"
+      ],
+      "expanded_keywords": [
+        "산모 혼자있는 시간",
+        "보호자 교대표",
+        "회복 시간",
+        "산모 혼자있는 시간 체크리스트",
+        "산모 혼자있는 시간 질문"
+      ],
+      "search_intent": "산모 혼자있는 시간에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "산모 혼자있는 시간 먼저 볼 위험 신호",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "warning",
+        "checklist",
+        "steps",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "산모 혼자있는 시간 보호자 교대표 회복 시간 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/mind-mom-alone-time.webp",
+      "published_at": "2026-08-03T05:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 314,
+      "title": "산후 몸 변화 받아들이기: 운동 재개 상담",
+      "subtitle": "산후 몸 변화와 운동 재개 상담",
+      "slug": "mind-postpartum-body-image",
+      "main_keyword": "산후 몸 변화",
+      "related_keywords": [
+        "운동 재개 상담",
+        "자기돌봄"
+      ],
+      "expanded_keywords": [
+        "산후 몸 변화",
+        "운동 재개 상담",
+        "자기돌봄",
+        "산후 몸 변화 체크리스트",
+        "산후 몸 변화 질문"
+      ],
+      "search_intent": "산후 몸 변화에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "산후 몸 변화 먼저 볼 위험 신호",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "warning",
+        "checklist",
+        "steps",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "산후 몸 변화 운동 재개 상담 자기돌봄 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/mind-postpartum-body-image.webp",
+      "published_at": "2026-08-03T10:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 315,
+      "title": "산후 정서 응급신호: 즉시 도움",
+      "subtitle": "산후 정서 응급신호와 즉시 도움 요청",
+      "slug": "mind-emergency-mental-signal",
+      "main_keyword": "산후 정서 응급신호",
+      "related_keywords": [
+        "즉시 도움",
+        "위기 대응"
+      ],
+      "expanded_keywords": [
+        "산후 정서 응급신호",
+        "즉시 도움",
+        "위기 대응",
+        "산후 정서 응급신호 체크리스트",
+        "산후 정서 응급신호 질문"
+      ],
+      "search_intent": "산후 정서 응급신호에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "산후 정서 응급신호 먼저 볼 위험 신호",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "warning",
+        "checklist",
+        "steps",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "산후 정서 응급신호 즉시 도움 위기 대응 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/mind-emergency-mental-signal.webp",
+      "published_at": "2026-08-03T15:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 316,
+      "title": "아기 첫 발열 대처: 체온 기록",
+      "subtitle": "아기 첫 발열과 체온 기록 기준",
+      "slug": "baby-fever-first-response",
+      "main_keyword": "아기 첫 발열",
+      "related_keywords": [
+        "체온 기록",
+        "진료 문의"
+      ],
+      "expanded_keywords": [
+        "아기 첫 발열",
+        "체온 기록",
+        "진료 문의",
+        "아기 첫 발열 체크리스트",
+        "아기 첫 발열 질문"
+      ],
+      "search_intent": "아기 첫 발열에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "아기 첫 발열 핵심 판단 기준",
+      "recommended_format": "출산준비",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "출산준비 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "아기 첫 발열 체온 기록 진료 문의 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/baby-fever-first-response.webp",
+      "published_at": "2026-08-03T20:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 317,
+      "title": "아기 기침 호흡 확인: 응급 신호",
+      "subtitle": "아기 기침 호흡과 응급 신호 구분",
+      "slug": "baby-cough-breathing-check",
+      "main_keyword": "아기 기침 호흡",
+      "related_keywords": [
+        "응급 신호",
+        "호흡 관찰"
+      ],
+      "expanded_keywords": [
+        "아기 기침 호흡",
+        "응급 신호",
+        "호흡 관찰",
+        "아기 기침 호흡 체크리스트",
+        "아기 기침 호흡 질문"
+      ],
+      "search_intent": "아기 기침 호흡에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "아기 기침 호흡 핵심 판단 기준",
+      "recommended_format": "출산준비",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "출산준비 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "아기 기침 호흡 응급 신호 호흡 관찰 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/baby-cough-breathing-check.webp",
+      "published_at": "2026-08-04T01:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 318,
+      "title": "아기 구토 역류 구분: 수유 후 관찰",
+      "subtitle": "아기 구토 역류와 수유 후 관찰",
+      "slug": "baby-vomit-vs-reflux",
+      "main_keyword": "아기 구토 역류",
+      "related_keywords": [
+        "수유 후 관찰",
+        "게워냄"
+      ],
+      "expanded_keywords": [
+        "아기 구토 역류",
+        "수유 후 관찰",
+        "게워냄",
+        "아기 구토 역류 체크리스트",
+        "아기 구토 역류 질문"
+      ],
+      "search_intent": "아기 구토 역류에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "아기 구토 역류 핵심 판단 기준",
+      "recommended_format": "출산준비",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "출산준비 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "아기 구토 역류 수유 후 관찰 게워냄 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/baby-vomit-vs-reflux.webp",
+      "published_at": "2026-08-04T06:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 319,
+      "title": "아기 설사 기저귀 기록: 탈수 신호",
+      "subtitle": "아기 설사 기저귀와 탈수 신호 체크",
+      "slug": "baby-diarrhea-diaper-log",
+      "main_keyword": "아기 설사 기저귀",
+      "related_keywords": [
+        "탈수 신호",
+        "소변 횟수"
+      ],
+      "expanded_keywords": [
+        "아기 설사 기저귀",
+        "탈수 신호",
+        "소변 횟수",
+        "아기 설사 기저귀 체크리스트",
+        "아기 설사 기저귀 질문"
+      ],
+      "search_intent": "아기 설사 기저귀에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "아기 설사 기저귀 핵심 판단 기준",
+      "recommended_format": "출산준비",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "출산준비 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "아기 설사 기저귀 탈수 신호 소변 횟수 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/baby-diarrhea-diaper-log.webp",
+      "published_at": "2026-08-04T11:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 320,
+      "title": "아기 발진 사진기록: 진료 전 메모",
+      "subtitle": "아기 발진 사진기록과 진료 전 메모",
+      "slug": "baby-rash-photo-note",
+      "main_keyword": "아기 발진 사진기록",
+      "related_keywords": [
+        "진료 전 메모",
+        "피부 변화"
+      ],
+      "expanded_keywords": [
+        "아기 발진 사진기록",
+        "진료 전 메모",
+        "피부 변화",
+        "아기 발진 사진기록 체크리스트",
+        "아기 발진 사진기록 질문"
+      ],
+      "search_intent": "아기 발진 사진기록에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "아기 발진 사진기록 핵심 판단 기준",
+      "recommended_format": "출산준비",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "출산준비 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "아기 발진 사진기록 진료 전 메모 피부 변화 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/baby-rash-photo-note.webp",
+      "published_at": "2026-08-04T16:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 321,
+      "title": "아기 눈곱 확인 기준: 눈 충혈",
+      "subtitle": "아기 눈곱과 눈 충혈 상담 질문",
+      "slug": "baby-eye-discharge-check",
+      "main_keyword": "아기 눈곱",
+      "related_keywords": [
+        "눈 충혈",
+        "진료 상담"
+      ],
+      "expanded_keywords": [
+        "아기 눈곱",
+        "눈 충혈",
+        "진료 상담",
+        "아기 눈곱 체크리스트",
+        "아기 눈곱 질문"
+      ],
+      "search_intent": "아기 눈곱에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "아기 눈곱 핵심 판단 기준",
+      "recommended_format": "출산준비",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "출산준비 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "아기 눈곱 눈 충혈 진료 상담 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/baby-eye-discharge-check.webp",
+      "published_at": "2026-08-04T21:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 322,
+      "title": "아기 귀 만짐 관찰: 울음 패턴",
+      "subtitle": "아기 귀 만짐과 울음 패턴 구분",
+      "slug": "baby-ear-touching-sign",
+      "main_keyword": "아기 귀 만짐",
+      "related_keywords": [
+        "울음 패턴",
+        "중이염 질문"
+      ],
+      "expanded_keywords": [
+        "아기 귀 만짐",
+        "울음 패턴",
+        "중이염 질문",
+        "아기 귀 만짐 체크리스트",
+        "아기 귀 만짐 질문"
+      ],
+      "search_intent": "아기 귀 만짐에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "아기 귀 만짐 핵심 판단 기준",
+      "recommended_format": "출산준비",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "출산준비 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "아기 귀 만짐 울음 패턴 중이염 질문 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/baby-ear-touching-sign.webp",
+      "published_at": "2026-08-05T02:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 323,
+      "title": "배꼽 늦은 회복 확인: 분비물 관찰",
+      "subtitle": "배꼽 늦은 회복과 분비물 관찰",
+      "slug": "baby-umbilical-care-late",
+      "main_keyword": "배꼽 늦은 회복",
+      "related_keywords": [
+        "분비물 관찰",
+        "소독 기준"
+      ],
+      "expanded_keywords": [
+        "배꼽 늦은 회복",
+        "분비물 관찰",
+        "소독 기준",
+        "배꼽 늦은 회복 체크리스트",
+        "배꼽 늦은 회복 질문"
+      ],
+      "search_intent": "배꼽 늦은 회복에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "배꼽 늦은 회복 핵심 판단 기준",
+      "recommended_format": "출산준비",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "출산준비 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "배꼽 늦은 회복 분비물 관찰 소독 기준 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/baby-umbilical-care-late.webp",
+      "published_at": "2026-08-05T07:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 324,
+      "title": "아기 머리 부딪힘 관찰: 응급실 기준",
+      "subtitle": "아기 머리 부딪힘과 응급실 기준",
+      "slug": "baby-head-bump-home-check",
+      "main_keyword": "아기 머리 부딪힘",
+      "related_keywords": [
+        "응급실 기준",
+        "낙상 관찰"
+      ],
+      "expanded_keywords": [
+        "아기 머리 부딪힘",
+        "응급실 기준",
+        "낙상 관찰",
+        "아기 머리 부딪힘 체크리스트",
+        "아기 머리 부딪힘 질문"
+      ],
+      "search_intent": "아기 머리 부딪힘에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "아기 머리 부딪힘 핵심 판단 기준",
+      "recommended_format": "출산준비",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "출산준비 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "아기 머리 부딪힘 응급실 기준 낙상 관찰 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/baby-head-bump-home-check.webp",
+      "published_at": "2026-08-05T12:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 325,
+      "title": "아기 변비 마사지 기준: 수유량 확인",
+      "subtitle": "아기 변비 마사지와 수유량 확인",
+      "slug": "baby-constipation-massage",
+      "main_keyword": "아기 변비 마사지",
+      "related_keywords": [
+        "수유량 확인",
+        "배변 패턴"
+      ],
+      "expanded_keywords": [
+        "아기 변비 마사지",
+        "수유량 확인",
+        "배변 패턴",
+        "아기 변비 마사지 체크리스트",
+        "아기 변비 마사지 질문"
+      ],
+      "search_intent": "아기 변비 마사지에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "아기 변비 마사지 핵심 판단 기준",
+      "recommended_format": "출산준비",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "출산준비 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "아기 변비 마사지 수유량 확인 배변 패턴 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/baby-constipation-massage.webp",
+      "published_at": "2026-08-05T17:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 326,
+      "title": "아기 잠잘 때 땀: 실내 온도",
+      "subtitle": "아기 잠잘 때 땀과 실내 온도 조정",
+      "slug": "baby-sweating-sleep-check",
+      "main_keyword": "아기 잠잘 때 땀",
+      "related_keywords": [
+        "실내 온도",
+        "수면 관찰"
+      ],
+      "expanded_keywords": [
+        "아기 잠잘 때 땀",
+        "실내 온도",
+        "수면 관찰",
+        "아기 잠잘 때 땀 체크리스트",
+        "아기 잠잘 때 땀 질문"
+      ],
+      "search_intent": "아기 잠잘 때 땀에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "아기 잠잘 때 땀 핵심 판단 기준",
+      "recommended_format": "출산준비",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "출산준비 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "아기 잠잘 때 땀 실내 온도 수면 관찰 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/baby-sweating-sleep-check.webp",
+      "published_at": "2026-08-05T22:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 327,
+      "title": "아기 숨소리 관찰: 코막힘 대처",
+      "subtitle": "아기 숨소리와 코막힘 대처 기준",
+      "slug": "baby-noisy-breathing",
+      "main_keyword": "아기 숨소리",
+      "related_keywords": [
+        "코막힘 대처",
+        "호흡 소리"
+      ],
+      "expanded_keywords": [
+        "아기 숨소리",
+        "코막힘 대처",
+        "호흡 소리",
+        "아기 숨소리 체크리스트",
+        "아기 숨소리 질문"
+      ],
+      "search_intent": "아기 숨소리에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "아기 숨소리 핵심 판단 기준",
+      "recommended_format": "출산준비",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "출산준비 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "아기 숨소리 코막힘 대처 호흡 소리 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/baby-noisy-breathing.webp",
+      "published_at": "2026-08-06T03:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 328,
+      "title": "수유 후 우는 아기: 배앓이 구분",
+      "subtitle": "수유 후 우는 아기와 배앓이 구분",
+      "slug": "baby-crying-after-feeding",
+      "main_keyword": "수유 후 우는 아기",
+      "related_keywords": [
+        "배앓이 구분",
+        "트림 확인"
+      ],
+      "expanded_keywords": [
+        "수유 후 우는 아기",
+        "배앓이 구분",
+        "트림 확인",
+        "수유 후 우는 아기 체크리스트",
+        "수유 후 우는 아기 질문"
+      ],
+      "search_intent": "수유 후 우는 아기에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "수유 후 우는 아기 핵심 판단 기준",
+      "recommended_format": "출산준비",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "출산준비 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "수유 후 우는 아기 배앓이 구분 트림 확인 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/baby-crying-after-feeding.webp",
+      "published_at": "2026-08-06T08:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 329,
+      "title": "예방접종 누락 대처: 보건소 상담",
+      "subtitle": "예방접종 누락과 보건소 상담 순서",
+      "slug": "baby-missed-vaccine-plan",
+      "main_keyword": "예방접종 누락",
+      "related_keywords": [
+        "보건소 상담",
+        "접종 일정"
+      ],
+      "expanded_keywords": [
+        "예방접종 누락",
+        "보건소 상담",
+        "접종 일정",
+        "예방접종 누락 체크리스트",
+        "예방접종 누락 질문"
+      ],
+      "search_intent": "예방접종 누락에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "예방접종 누락 핵심 판단 기준",
+      "recommended_format": "출산준비",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "출산준비 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "예방접종 누락 보건소 상담 접종 일정 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/baby-missed-vaccine-plan.webp",
+      "published_at": "2026-08-06T13:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 330,
+      "title": "아기 약 용량 질문: 처방전 확인",
+      "subtitle": "아기 약 용량과 처방전 확인 메모",
+      "slug": "baby-medicine-dose-question",
+      "main_keyword": "아기 약 용량",
+      "related_keywords": [
+        "처방전 확인",
+        "복약 기록"
+      ],
+      "expanded_keywords": [
+        "아기 약 용량",
+        "처방전 확인",
+        "복약 기록",
+        "아기 약 용량 체크리스트",
+        "아기 약 용량 질문"
+      ],
+      "search_intent": "아기 약 용량에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "아기 약 용량 핵심 판단 기준",
+      "recommended_format": "출산준비",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "출산준비 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "아기 약 용량 처방전 확인 복약 기록 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/baby-medicine-dose-question.webp",
+      "published_at": "2026-08-06T18:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 331,
+      "title": "이유식 시작 신호: 소아과 상담",
+      "subtitle": "이유식 시작 신호와 소아과 상담 질문",
+      "slug": "weaning-readiness-sign",
+      "main_keyword": "이유식 시작 신호",
+      "related_keywords": [
+        "소아과 상담",
+        "먹는 준비"
+      ],
+      "expanded_keywords": [
+        "이유식 시작 신호",
+        "소아과 상담",
+        "먹는 준비",
+        "이유식 시작 신호 체크리스트",
+        "이유식 시작 신호 질문"
+      ],
+      "search_intent": "이유식 시작 신호에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "이유식 시작 신호 실행 순서",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "이유식 시작 신호 소아과 상담 먹는 준비 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/weaning-readiness-sign.webp",
+      "published_at": "2026-08-06T23:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 332,
+      "title": "첫 쌀미음 일정표: 알레르기 관찰",
+      "subtitle": "첫 쌀미음 일정표와 알레르기 관찰",
+      "slug": "weaning-first-rice-schedule",
+      "main_keyword": "첫 쌀미음 일정표",
+      "related_keywords": [
+        "알레르기 관찰",
+        "이유식 기록"
+      ],
+      "expanded_keywords": [
+        "첫 쌀미음 일정표",
+        "알레르기 관찰",
+        "이유식 기록",
+        "첫 쌀미음 일정표 체크리스트",
+        "첫 쌀미음 일정표 질문"
+      ],
+      "search_intent": "첫 쌀미음 일정표에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "첫 쌀미음 일정표 실행 순서",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "첫 쌀미음 일정표 알레르기 관찰 이유식 기록 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/weaning-first-rice-schedule.webp",
+      "published_at": "2026-08-07T04:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 333,
+      "title": "알레르기 식품 기록: 증상 사진",
+      "subtitle": "알레르기 식품 기록과 증상 사진 정리",
+      "slug": "weaning-allergy-food-note",
+      "main_keyword": "알레르기 식품 기록",
+      "related_keywords": [
+        "증상 사진",
+        "식품 반응"
+      ],
+      "expanded_keywords": [
+        "알레르기 식품 기록",
+        "증상 사진",
+        "식품 반응",
+        "알레르기 식품 기록 체크리스트",
+        "알레르기 식품 기록 질문"
+      ],
+      "search_intent": "알레르기 식품 기록에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "알레르기 식품 기록 실행 순서",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "알레르기 식품 기록 증상 사진 식품 반응 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/weaning-allergy-food-note.webp",
+      "published_at": "2026-08-07T09:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 334,
+      "title": "이유식 숟가락 거부: 수유 간격",
+      "subtitle": "이유식 숟가락 거부와 수유 간격 조정",
+      "slug": "weaning-spoon-refusal",
+      "main_keyword": "이유식 숟가락 거부",
+      "related_keywords": [
+        "수유 간격",
+        "먹는 연습"
+      ],
+      "expanded_keywords": [
+        "이유식 숟가락 거부",
+        "수유 간격",
+        "먹는 연습",
+        "이유식 숟가락 거부 체크리스트",
+        "이유식 숟가락 거부 질문"
+      ],
+      "search_intent": "이유식 숟가락 거부에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "이유식 숟가락 거부 실행 순서",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "이유식 숟가락 거부 수유 간격 먹는 연습 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/weaning-spoon-refusal.webp",
+      "published_at": "2026-08-07T14:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 335,
+      "title": "이유식 물 섭취 질문: 변비 관찰",
+      "subtitle": "이유식 물 섭취와 변비 관찰 기준",
+      "slug": "weaning-water-question",
+      "main_keyword": "이유식 물 섭취",
+      "related_keywords": [
+        "변비 관찰",
+        "수분 섭취"
+      ],
+      "expanded_keywords": [
+        "이유식 물 섭취",
+        "변비 관찰",
+        "수분 섭취",
+        "이유식 물 섭취 체크리스트",
+        "이유식 물 섭취 질문"
+      ],
+      "search_intent": "이유식 물 섭취에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "이유식 물 섭취 실행 순서",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "이유식 물 섭취 변비 관찰 수분 섭취 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/weaning-water-question.webp",
+      "published_at": "2026-08-07T19:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 336,
+      "title": "이유식 철분 식단: 고기 시작",
+      "subtitle": "이유식 철분 식단과 고기 시작 기준",
+      "slug": "weaning-iron-food-plan",
+      "main_keyword": "이유식 철분 식단",
+      "related_keywords": [
+        "고기 시작",
+        "영양 보충"
+      ],
+      "expanded_keywords": [
+        "이유식 철분 식단",
+        "고기 시작",
+        "영양 보충",
+        "이유식 철분 식단 체크리스트",
+        "이유식 철분 식단 질문"
+      ],
+      "search_intent": "이유식 철분 식단에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "이유식 철분 식단 실행 순서",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "이유식 철분 식단 고기 시작 영양 보충 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/weaning-iron-food-plan.webp",
+      "published_at": "2026-08-08T00:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 337,
+      "title": "BLW 미음 비교: 질식 위험",
+      "subtitle": "BLW 미음 비교와 질식 위험 점검",
+      "slug": "weaning-baby-led-vs-puree",
+      "main_keyword": "BLW 미음 비교",
+      "related_keywords": [
+        "질식 위험",
+        "이유식 방식"
+      ],
+      "expanded_keywords": [
+        "BLW 미음 비교",
+        "질식 위험",
+        "이유식 방식",
+        "BLW 미음 비교 체크리스트",
+        "BLW 미음 비교 질문"
+      ],
+      "search_intent": "BLW 미음 비교에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "BLW 미음 비교 실행 순서",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "BLW 미음 비교 질식 위험 이유식 방식 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/weaning-baby-led-vs-puree.webp",
+      "published_at": "2026-08-08T05:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 338,
+      "title": "이유식 큐브 보관: 해동 위생",
+      "subtitle": "이유식 큐브 보관과 해동 위생 기준",
+      "slug": "weaning-freezer-cube",
+      "main_keyword": "이유식 큐브 보관",
+      "related_keywords": [
+        "해동 위생",
+        "식재료 관리"
+      ],
+      "expanded_keywords": [
+        "이유식 큐브 보관",
+        "해동 위생",
+        "식재료 관리",
+        "이유식 큐브 보관 체크리스트",
+        "이유식 큐브 보관 질문"
+      ],
+      "search_intent": "이유식 큐브 보관에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "이유식 큐브 보관 실행 순서",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "이유식 큐브 보관 해동 위생 식재료 관리 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/weaning-freezer-cube.webp",
+      "published_at": "2026-08-08T10:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 339,
+      "title": "어린이집 이유식 메모: 알레르기 공유",
+      "subtitle": "어린이집 이유식 메모와 알레르기 공유",
+      "slug": "weaning-daycare-meal-note",
+      "main_keyword": "어린이집 이유식 메모",
+      "related_keywords": [
+        "알레르기 공유",
+        "식단 전달"
+      ],
+      "expanded_keywords": [
+        "어린이집 이유식 메모",
+        "알레르기 공유",
+        "식단 전달",
+        "어린이집 이유식 메모 체크리스트",
+        "어린이집 이유식 메모 질문"
+      ],
+      "search_intent": "어린이집 이유식 메모에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "어린이집 이유식 메모 실행 순서",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "어린이집 이유식 메모 알레르기 공유 식단 전달 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/weaning-daycare-meal-note.webp",
+      "published_at": "2026-08-08T15:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 340,
+      "title": "구역질 질식 구분: 응급 대처",
+      "subtitle": "구역질 질식 구분과 응급 대처 준비",
+      "slug": "weaning-gagging-vs-choking",
+      "main_keyword": "구역질 질식 구분",
+      "related_keywords": [
+        "응급 대처",
+        "식사 안전"
+      ],
+      "expanded_keywords": [
+        "구역질 질식 구분",
+        "응급 대처",
+        "식사 안전",
+        "구역질 질식 구분 체크리스트",
+        "구역질 질식 구분 질문"
+      ],
+      "search_intent": "구역질 질식 구분에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "구역질 질식 구분 실행 순서",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "구역질 질식 구분 응급 대처 식사 안전 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/weaning-gagging-vs-choking.webp",
+      "published_at": "2026-08-08T20:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 341,
+      "title": "이유식 수유량 균형: 체중 변화",
+      "subtitle": "이유식 수유량 균형과 체중 변화 확인",
+      "slug": "feeding-weaning-milk-balance",
+      "main_keyword": "이유식 수유량 균형",
+      "related_keywords": [
+        "체중 변화",
+        "수유 조정"
+      ],
+      "expanded_keywords": [
+        "이유식 수유량 균형",
+        "체중 변화",
+        "수유 조정",
+        "이유식 수유량 균형 체크리스트",
+        "이유식 수유량 균형 질문"
+      ],
+      "search_intent": "이유식 수유량 균형에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "이유식 수유량 균형 실행 순서",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "이유식 수유량 균형 체중 변화 수유 조정 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/feeding-weaning-milk-balance.webp",
+      "published_at": "2026-08-09T01:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 342,
+      "title": "외출 이유식 준비: 보냉 시간",
+      "subtitle": "외출 이유식 준비와 보냉 시간 체크",
+      "slug": "weaning-travel-meal-kit",
+      "main_keyword": "외출 이유식 준비",
+      "related_keywords": [
+        "보냉 시간",
+        "외출 식사"
+      ],
+      "expanded_keywords": [
+        "외출 이유식 준비",
+        "보냉 시간",
+        "외출 식사",
+        "외출 이유식 준비 체크리스트",
+        "외출 이유식 준비 질문"
+      ],
+      "search_intent": "외출 이유식 준비에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "외출 이유식 준비 실행 순서",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "외출 이유식 준비 보냉 시간 외출 식사 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/weaning-travel-meal-kit.webp",
+      "published_at": "2026-08-09T06:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 343,
+      "title": "이유식 변비 식단: 소아과 문의",
+      "subtitle": "이유식 변비 식단과 소아과 문의 기준",
+      "slug": "weaning-constipation-food",
+      "main_keyword": "이유식 변비 식단",
+      "related_keywords": [
+        "소아과 문의",
+        "배변 기록"
+      ],
+      "expanded_keywords": [
+        "이유식 변비 식단",
+        "소아과 문의",
+        "배변 기록",
+        "이유식 변비 식단 체크리스트",
+        "이유식 변비 식단 질문"
+      ],
+      "search_intent": "이유식 변비 식단에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "이유식 변비 식단 실행 순서",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "이유식 변비 식단 소아과 문의 배변 기록 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/weaning-constipation-food.webp",
+      "published_at": "2026-08-09T11:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 344,
+      "title": "이유식 간식 당분 확인: 무염 식단",
+      "subtitle": "이유식 간식 당분과 무염 식단 기준",
+      "slug": "weaning-salt-sugar-check",
+      "main_keyword": "이유식 간식 당분",
+      "related_keywords": [
+        "무염 식단",
+        "식품 라벨"
+      ],
+      "expanded_keywords": [
+        "이유식 간식 당분",
+        "무염 식단",
+        "식품 라벨",
+        "이유식 간식 당분 체크리스트",
+        "이유식 간식 당분 질문"
+      ],
+      "search_intent": "이유식 간식 당분에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "이유식 간식 당분 실행 순서",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "이유식 간식 당분 무염 식단 식품 라벨 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/weaning-salt-sugar-check.webp",
+      "published_at": "2026-08-09T16:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 345,
+      "title": "가족 식탁 이유식 규칙: 보호자 역할",
+      "subtitle": "가족 식탁 이유식 규칙과 보호자 역할",
+      "slug": "weaning-family-table-rules",
+      "main_keyword": "가족 식탁 이유식 규칙",
+      "related_keywords": [
+        "보호자 역할",
+        "식사 루틴"
+      ],
+      "expanded_keywords": [
+        "가족 식탁 이유식 규칙",
+        "보호자 역할",
+        "식사 루틴",
+        "가족 식탁 이유식 규칙 체크리스트",
+        "가족 식탁 이유식 규칙 질문"
+      ],
+      "search_intent": "가족 식탁 이유식 규칙에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "가족 식탁 이유식 규칙 실행 순서",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "가족 식탁 이유식 규칙 보호자 역할 식사 루틴 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/weaning-family-table-rules.webp",
+      "published_at": "2026-08-09T21:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 346,
+      "title": "카시트 각도 확인: 호흡 안전",
+      "subtitle": "카시트 각도와 신생아 호흡 안전",
+      "slug": "safety-car-seat-angle",
+      "main_keyword": "카시트 각도",
+      "related_keywords": [
+        "호흡 안전",
+        "차량 이동"
+      ],
+      "expanded_keywords": [
+        "카시트 각도",
+        "호흡 안전",
+        "차량 이동",
+        "카시트 각도 체크리스트",
+        "카시트 각도 질문"
+      ],
+      "search_intent": "카시트 각도에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "카시트 각도 핵심 판단 기준",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "카시트 각도 호흡 안전 차량 이동 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/safety-car-seat-angle.webp",
+      "published_at": "2026-08-10T02:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 347,
+      "title": "유모차 브레이크 점검: 경사로 이동",
+      "subtitle": "유모차 브레이크와 경사로 이동 기준",
+      "slug": "safety-stroller-brake-check",
+      "main_keyword": "유모차 브레이크",
+      "related_keywords": [
+        "경사로 이동",
+        "외출 안전"
+      ],
+      "expanded_keywords": [
+        "유모차 브레이크",
+        "경사로 이동",
+        "외출 안전",
+        "유모차 브레이크 체크리스트",
+        "유모차 브레이크 질문"
+      ],
+      "search_intent": "유모차 브레이크에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "유모차 브레이크 핵심 판단 기준",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "유모차 브레이크 경사로 이동 외출 안전 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/safety-stroller-brake-check.webp",
+      "published_at": "2026-08-10T07:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 348,
+      "title": "아기 목욕 미끄럼 예방: 물 온도",
+      "subtitle": "아기 목욕 미끄럼 예방과 물 온도 확인",
+      "slug": "safety-bath-slip-prevention",
+      "main_keyword": "아기 목욕 미끄럼 예방",
+      "related_keywords": [
+        "물 온도",
+        "목욕 안전"
+      ],
+      "expanded_keywords": [
+        "아기 목욕 미끄럼 예방",
+        "물 온도",
+        "목욕 안전",
+        "아기 목욕 미끄럼 예방 체크리스트",
+        "아기 목욕 미끄럼 예방 질문"
+      ],
+      "search_intent": "아기 목욕 미끄럼 예방에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "아기 목욕 미끄럼 예방 핵심 판단 기준",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "아기 목욕 미끄럼 예방 물 온도 목욕 안전 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/safety-bath-slip-prevention.webp",
+      "published_at": "2026-08-10T12:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 349,
+      "title": "침대 낙상 예방: 뒤집기 전후",
+      "subtitle": "침대 낙상 예방과 뒤집기 전후 환경",
+      "slug": "safety-bed-fall-prevention",
+      "main_keyword": "침대 낙상 예방",
+      "related_keywords": [
+        "뒤집기 전후",
+        "수면 공간"
+      ],
+      "expanded_keywords": [
+        "침대 낙상 예방",
+        "뒤집기 전후",
+        "수면 공간",
+        "침대 낙상 예방 체크리스트",
+        "침대 낙상 예방 질문"
+      ],
+      "search_intent": "침대 낙상 예방에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "침대 낙상 예방 핵심 판단 기준",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "침대 낙상 예방 뒤집기 전후 수면 공간 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/safety-bed-fall-prevention.webp",
+      "published_at": "2026-08-10T17:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 350,
+      "title": "작은 물건 삼킴 예방: 바닥 점검",
+      "subtitle": "작은 물건 삼킴 예방과 바닥 점검 루틴",
+      "slug": "safety-small-object-scan",
+      "main_keyword": "작은 물건 삼킴 예방",
+      "related_keywords": [
+        "바닥 점검",
+        "질식 예방"
+      ],
+      "expanded_keywords": [
+        "작은 물건 삼킴 예방",
+        "바닥 점검",
+        "질식 예방",
+        "작은 물건 삼킴 예방 체크리스트",
+        "작은 물건 삼킴 예방 질문"
+      ],
+      "search_intent": "작은 물건 삼킴 예방에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "작은 물건 삼킴 예방 핵심 판단 기준",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "작은 물건 삼킴 예방 바닥 점검 질식 예방 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/safety-small-object-scan.webp",
+      "published_at": "2026-08-10T22:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 351,
+      "title": "주방 아기 안전구역: 뜨거운 물",
+      "subtitle": "주방 아기 안전구역과 뜨거운 물 동선",
+      "slug": "safety-kitchen-baby-zone",
+      "main_keyword": "주방 아기 안전구역",
+      "related_keywords": [
+        "뜨거운 물",
+        "생활 안전"
+      ],
+      "expanded_keywords": [
+        "주방 아기 안전구역",
+        "뜨거운 물",
+        "생활 안전",
+        "주방 아기 안전구역 체크리스트",
+        "주방 아기 안전구역 질문"
+      ],
+      "search_intent": "주방 아기 안전구역에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "주방 아기 안전구역 핵심 판단 기준",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "주방 아기 안전구역 뜨거운 물 생활 안전 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/safety-kitchen-baby-zone.webp",
+      "published_at": "2026-08-11T03:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 352,
+      "title": "형제자매 놀이 규칙: 아기 보호",
+      "subtitle": "형제자매 놀이 규칙과 아기 보호 기준",
+      "slug": "safety-sibling-play-rule",
+      "main_keyword": "형제자매 놀이 규칙",
+      "related_keywords": [
+        "아기 보호",
+        "가족 안전"
+      ],
+      "expanded_keywords": [
+        "형제자매 놀이 규칙",
+        "아기 보호",
+        "가족 안전",
+        "형제자매 놀이 규칙 체크리스트",
+        "형제자매 놀이 규칙 질문"
+      ],
+      "search_intent": "형제자매 놀이 규칙에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "형제자매 놀이 규칙 핵심 판단 기준",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "형제자매 놀이 규칙 아기 보호 가족 안전 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/safety-sibling-play-rule.webp",
+      "published_at": "2026-08-11T08:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 353,
+      "title": "엘리베이터 유모차 이동: 문 끼임 예방",
+      "subtitle": "엘리베이터 유모차 이동과 문 끼임 예방",
+      "slug": "safety-elevator-stroller",
+      "main_keyword": "엘리베이터 유모차 이동",
+      "related_keywords": [
+        "문 끼임 예방",
+        "외출 동선"
+      ],
+      "expanded_keywords": [
+        "엘리베이터 유모차 이동",
+        "문 끼임 예방",
+        "외출 동선",
+        "엘리베이터 유모차 이동 체크리스트",
+        "엘리베이터 유모차 이동 질문"
+      ],
+      "search_intent": "엘리베이터 유모차 이동에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "엘리베이터 유모차 이동 핵심 판단 기준",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "엘리베이터 유모차 이동 문 끼임 예방 외출 동선 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/safety-elevator-stroller.webp",
+      "published_at": "2026-08-11T13:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 354,
+      "title": "미세먼지 외출 기준: 아기 호흡",
+      "subtitle": "미세먼지 외출 기준과 아기 호흡 관찰",
+      "slug": "safety-air-quality-outing",
+      "main_keyword": "미세먼지 외출 기준",
+      "related_keywords": [
+        "아기 호흡",
+        "외출 판단"
+      ],
+      "expanded_keywords": [
+        "미세먼지 외출 기준",
+        "아기 호흡",
+        "외출 판단",
+        "미세먼지 외출 기준 체크리스트",
+        "미세먼지 외출 기준 질문"
+      ],
+      "search_intent": "미세먼지 외출 기준에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "미세먼지 외출 기준 핵심 판단 기준",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "미세먼지 외출 기준 아기 호흡 외출 판단 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/safety-air-quality-outing.webp",
+      "published_at": "2026-08-11T18:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 355,
+      "title": "여름 아기 더위 대처: 탈수 신호",
+      "subtitle": "여름 아기 더위 대처와 탈수 신호 확인",
+      "slug": "safety-summer-heat-baby",
+      "main_keyword": "여름 아기 더위 대처",
+      "related_keywords": [
+        "탈수 신호",
+        "실내 온도"
+      ],
+      "expanded_keywords": [
+        "여름 아기 더위 대처",
+        "탈수 신호",
+        "실내 온도",
+        "여름 아기 더위 대처 체크리스트",
+        "여름 아기 더위 대처 질문"
+      ],
+      "search_intent": "여름 아기 더위 대처에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "여름 아기 더위 대처 핵심 판단 기준",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "여름 아기 더위 대처 탈수 신호 실내 온도 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/safety-summer-heat-baby.webp",
+      "published_at": "2026-08-11T23:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 356,
+      "title": "겨울 아기 옷 겹쳐입기: 땀 관찰",
+      "subtitle": "겨울 아기 옷 겹쳐입기와 땀 관찰",
+      "slug": "safety-winter-layering-baby",
+      "main_keyword": "겨울 아기 옷",
+      "related_keywords": [
+        "땀 관찰",
+        "체온 조절"
+      ],
+      "expanded_keywords": [
+        "겨울 아기 옷",
+        "땀 관찰",
+        "체온 조절",
+        "겨울 아기 옷 체크리스트",
+        "겨울 아기 옷 질문"
+      ],
+      "search_intent": "겨울 아기 옷에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "겨울 아기 옷 핵심 판단 기준",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "겨울 아기 옷 땀 관찰 체온 조절 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/safety-winter-layering-baby.webp",
+      "published_at": "2026-08-12T04:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 357,
+      "title": "아기와 숙소 점검: 침대 안전",
+      "subtitle": "아기와 숙소 점검과 침대 안전 확인",
+      "slug": "safety-hotel-baby-check",
+      "main_keyword": "아기와 숙소 점검",
+      "related_keywords": [
+        "침대 안전",
+        "여행 준비"
+      ],
+      "expanded_keywords": [
+        "아기와 숙소 점검",
+        "침대 안전",
+        "여행 준비",
+        "아기와 숙소 점검 체크리스트",
+        "아기와 숙소 점검 질문"
+      ],
+      "search_intent": "아기와 숙소 점검에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "아기와 숙소 점검 핵심 판단 기준",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "아기와 숙소 점검 침대 안전 여행 준비 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/safety-hotel-baby-check.webp",
+      "published_at": "2026-08-12T09:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 358,
+      "title": "아기 응급가방 구성: 병원 연락처",
+      "subtitle": "아기 응급가방 구성과 병원 연락처 정리",
+      "slug": "safety-emergency-bag",
+      "main_keyword": "아기 응급가방",
+      "related_keywords": [
+        "병원 연락처",
+        "응급 준비"
+      ],
+      "expanded_keywords": [
+        "아기 응급가방",
+        "병원 연락처",
+        "응급 준비",
+        "아기 응급가방 체크리스트",
+        "아기 응급가방 질문"
+      ],
+      "search_intent": "아기 응급가방에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "아기 응급가방 핵심 판단 기준",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "아기 응급가방 병원 연락처 응급 준비 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/safety-emergency-bag.webp",
+      "published_at": "2026-08-12T14:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 359,
+      "title": "홈캠 사용 경계: 개인정보 보호",
+      "subtitle": "홈캠 사용 경계와 개인정보 보호 기준",
+      "slug": "safety-home-camera-boundary",
+      "main_keyword": "홈캠 사용 경계",
+      "related_keywords": [
+        "개인정보 보호",
+        "돌봄 확인"
+      ],
+      "expanded_keywords": [
+        "홈캠 사용 경계",
+        "개인정보 보호",
+        "돌봄 확인",
+        "홈캠 사용 경계 체크리스트",
+        "홈캠 사용 경계 질문"
+      ],
+      "search_intent": "홈캠 사용 경계에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "홈캠 사용 경계 핵심 판단 기준",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "홈캠 사용 경계 개인정보 보호 돌봄 확인 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/safety-home-camera-boundary.webp",
+      "published_at": "2026-08-12T19:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 360,
+      "title": "장난감 연령표시 확인: 작은 부품",
+      "subtitle": "장난감 연령표시와 작은 부품 점검",
+      "slug": "safety-toy-age-label",
+      "main_keyword": "장난감 연령표시",
+      "related_keywords": [
+        "작은 부품",
+        "놀이 안전"
+      ],
+      "expanded_keywords": [
+        "장난감 연령표시",
+        "작은 부품",
+        "놀이 안전",
+        "장난감 연령표시 체크리스트",
+        "장난감 연령표시 질문"
+      ],
+      "search_intent": "장난감 연령표시에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "장난감 연령표시 핵심 판단 기준",
+      "recommended_format": "생활관리",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "checklist",
+        "steps",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "생활관리 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "장난감 연령표시 작은 부품 놀이 안전 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/safety-toy-age-label.webp",
+      "published_at": "2026-08-13T00:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 361,
+      "title": "아기 첫해 지출표: 월별 고정비",
+      "subtitle": "아기 첫해 지출표와 월별 고정비 정리",
+      "slug": "budget-first-year-baby-cost",
+      "main_keyword": "아기 첫해 지출표",
+      "related_keywords": [
+        "월별 고정비",
+        "육아 예산"
+      ],
+      "expanded_keywords": [
+        "아기 첫해 지출표",
+        "월별 고정비",
+        "육아 예산",
+        "아기 첫해 지출표 체크리스트",
+        "아기 첫해 지출표 질문"
+      ],
+      "search_intent": "아기 첫해 지출표에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "아기 첫해 지출표 상담 전 기준",
+      "recommended_format": "정부지원",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "정부지원 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "아기 첫해 지출표 월별 고정비 육아 예산 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내",
+        "임신육아종합포털 아이사랑",
+        "복지로 임신·출산 지원 서비스"
+      ],
+      "thumbnail": "/blog-thumbnails/budget-first-year-baby-cost.webp",
+      "published_at": "2026-08-13T05:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 362,
+      "title": "기저귀 분유 비용 비교: 구매 주기",
+      "subtitle": "기저귀 분유 비용 비교와 구매 주기 계산",
+      "slug": "budget-diaper-formula-compare",
+      "main_keyword": "기저귀 분유 비용",
+      "related_keywords": [
+        "구매 주기",
+        "소모품 예산"
+      ],
+      "expanded_keywords": [
+        "기저귀 분유 비용",
+        "구매 주기",
+        "소모품 예산",
+        "기저귀 분유 비용 체크리스트",
+        "기저귀 분유 비용 질문"
+      ],
+      "search_intent": "기저귀 분유 비용에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "기저귀 분유 비용 상담 전 기준",
+      "recommended_format": "정부지원",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "정부지원 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "기저귀 분유 비용 구매 주기 소모품 예산 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내",
+        "임신육아종합포털 아이사랑",
+        "복지로 임신·출산 지원 서비스"
+      ],
+      "thumbnail": "/blog-thumbnails/budget-diaper-formula-compare.webp",
+      "published_at": "2026-08-13T10:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 363,
+      "title": "부모급여 지급일 달력: 보육료 전환",
+      "subtitle": "부모급여 지급일 달력과 보육료 전환",
+      "slug": "budget-parent-benefit-calendar",
+      "main_keyword": "부모급여 지급일",
+      "related_keywords": [
+        "보육료 전환",
+        "정부지원"
+      ],
+      "expanded_keywords": [
+        "부모급여 지급일",
+        "보육료 전환",
+        "정부지원",
+        "부모급여 지급일 체크리스트",
+        "부모급여 지급일 질문"
+      ],
+      "search_intent": "부모급여 지급일에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "부모급여 지급일 상담 전 기준",
+      "recommended_format": "정부지원",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "정부지원 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "부모급여 지급일 보육료 전환 정부지원 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내",
+        "임신육아종합포털 아이사랑",
+        "복지로 임신·출산 지원 서비스"
+      ],
+      "thumbnail": "/blog-thumbnails/budget-parent-benefit-calendar.webp",
+      "published_at": "2026-08-13T15:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 364,
+      "title": "아동수당 확인표: 계좌 변경",
+      "subtitle": "아동수당 확인표와 계좌 변경 점검",
+      "slug": "budget-child-allowance-check",
+      "main_keyword": "아동수당 확인표",
+      "related_keywords": [
+        "계좌 변경",
+        "복지 신청"
+      ],
+      "expanded_keywords": [
+        "아동수당 확인표",
+        "계좌 변경",
+        "복지 신청",
+        "아동수당 확인표 체크리스트",
+        "아동수당 확인표 질문"
+      ],
+      "search_intent": "아동수당 확인표에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "아동수당 확인표 상담 전 기준",
+      "recommended_format": "정부지원",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "정부지원 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "아동수당 확인표 계좌 변경 복지 신청 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내",
+        "임신육아종합포털 아이사랑",
+        "복지로 임신·출산 지원 서비스"
+      ],
+      "thumbnail": "/blog-thumbnails/budget-child-allowance-check.webp",
+      "published_at": "2026-08-13T20:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 365,
+      "title": "어린이집 추가비용 질문: 특별활동비",
+      "subtitle": "어린이집 추가비용과 특별활동비 확인",
+      "slug": "budget-daycare-extra-fee",
+      "main_keyword": "어린이집 추가비용",
+      "related_keywords": [
+        "특별활동비",
+        "보육 예산"
+      ],
+      "expanded_keywords": [
+        "어린이집 추가비용",
+        "특별활동비",
+        "보육 예산",
+        "어린이집 추가비용 체크리스트",
+        "어린이집 추가비용 질문"
+      ],
+      "search_intent": "어린이집 추가비용에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "어린이집 추가비용 상담 전 기준",
+      "recommended_format": "정부지원",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "정부지원 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "어린이집 추가비용 특별활동비 보육 예산 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내",
+        "임신육아종합포털 아이사랑",
+        "복지로 임신·출산 지원 서비스"
+      ],
+      "thumbnail": "/blog-thumbnails/budget-daycare-extra-fee.webp",
+      "published_at": "2026-08-14T01:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 366,
+      "title": "산후도우미 비용 계산: 본인부담금",
+      "subtitle": "산후도우미 비용 계산과 본인부담금 확인",
+      "slug": "budget-postpartum-helper-cost",
+      "main_keyword": "산후도우미 비용",
+      "related_keywords": [
+        "본인부담금",
+        "지원 등급"
+      ],
+      "expanded_keywords": [
+        "산후도우미 비용",
+        "본인부담금",
+        "지원 등급",
+        "산후도우미 비용 체크리스트",
+        "산후도우미 비용 질문"
+      ],
+      "search_intent": "산후도우미 비용에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "산후도우미 비용 상담 전 기준",
+      "recommended_format": "정부지원",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "정부지원 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "산후도우미 비용 본인부담금 지원 등급 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내",
+        "임신육아종합포털 아이사랑",
+        "복지로 임신·출산 지원 서비스"
+      ],
+      "thumbnail": "/blog-thumbnails/budget-postpartum-helper-cost.webp",
+      "published_at": "2026-08-14T06:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 367,
+      "title": "출산축하금 주소지 확인: 신청 기한",
+      "subtitle": "출산축하금 주소지와 신청 기한 점검",
+      "slug": "budget-local-childbirth-cash",
+      "main_keyword": "출산축하금 주소지",
+      "related_keywords": [
+        "신청 기한",
+        "전입 기준"
+      ],
+      "expanded_keywords": [
+        "출산축하금 주소지",
+        "신청 기한",
+        "전입 기준",
+        "출산축하금 주소지 체크리스트",
+        "출산축하금 주소지 질문"
+      ],
+      "search_intent": "출산축하금 주소지에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "출산축하금 주소지 상담 전 기준",
+      "recommended_format": "정부지원",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "정부지원 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "출산축하금 주소지 신청 기한 전입 기준 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내",
+        "임신육아종합포털 아이사랑",
+        "복지로 임신·출산 지원 서비스"
+      ],
+      "thumbnail": "/blog-thumbnails/budget-local-childbirth-cash.webp",
+      "published_at": "2026-08-14T11:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 368,
+      "title": "아기 의료비 영수증 파일: 보험 청구",
+      "subtitle": "아기 의료비 영수증 파일과 보험 청구 정리",
+      "slug": "budget-medical-receipt-folder",
+      "main_keyword": "아기 의료비 영수증",
+      "related_keywords": [
+        "보험 청구",
+        "병원비 관리"
+      ],
+      "expanded_keywords": [
+        "아기 의료비 영수증",
+        "보험 청구",
+        "병원비 관리",
+        "아기 의료비 영수증 체크리스트",
+        "아기 의료비 영수증 질문"
+      ],
+      "search_intent": "아기 의료비 영수증에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "아기 의료비 영수증 상담 전 기준",
+      "recommended_format": "정부지원",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "정부지원 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "아기 의료비 영수증 보험 청구 병원비 관리 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내",
+        "임신육아종합포털 아이사랑",
+        "복지로 임신·출산 지원 서비스"
+      ],
+      "thumbnail": "/blog-thumbnails/budget-medical-receipt-folder.webp",
+      "published_at": "2026-08-14T16:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 369,
+      "title": "육아용품 중고 구매 기준: 안전 확인",
+      "subtitle": "육아용품 중고 구매 기준과 안전 확인",
+      "slug": "budget-used-baby-gear",
+      "main_keyword": "육아용품 중고 구매",
+      "related_keywords": [
+        "안전 확인",
+        "절약 예산"
+      ],
+      "expanded_keywords": [
+        "육아용품 중고 구매",
+        "안전 확인",
+        "절약 예산",
+        "육아용품 중고 구매 체크리스트",
+        "육아용품 중고 구매 질문"
+      ],
+      "search_intent": "육아용품 중고 구매에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "육아용품 중고 구매 상담 전 기준",
+      "recommended_format": "정부지원",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "정부지원 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "육아용품 중고 구매 안전 확인 절약 예산 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내",
+        "임신육아종합포털 아이사랑",
+        "복지로 임신·출산 지원 서비스"
+      ],
+      "thumbnail": "/blog-thumbnails/budget-used-baby-gear.webp",
+      "published_at": "2026-08-14T21:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 370,
+      "title": "가족 돌봄 사례비 정리: 역할 경계",
+      "subtitle": "가족 돌봄 사례비와 역할 경계 합의",
+      "slug": "budget-family-help-cost",
+      "main_keyword": "가족 돌봄 사례비",
+      "related_keywords": [
+        "역할 경계",
+        "돌봄 비용"
+      ],
+      "expanded_keywords": [
+        "가족 돌봄 사례비",
+        "역할 경계",
+        "돌봄 비용",
+        "가족 돌봄 사례비 체크리스트",
+        "가족 돌봄 사례비 질문"
+      ],
+      "search_intent": "가족 돌봄 사례비에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "가족 돌봄 사례비 상담 전 기준",
+      "recommended_format": "정부지원",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "정부지원 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "가족 돌봄 사례비 역할 경계 돌봄 비용 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내",
+        "임신육아종합포털 아이사랑",
+        "복지로 임신·출산 지원 서비스"
+      ],
+      "thumbnail": "/blog-thumbnails/budget-family-help-cost.webp",
+      "published_at": "2026-08-15T02:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 371,
+      "title": "유료 예방접종 비용표: 병원 상담",
+      "subtitle": "유료 예방접종 비용표와 병원 상담 질문",
+      "slug": "budget-vaccine-paid-list",
+      "main_keyword": "유료 예방접종 비용",
+      "related_keywords": [
+        "병원 상담",
+        "접종 계획"
+      ],
+      "expanded_keywords": [
+        "유료 예방접종 비용",
+        "병원 상담",
+        "접종 계획",
+        "유료 예방접종 비용 체크리스트",
+        "유료 예방접종 비용 질문"
+      ],
+      "search_intent": "유료 예방접종 비용에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "유료 예방접종 비용 상담 전 기준",
+      "recommended_format": "정부지원",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "정부지원 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "유료 예방접종 비용 병원 상담 접종 계획 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내",
+        "임신육아종합포털 아이사랑",
+        "복지로 임신·출산 지원 서비스"
+      ],
+      "thumbnail": "/blog-thumbnails/budget-vaccine-paid-list.webp",
+      "published_at": "2026-08-15T07:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 372,
+      "title": "아기 응급의료비 예비비: 야간진료",
+      "subtitle": "아기 응급의료비 예비비와 야간진료 대비",
+      "slug": "budget-emergency-medical-fund",
+      "main_keyword": "아기 응급의료비",
+      "related_keywords": [
+        "야간진료",
+        "예비비"
+      ],
+      "expanded_keywords": [
+        "아기 응급의료비",
+        "야간진료",
+        "예비비",
+        "아기 응급의료비 체크리스트",
+        "아기 응급의료비 질문"
+      ],
+      "search_intent": "아기 응급의료비에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "아기 응급의료비 상담 전 기준",
+      "recommended_format": "정부지원",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "정부지원 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "아기 응급의료비 야간진료 예비비 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내",
+        "임신육아종합포털 아이사랑",
+        "복지로 임신·출산 지원 서비스"
+      ],
+      "thumbnail": "/blog-thumbnails/budget-emergency-medical-fund.webp",
+      "published_at": "2026-08-15T12:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 373,
+      "title": "육아휴직 소득공백 계산: 생활비 조정",
+      "subtitle": "육아휴직 소득공백과 생활비 조정",
+      "slug": "budget-childcare-leave-income",
+      "main_keyword": "육아휴직 소득공백",
+      "related_keywords": [
+        "생활비 조정",
+        "가계 계획"
+      ],
+      "expanded_keywords": [
+        "육아휴직 소득공백",
+        "생활비 조정",
+        "가계 계획",
+        "육아휴직 소득공백 체크리스트",
+        "육아휴직 소득공백 질문"
+      ],
+      "search_intent": "육아휴직 소득공백에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "육아휴직 소득공백 상담 전 기준",
+      "recommended_format": "정부지원",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "정부지원 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "육아휴직 소득공백 생활비 조정 가계 계획 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내",
+        "임신육아종합포털 아이사랑",
+        "복지로 임신·출산 지원 서비스"
+      ],
+      "thumbnail": "/blog-thumbnails/budget-childcare-leave-income.webp",
+      "published_at": "2026-08-15T17:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 374,
+      "title": "어린이보험료 상한 정하기: 양육비 균형",
+      "subtitle": "어린이보험료 상한과 양육비 균형",
+      "slug": "budget-insurance-premium-cap",
+      "main_keyword": "어린이보험료 상한",
+      "related_keywords": [
+        "양육비 균형",
+        "보험 예산"
+      ],
+      "expanded_keywords": [
+        "어린이보험료 상한",
+        "양육비 균형",
+        "보험 예산",
+        "어린이보험료 상한 체크리스트",
+        "어린이보험료 상한 질문"
+      ],
+      "search_intent": "어린이보험료 상한에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "어린이보험료 상한 상담 전 기준",
+      "recommended_format": "정부지원",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "정부지원 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "어린이보험료 상한 양육비 균형 보험 예산 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내",
+        "임신육아종합포털 아이사랑",
+        "복지로 임신·출산 지원 서비스"
+      ],
+      "thumbnail": "/blog-thumbnails/budget-insurance-premium-cap.webp",
+      "published_at": "2026-08-15T22:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 375,
+      "title": "육아비 월말정산 루틴: 구매 계획",
+      "subtitle": "육아비 월말정산과 다음 달 구매 계획",
+      "slug": "budget-monthly-review-routine",
+      "main_keyword": "육아비 월말정산",
+      "related_keywords": [
+        "구매 계획",
+        "가계 루틴"
+      ],
+      "expanded_keywords": [
+        "육아비 월말정산",
+        "구매 계획",
+        "가계 루틴",
+        "육아비 월말정산 체크리스트",
+        "육아비 월말정산 질문"
+      ],
+      "search_intent": "육아비 월말정산에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "육아비 월말정산 상담 전 기준",
+      "recommended_format": "정부지원",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "정부지원 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "육아비 월말정산 구매 계획 가계 루틴 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내",
+        "임신육아종합포털 아이사랑",
+        "복지로 임신·출산 지원 서비스"
+      ],
+      "thumbnail": "/blog-thumbnails/budget-monthly-review-routine.webp",
+      "published_at": "2026-08-16T03:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 376,
+      "title": "어린이 입원비 청구 질문: 진단서 발급",
+      "subtitle": "어린이 입원비 청구와 진단서 발급 기준",
+      "slug": "insurance-child-hospitalization-claim",
+      "main_keyword": "어린이 입원비 청구",
+      "related_keywords": [
+        "진단서 발급",
+        "보험금 서류"
+      ],
+      "expanded_keywords": [
+        "어린이 입원비 청구",
+        "진단서 발급",
+        "보험금 서류",
+        "어린이 입원비 청구 체크리스트",
+        "어린이 입원비 청구 질문"
+      ],
+      "search_intent": "어린이 입원비 청구에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "어린이 입원비 청구 상담 전 기준",
+      "recommended_format": "태아보험",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "태아보험 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "어린이 입원비 청구 진단서 발급 보험금 서류 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내"
+      ],
+      "thumbnail": "/blog-thumbnails/insurance-child-hospitalization-claim.webp",
+      "published_at": "2026-08-16T08:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 377,
+      "title": "아기 통원비 청구 한도: 영수증 정리",
+      "subtitle": "아기 통원비 청구 한도와 영수증 정리",
+      "slug": "insurance-outpatient-claim-limit",
+      "main_keyword": "아기 통원비 청구",
+      "related_keywords": [
+        "영수증 정리",
+        "보장 한도"
+      ],
+      "expanded_keywords": [
+        "아기 통원비 청구",
+        "영수증 정리",
+        "보장 한도",
+        "아기 통원비 청구 체크리스트",
+        "아기 통원비 청구 질문"
+      ],
+      "search_intent": "아기 통원비 청구에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "아기 통원비 청구 상담 전 기준",
+      "recommended_format": "태아보험",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "태아보험 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "아기 통원비 청구 영수증 정리 보장 한도 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내"
+      ],
+      "thumbnail": "/blog-thumbnails/insurance-outpatient-claim-limit.webp",
+      "published_at": "2026-08-16T13:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 378,
+      "title": "어린이보험 특약 중복: 보장 공백",
+      "subtitle": "어린이보험 특약 중복과 보장 공백 비교",
+      "slug": "insurance-rider-overlap-review",
+      "main_keyword": "어린이보험 특약 중복",
+      "related_keywords": [
+        "보장 공백",
+        "증권 점검"
+      ],
+      "expanded_keywords": [
+        "어린이보험 특약 중복",
+        "보장 공백",
+        "증권 점검",
+        "어린이보험 특약 중복 체크리스트",
+        "어린이보험 특약 중복 질문"
+      ],
+      "search_intent": "어린이보험 특약 중복에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "어린이보험 특약 중복 상담 전 기준",
+      "recommended_format": "태아보험",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "태아보험 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "어린이보험 특약 중복 보장 공백 증권 점검 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내"
+      ],
+      "thumbnail": "/blog-thumbnails/insurance-rider-overlap-review.webp",
+      "published_at": "2026-08-16T18:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 379,
+      "title": "보험료 납입일 관리: 자동이체 계좌",
+      "subtitle": "보험료 납입일 관리와 자동이체 계좌 확인",
+      "slug": "insurance-premium-payment-day",
+      "main_keyword": "보험료 납입일",
+      "related_keywords": [
+        "자동이체 계좌",
+        "계약 유지"
+      ],
+      "expanded_keywords": [
+        "보험료 납입일",
+        "자동이체 계좌",
+        "계약 유지",
+        "보험료 납입일 체크리스트",
+        "보험료 납입일 질문"
+      ],
+      "search_intent": "보험료 납입일에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "보험료 납입일 상담 전 기준",
+      "recommended_format": "태아보험",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "태아보험 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "보험료 납입일 자동이체 계좌 계약 유지 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내"
+      ],
+      "thumbnail": "/blog-thumbnails/insurance-premium-payment-day.webp",
+      "published_at": "2026-08-16T23:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 380,
+      "title": "보험서류 발급비용 확인: 청구 실익",
+      "subtitle": "보험서류 발급비용과 청구 실익 비교",
+      "slug": "insurance-medical-document-fee",
+      "main_keyword": "보험서류 발급비용",
+      "related_keywords": [
+        "청구 실익",
+        "진료기록"
+      ],
+      "expanded_keywords": [
+        "보험서류 발급비용",
+        "청구 실익",
+        "진료기록",
+        "보험서류 발급비용 체크리스트",
+        "보험서류 발급비용 질문"
+      ],
+      "search_intent": "보험서류 발급비용에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "보험서류 발급비용 상담 전 기준",
+      "recommended_format": "태아보험",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "태아보험 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "보험서류 발급비용 청구 실익 진료기록 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내"
+      ],
+      "thumbnail": "/blog-thumbnails/insurance-medical-document-fee.webp",
+      "published_at": "2026-08-17T04:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 381,
+      "title": "보험금 거절 메모: 약관 근거",
+      "subtitle": "보험금 거절 메모와 약관 근거 질문",
+      "slug": "insurance-claim-denied-note",
+      "main_keyword": "보험금 거절 메모",
+      "related_keywords": [
+        "약관 근거",
+        "이의 절차"
+      ],
+      "expanded_keywords": [
+        "보험금 거절 메모",
+        "약관 근거",
+        "이의 절차",
+        "보험금 거절 메모 체크리스트",
+        "보험금 거절 메모 질문"
+      ],
+      "search_intent": "보험금 거절 메모에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "보험금 거절 메모 상담 전 기준",
+      "recommended_format": "태아보험",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "태아보험 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "보험금 거절 메모 약관 근거 이의 절차 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내"
+      ],
+      "thumbnail": "/blog-thumbnails/insurance-claim-denied-note.webp",
+      "published_at": "2026-08-17T09:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 382,
+      "title": "발달검사 보장 질문: 검사비 청구",
+      "subtitle": "발달검사 보장 질문과 검사비 청구 가능성",
+      "slug": "insurance-growth-checkup-rider",
+      "main_keyword": "발달검사 보장",
+      "related_keywords": [
+        "검사비 청구",
+        "특약 확인"
+      ],
+      "expanded_keywords": [
+        "발달검사 보장",
+        "검사비 청구",
+        "특약 확인",
+        "발달검사 보장 체크리스트",
+        "발달검사 보장 질문"
+      ],
+      "search_intent": "발달검사 보장에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "발달검사 보장 상담 전 기준",
+      "recommended_format": "태아보험",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "태아보험 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "발달검사 보장 검사비 청구 특약 확인 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내"
+      ],
+      "thumbnail": "/blog-thumbnails/insurance-growth-checkup-rider.webp",
+      "published_at": "2026-08-17T14:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 383,
+      "title": "응급실 진료비 청구: 야간진료 서류",
+      "subtitle": "응급실 진료비 청구와 야간진료 서류",
+      "slug": "insurance-emergency-room-claim",
+      "main_keyword": "응급실 진료비 청구",
+      "related_keywords": [
+        "야간진료 서류",
+        "보험 청구"
+      ],
+      "expanded_keywords": [
+        "응급실 진료비 청구",
+        "야간진료 서류",
+        "보험 청구",
+        "응급실 진료비 청구 체크리스트",
+        "응급실 진료비 청구 질문"
+      ],
+      "search_intent": "응급실 진료비 청구에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "응급실 진료비 청구 상담 전 기준",
+      "recommended_format": "태아보험",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "태아보험 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "응급실 진료비 청구 야간진료 서류 보험 청구 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내"
+      ],
+      "thumbnail": "/blog-thumbnails/insurance-emergency-room-claim.webp",
+      "published_at": "2026-08-17T19:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 384,
+      "title": "보험 수익자 확인: 가족 정보 변경",
+      "subtitle": "보험 수익자 확인과 가족 정보 변경",
+      "slug": "insurance-policy-beneficiary-check",
+      "main_keyword": "보험 수익자 확인",
+      "related_keywords": [
+        "가족 정보 변경",
+        "계약 관리"
+      ],
+      "expanded_keywords": [
+        "보험 수익자 확인",
+        "가족 정보 변경",
+        "계약 관리",
+        "보험 수익자 확인 체크리스트",
+        "보험 수익자 확인 질문"
+      ],
+      "search_intent": "보험 수익자 확인에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "보험 수익자 확인 상담 전 기준",
+      "recommended_format": "태아보험",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "태아보험 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "보험 수익자 확인 가족 정보 변경 계약 관리 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내"
+      ],
+      "thumbnail": "/blog-thumbnails/insurance-policy-beneficiary-check.webp",
+      "published_at": "2026-08-18T00:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 385,
+      "title": "어린이보험 연간점검: 의료이력 업데이트",
+      "subtitle": "어린이보험 연간점검과 의료이력 업데이트",
+      "slug": "insurance-annual-review-calendar",
+      "main_keyword": "어린이보험 연간점검",
+      "related_keywords": [
+        "의료이력 업데이트",
+        "보장 조정"
+      ],
+      "expanded_keywords": [
+        "어린이보험 연간점검",
+        "의료이력 업데이트",
+        "보장 조정",
+        "어린이보험 연간점검 체크리스트",
+        "어린이보험 연간점검 질문"
+      ],
+      "search_intent": "어린이보험 연간점검에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "어린이보험 연간점검 상담 전 기준",
+      "recommended_format": "태아보험",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "compare",
+        "checklist",
+        "warning",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "태아보험 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "어린이보험 연간점검 의료이력 업데이트 보장 조정 공식 안내",
+      "source_hint": [
+        "보건복지부 임신·출산진료비지원사업",
+        "국민건강보험공단 임신·출산 진료비 지원 안내"
+      ],
+      "thumbnail": "/blog-thumbnails/insurance-annual-review-calendar.webp",
+      "published_at": "2026-08-18T05:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 386,
+      "title": "제왕절개 후 다음 임신: 회복 기간 상담",
+      "subtitle": "제왕절개 후 다음 임신과 회복 기간 상담",
+      "slug": "next-pregnancy-after-csection",
+      "main_keyword": "제왕절개 후 다음 임신",
+      "related_keywords": [
+        "회복 기간 상담",
+        "분만 계획"
+      ],
+      "expanded_keywords": [
+        "제왕절개 후 다음 임신",
+        "회복 기간 상담",
+        "분만 계획",
+        "제왕절개 후 다음 임신 체크리스트",
+        "제왕절개 후 다음 임신 질문"
+      ],
+      "search_intent": "제왕절개 후 다음 임신에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "제왕절개 후 다음 임신 실행 순서",
+      "recommended_format": "주차별 임신",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "주차별 임신 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "제왕절개 후 다음 임신 회복 기간 상담 분만 계획 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/next-pregnancy-after-csection.webp",
+      "published_at": "2026-08-18T10:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 387,
+      "title": "수유 중 생리와 임신: 피임 상담",
+      "subtitle": "수유 중 생리와 피임 상담 기준",
+      "slug": "next-pregnancy-breastfeeding-period",
+      "main_keyword": "수유 중 생리",
+      "related_keywords": [
+        "피임 상담",
+        "다음 임신"
+      ],
+      "expanded_keywords": [
+        "수유 중 생리",
+        "피임 상담",
+        "다음 임신",
+        "수유 중 생리 체크리스트",
+        "수유 중 생리 질문"
+      ],
+      "search_intent": "수유 중 생리에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "수유 중 생리 실행 순서",
+      "recommended_format": "주차별 임신",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "주차별 임신 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "수유 중 생리 피임 상담 다음 임신 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/next-pregnancy-breastfeeding-period.webp",
+      "published_at": "2026-08-18T15:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 388,
+      "title": "둘째 준비 엽산 시작: 산전검사 확인",
+      "subtitle": "둘째 준비 엽산 시작과 산전검사 확인",
+      "slug": "next-pregnancy-folic-acid-restart",
+      "main_keyword": "둘째 준비 엽산",
+      "related_keywords": [
+        "산전검사 확인",
+        "임신 준비"
+      ],
+      "expanded_keywords": [
+        "둘째 준비 엽산",
+        "산전검사 확인",
+        "임신 준비",
+        "둘째 준비 엽산 체크리스트",
+        "둘째 준비 엽산 질문"
+      ],
+      "search_intent": "둘째 준비 엽산에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "둘째 준비 엽산 실행 순서",
+      "recommended_format": "주차별 임신",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "주차별 임신 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "둘째 준비 엽산 산전검사 확인 임신 준비 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/next-pregnancy-folic-acid-restart.webp",
+      "published_at": "2026-08-18T20:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 389,
+      "title": "터울 계획 체크리스트: 육아 부담",
+      "subtitle": "터울 계획 체크리스트와 육아 부담 계산",
+      "slug": "next-pregnancy-age-gap-plan",
+      "main_keyword": "터울 계획",
+      "related_keywords": [
+        "육아 부담",
+        "가족 계획"
+      ],
+      "expanded_keywords": [
+        "터울 계획",
+        "육아 부담",
+        "가족 계획",
+        "터울 계획 체크리스트",
+        "터울 계획 질문"
+      ],
+      "search_intent": "터울 계획에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "터울 계획 실행 순서",
+      "recommended_format": "주차별 임신",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "주차별 임신 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "터울 계획 육아 부담 가족 계획 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/next-pregnancy-age-gap-plan.webp",
+      "published_at": "2026-08-19T01:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 390,
+      "title": "산후 체중과 다음 임신: 건강 상담",
+      "subtitle": "산후 체중과 다음 임신 전 건강 상담",
+      "slug": "next-pregnancy-postpartum-weight",
+      "main_keyword": "산후 체중",
+      "related_keywords": [
+        "건강 상담",
+        "임신 준비"
+      ],
+      "expanded_keywords": [
+        "산후 체중",
+        "건강 상담",
+        "임신 준비",
+        "산후 체중 체크리스트",
+        "산후 체중 질문"
+      ],
+      "search_intent": "산후 체중에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "산후 체중 실행 순서",
+      "recommended_format": "주차별 임신",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "주차별 임신 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "산후 체중 건강 상담 임신 준비 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/next-pregnancy-postpartum-weight.webp",
+      "published_at": "2026-08-19T06:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 391,
+      "title": "둘째 전 빈혈 재검: 철분 복용",
+      "subtitle": "둘째 전 빈혈 재검과 철분 복용 상담",
+      "slug": "next-pregnancy-anemia-recheck",
+      "main_keyword": "둘째 전 빈혈 재검",
+      "related_keywords": [
+        "철분 복용",
+        "혈액검사"
+      ],
+      "expanded_keywords": [
+        "둘째 전 빈혈 재검",
+        "철분 복용",
+        "혈액검사",
+        "둘째 전 빈혈 재검 체크리스트",
+        "둘째 전 빈혈 재검 질문"
+      ],
+      "search_intent": "둘째 전 빈혈 재검에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "둘째 전 빈혈 재검 실행 순서",
+      "recommended_format": "주차별 임신",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "주차별 임신 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "둘째 전 빈혈 재검 철분 복용 혈액검사 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/next-pregnancy-anemia-recheck.webp",
+      "published_at": "2026-08-19T11:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 392,
+      "title": "출산 후 갑상선 검사: 다음 임신 준비",
+      "subtitle": "출산 후 갑상선 검사와 다음 임신 준비",
+      "slug": "next-pregnancy-thyroid-check",
+      "main_keyword": "출산 후 갑상선 검사",
+      "related_keywords": [
+        "다음 임신 준비",
+        "호르몬 검사"
+      ],
+      "expanded_keywords": [
+        "출산 후 갑상선 검사",
+        "다음 임신 준비",
+        "호르몬 검사",
+        "출산 후 갑상선 검사 체크리스트",
+        "출산 후 갑상선 검사 질문"
+      ],
+      "search_intent": "출산 후 갑상선 검사에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "출산 후 갑상선 검사 실행 순서",
+      "recommended_format": "주차별 임신",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "주차별 임신 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "출산 후 갑상선 검사 다음 임신 준비 호르몬 검사 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/next-pregnancy-thyroid-check.webp",
+      "published_at": "2026-08-19T16:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 393,
+      "title": "임당 이력 다음 임신: 혈당검사 시기",
+      "subtitle": "임당 이력 다음 임신과 혈당검사 시기",
+      "slug": "next-pregnancy-diabetes-history",
+      "main_keyword": "임당 이력 다음 임신",
+      "related_keywords": [
+        "혈당검사 시기",
+        "산전관리"
+      ],
+      "expanded_keywords": [
+        "임당 이력 다음 임신",
+        "혈당검사 시기",
+        "산전관리",
+        "임당 이력 다음 임신 체크리스트",
+        "임당 이력 다음 임신 질문"
+      ],
+      "search_intent": "임당 이력 다음 임신에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "임당 이력 다음 임신 실행 순서",
+      "recommended_format": "주차별 임신",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "주차별 임신 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "임당 이력 다음 임신 혈당검사 시기 산전관리 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/next-pregnancy-diabetes-history.webp",
+      "published_at": "2026-08-19T21:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 394,
+      "title": "임신중독증 이력 상담: 재발 위험",
+      "subtitle": "임신중독증 이력 상담과 재발 위험 질문",
+      "slug": "next-pregnancy-preeclampsia-history",
+      "main_keyword": "임신중독증 이력",
+      "related_keywords": [
+        "재발 위험",
+        "고위험 관리"
+      ],
+      "expanded_keywords": [
+        "임신중독증 이력",
+        "재발 위험",
+        "고위험 관리",
+        "임신중독증 이력 체크리스트",
+        "임신중독증 이력 질문"
+      ],
+      "search_intent": "임신중독증 이력에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "임신중독증 이력 실행 순서",
+      "recommended_format": "주차별 임신",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "주차별 임신 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "임신중독증 이력 재발 위험 고위험 관리 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/next-pregnancy-preeclampsia-history.webp",
+      "published_at": "2026-08-20T02:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 395,
+      "title": "유산 후 다음 임신 준비: 진료 질문",
+      "subtitle": "유산 후 다음 임신 준비와 진료 질문",
+      "slug": "next-pregnancy-loss-aftercare",
+      "main_keyword": "유산 후 다음 임신",
+      "related_keywords": [
+        "진료 질문",
+        "회복 확인"
+      ],
+      "expanded_keywords": [
+        "유산 후 다음 임신",
+        "진료 질문",
+        "회복 확인",
+        "유산 후 다음 임신 체크리스트",
+        "유산 후 다음 임신 질문"
+      ],
+      "search_intent": "유산 후 다음 임신에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "유산 후 다음 임신 실행 순서",
+      "recommended_format": "주차별 임신",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "주차별 임신 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "유산 후 다음 임신 진료 질문 회복 확인 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/next-pregnancy-loss-aftercare.webp",
+      "published_at": "2026-08-20T07:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 396,
+      "title": "임신 전 예방접종 확인: 접종 간격",
+      "subtitle": "임신 전 예방접종 확인과 접종 간격",
+      "slug": "next-pregnancy-vaccine-check",
+      "main_keyword": "임신 전 예방접종",
+      "related_keywords": [
+        "접종 간격",
+        "임신 준비"
+      ],
+      "expanded_keywords": [
+        "임신 전 예방접종",
+        "접종 간격",
+        "임신 준비",
+        "임신 전 예방접종 체크리스트",
+        "임신 전 예방접종 질문"
+      ],
+      "search_intent": "임신 전 예방접종에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "임신 전 예방접종 실행 순서",
+      "recommended_format": "주차별 임신",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "주차별 임신 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "임신 전 예방접종 접종 간격 임신 준비 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/next-pregnancy-vaccine-check.webp",
+      "published_at": "2026-08-20T12:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 397,
+      "title": "임신 전 치과검진: 치료 일정",
+      "subtitle": "임신 전 치과검진과 치료 일정 조정",
+      "slug": "next-pregnancy-dental-check",
+      "main_keyword": "임신 전 치과검진",
+      "related_keywords": [
+        "치료 일정",
+        "건강 점검"
+      ],
+      "expanded_keywords": [
+        "임신 전 치과검진",
+        "치료 일정",
+        "건강 점검",
+        "임신 전 치과검진 체크리스트",
+        "임신 전 치과검진 질문"
+      ],
+      "search_intent": "임신 전 치과검진에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "임신 전 치과검진 실행 순서",
+      "recommended_format": "주차별 임신",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "주차별 임신 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "임신 전 치과검진 치료 일정 건강 점검 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/next-pregnancy-dental-check.webp",
+      "published_at": "2026-08-20T17:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 398,
+      "title": "임신 전 복용약 점검: 주치의 상담",
+      "subtitle": "임신 전 복용약 점검과 주치의 상담",
+      "slug": "next-pregnancy-medication-review",
+      "main_keyword": "임신 전 복용약",
+      "related_keywords": [
+        "주치의 상담",
+        "약물 확인"
+      ],
+      "expanded_keywords": [
+        "임신 전 복용약",
+        "주치의 상담",
+        "약물 확인",
+        "임신 전 복용약 체크리스트",
+        "임신 전 복용약 질문"
+      ],
+      "search_intent": "임신 전 복용약에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "임신 전 복용약 실행 순서",
+      "recommended_format": "주차별 임신",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "주차별 임신 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "임신 전 복용약 주치의 상담 약물 확인 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/next-pregnancy-medication-review.webp",
+      "published_at": "2026-08-20T22:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 399,
+      "title": "둘째 출산예산 계산: 소득공백",
+      "subtitle": "둘째 출산예산 계산과 육아휴직 소득공백",
+      "slug": "next-pregnancy-budget-second-child",
+      "main_keyword": "둘째 출산예산",
+      "related_keywords": [
+        "소득공백",
+        "가계 계획"
+      ],
+      "expanded_keywords": [
+        "둘째 출산예산",
+        "소득공백",
+        "가계 계획",
+        "둘째 출산예산 체크리스트",
+        "둘째 출산예산 질문"
+      ],
+      "search_intent": "둘째 출산예산에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "둘째 출산예산 실행 순서",
+      "recommended_format": "주차별 임신",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "주차별 임신 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "둘째 출산예산 소득공백 가계 계획 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/next-pregnancy-budget-second-child.webp",
+      "published_at": "2026-08-21T03:00:00.000Z",
+      "quality_score": 92
+    },
+    {
+      "order": 400,
+      "title": "둘째 출산 첫째 돌봄: 입원 기간",
+      "subtitle": "둘째 출산 첫째 돌봄과 입원 기간 계획",
+      "slug": "next-pregnancy-first-child-care",
+      "main_keyword": "둘째 출산 첫째 돌봄",
+      "related_keywords": [
+        "입원 기간",
+        "가족 지원"
+      ],
+      "expanded_keywords": [
+        "둘째 출산 첫째 돌봄",
+        "입원 기간",
+        "가족 지원",
+        "둘째 출산 첫째 돌봄 체크리스트",
+        "둘째 출산 첫째 돌봄 질문"
+      ],
+      "search_intent": "둘째 출산 첫째 돌봄에서 먼저 확인할 것은 무엇인가요?",
+      "persona_fit": "임신·출산 정보를 불안 조장 없이 체크리스트와 공식 확인 경로로 정리",
+      "duplicate_status": "new",
+      "cannibalization_status": "clear",
+      "next_content_angle": "둘째 출산 첫째 돌봄 실행 순서",
+      "recommended_format": "주차별 임신",
+      "supporting_elements": [
+        "toc",
+        "summary",
+        "steps",
+        "checklist",
+        "compare",
+        "source",
+        "faq",
+        "source_box",
+        "color_accent"
+      ],
+      "content_type_reason": "주차별 임신 검색 의도에 맞춰 목차, 직접답변, 확인 질문 중심으로 구성",
+      "research_seed": "둘째 출산 첫째 돌봄 입원 기간 가족 지원 공식 안내",
+      "source_hint": [
+        "임신육아종합포털 아이사랑",
+        "질병관리청 예방접종도우미",
+        "보건복지부 임신·출산진료비지원사업"
+      ],
+      "thumbnail": "/blog-thumbnails/next-pregnancy-first-child-care.webp",
+      "published_at": "2026-08-21T08:00:00.000Z",
       "quality_score": 92
     }
   ]

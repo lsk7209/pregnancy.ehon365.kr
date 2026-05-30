@@ -703,6 +703,127 @@ const familyHomePlans: readonly PlanTuple[] = [
   ["home-family-meeting", "육아 가족회의 안건", "육아 가족회의 안건과 역할 조정 문장", "육아 가족회의 안건", "역할 조정", "가족 소통"],
 ];
 
+const postpartumMindPlans: readonly PlanTuple[] = [
+  ["mind-postpartum-day-record", "산후 감정기록 시작법", "산후 감정기록과 상담 신호 체크", "산후 감정기록", "상담 신호", "기분 변화"],
+  ["mind-baby-blues-vs-depression", "베이비블루스 구분 기준", "베이비블루스와 산후우울 상담 기준", "베이비블루스", "산후우울 상담", "정서 회복"],
+  ["mind-partner-night-talk", "배우자 야간대화 규칙", "배우자 야간대화와 수유 분담 조정", "배우자 야간대화", "수유 분담", "가족 소통"],
+  ["mind-mother-guilt-check", "육아 죄책감 다루기", "육아 죄책감과 도움 요청 문장", "육아 죄책감", "도움 요청", "정서 부담"],
+  ["mind-postpartum-anxiety-list", "산후 불안 목록 정리", "산후 불안 목록과 병원 상담 질문", "산후 불안 목록", "병원 상담", "불안 신호"],
+  ["mind-grandparent-boundary", "조부모 육아간섭 경계", "조부모 육아간섭과 가족 규칙 합의", "조부모 육아간섭", "가족 규칙", "관계 조정"],
+  ["mind-sleep-deprivation-irritability", "수면부족 짜증 대처", "수면부족 짜증과 보호자 교대 기준", "수면부족 짜증", "보호자 교대", "휴식 계획"],
+  ["mind-postpartum-counseling-route", "산후 상담기관 찾기", "산후 상담기관과 정신건강복지센터 연결", "산후 상담기관", "정신건강복지센터", "상담 예약"],
+  ["mind-single-mom-support-talk", "혼자 돌보는 산모 지원", "혼자 돌보는 산모와 긴급 도움 요청", "혼자 돌보는 산모", "긴급 도움", "돌봄 공백"],
+  ["mind-return-work-emotion", "복직 전 감정정리", "복직 전 감정정리와 돌봄 불안 낮추기", "복직 전 감정정리", "돌봄 불안", "업무 복귀"],
+  ["mind-birth-memory-rewrite", "출산 기억 정리법", "출산 기억 정리와 트라우마 상담 기준", "출산 기억 정리", "트라우마 상담", "회복 기록"],
+  ["mind-postpartum-couple-conflict", "산후 부부갈등 대화", "산후 부부갈등과 역할 분담 문장", "산후 부부갈등", "역할 분담", "대화 규칙"],
+  ["mind-mom-alone-time", "산모 혼자있는 시간", "산모 혼자있는 시간과 보호자 교대표", "산모 혼자있는 시간", "보호자 교대표", "회복 시간"],
+  ["mind-postpartum-body-image", "산후 몸 변화 받아들이기", "산후 몸 변화와 운동 재개 상담", "산후 몸 변화", "운동 재개 상담", "자기돌봄"],
+  ["mind-emergency-mental-signal", "산후 정서 응급신호", "산후 정서 응급신호와 즉시 도움 요청", "산후 정서 응급신호", "즉시 도움", "위기 대응"],
+];
+
+const babyObservationPlans: readonly PlanTuple[] = [
+  ["baby-fever-first-response", "아기 첫 발열 대처", "아기 첫 발열과 체온 기록 기준", "아기 첫 발열", "체온 기록", "진료 문의"],
+  ["baby-cough-breathing-check", "아기 기침 호흡 확인", "아기 기침 호흡과 응급 신호 구분", "아기 기침 호흡", "응급 신호", "호흡 관찰"],
+  ["baby-vomit-vs-reflux", "아기 구토 역류 구분", "아기 구토 역류와 수유 후 관찰", "아기 구토 역류", "수유 후 관찰", "게워냄"],
+  ["baby-diarrhea-diaper-log", "아기 설사 기저귀 기록", "아기 설사 기저귀와 탈수 신호 체크", "아기 설사 기저귀", "탈수 신호", "소변 횟수"],
+  ["baby-rash-photo-note", "아기 발진 사진기록", "아기 발진 사진기록과 진료 전 메모", "아기 발진 사진기록", "진료 전 메모", "피부 변화"],
+  ["baby-eye-discharge-check", "아기 눈곱 확인 기준", "아기 눈곱과 눈 충혈 상담 질문", "아기 눈곱", "눈 충혈", "진료 상담"],
+  ["baby-ear-touching-sign", "아기 귀 만짐 관찰", "아기 귀 만짐과 울음 패턴 구분", "아기 귀 만짐", "울음 패턴", "중이염 질문"],
+  ["baby-umbilical-care-late", "배꼽 늦은 회복 확인", "배꼽 늦은 회복과 분비물 관찰", "배꼽 늦은 회복", "분비물 관찰", "소독 기준"],
+  ["baby-head-bump-home-check", "아기 머리 부딪힘 관찰", "아기 머리 부딪힘과 응급실 기준", "아기 머리 부딪힘", "응급실 기준", "낙상 관찰"],
+  ["baby-constipation-massage", "아기 변비 마사지 기준", "아기 변비 마사지와 수유량 확인", "아기 변비 마사지", "수유량 확인", "배변 패턴"],
+  ["baby-sweating-sleep-check", "아기 잠잘 때 땀", "아기 잠잘 때 땀과 실내 온도 조정", "아기 잠잘 때 땀", "실내 온도", "수면 관찰"],
+  ["baby-noisy-breathing", "아기 숨소리 관찰", "아기 숨소리와 코막힘 대처 기준", "아기 숨소리", "코막힘 대처", "호흡 소리"],
+  ["baby-crying-after-feeding", "수유 후 우는 아기", "수유 후 우는 아기와 배앓이 구분", "수유 후 우는 아기", "배앓이 구분", "트림 확인"],
+  ["baby-missed-vaccine-plan", "예방접종 누락 대처", "예방접종 누락과 보건소 상담 순서", "예방접종 누락", "보건소 상담", "접종 일정"],
+  ["baby-medicine-dose-question", "아기 약 용량 질문", "아기 약 용량과 처방전 확인 메모", "아기 약 용량", "처방전 확인", "복약 기록"],
+];
+
+const feedingWeaningPlans: readonly PlanTuple[] = [
+  ["weaning-readiness-sign", "이유식 시작 신호", "이유식 시작 신호와 소아과 상담 질문", "이유식 시작 신호", "소아과 상담", "먹는 준비"],
+  ["weaning-first-rice-schedule", "첫 쌀미음 일정표", "첫 쌀미음 일정표와 알레르기 관찰", "첫 쌀미음 일정표", "알레르기 관찰", "이유식 기록"],
+  ["weaning-allergy-food-note", "알레르기 식품 기록", "알레르기 식품 기록과 증상 사진 정리", "알레르기 식품 기록", "증상 사진", "식품 반응"],
+  ["weaning-spoon-refusal", "이유식 숟가락 거부", "이유식 숟가락 거부와 수유 간격 조정", "이유식 숟가락 거부", "수유 간격", "먹는 연습"],
+  ["weaning-water-question", "이유식 물 섭취 질문", "이유식 물 섭취와 변비 관찰 기준", "이유식 물 섭취", "변비 관찰", "수분 섭취"],
+  ["weaning-iron-food-plan", "이유식 철분 식단", "이유식 철분 식단과 고기 시작 기준", "이유식 철분 식단", "고기 시작", "영양 보충"],
+  ["weaning-baby-led-vs-puree", "BLW 미음 비교", "BLW 미음 비교와 질식 위험 점검", "BLW 미음 비교", "질식 위험", "이유식 방식"],
+  ["weaning-freezer-cube", "이유식 큐브 보관", "이유식 큐브 보관과 해동 위생 기준", "이유식 큐브 보관", "해동 위생", "식재료 관리"],
+  ["weaning-daycare-meal-note", "어린이집 이유식 메모", "어린이집 이유식 메모와 알레르기 공유", "어린이집 이유식 메모", "알레르기 공유", "식단 전달"],
+  ["weaning-gagging-vs-choking", "구역질 질식 구분", "구역질 질식 구분과 응급 대처 준비", "구역질 질식 구분", "응급 대처", "식사 안전"],
+  ["feeding-weaning-milk-balance", "이유식 수유량 균형", "이유식 수유량 균형과 체중 변화 확인", "이유식 수유량 균형", "체중 변화", "수유 조정"],
+  ["weaning-travel-meal-kit", "외출 이유식 준비", "외출 이유식 준비와 보냉 시간 체크", "외출 이유식 준비", "보냉 시간", "외출 식사"],
+  ["weaning-constipation-food", "이유식 변비 식단", "이유식 변비 식단과 소아과 문의 기준", "이유식 변비 식단", "소아과 문의", "배변 기록"],
+  ["weaning-salt-sugar-check", "이유식 간식 당분 확인", "이유식 간식 당분과 무염 식단 기준", "이유식 간식 당분", "무염 식단", "식품 라벨"],
+  ["weaning-family-table-rules", "가족 식탁 이유식 규칙", "가족 식탁 이유식 규칙과 보호자 역할", "가족 식탁 이유식 규칙", "보호자 역할", "식사 루틴"],
+];
+
+const safetyTravelPlans: readonly PlanTuple[] = [
+  ["safety-car-seat-angle", "카시트 각도 확인", "카시트 각도와 신생아 호흡 안전", "카시트 각도", "호흡 안전", "차량 이동"],
+  ["safety-stroller-brake-check", "유모차 브레이크 점검", "유모차 브레이크와 경사로 이동 기준", "유모차 브레이크", "경사로 이동", "외출 안전"],
+  ["safety-bath-slip-prevention", "아기 목욕 미끄럼 예방", "아기 목욕 미끄럼 예방과 물 온도 확인", "아기 목욕 미끄럼 예방", "물 온도", "목욕 안전"],
+  ["safety-bed-fall-prevention", "침대 낙상 예방", "침대 낙상 예방과 뒤집기 전후 환경", "침대 낙상 예방", "뒤집기 전후", "수면 공간"],
+  ["safety-small-object-scan", "작은 물건 삼킴 예방", "작은 물건 삼킴 예방과 바닥 점검 루틴", "작은 물건 삼킴 예방", "바닥 점검", "질식 예방"],
+  ["safety-kitchen-baby-zone", "주방 아기 안전구역", "주방 아기 안전구역과 뜨거운 물 동선", "주방 아기 안전구역", "뜨거운 물", "생활 안전"],
+  ["safety-sibling-play-rule", "형제자매 놀이 규칙", "형제자매 놀이 규칙과 아기 보호 기준", "형제자매 놀이 규칙", "아기 보호", "가족 안전"],
+  ["safety-elevator-stroller", "엘리베이터 유모차 이동", "엘리베이터 유모차 이동과 문 끼임 예방", "엘리베이터 유모차 이동", "문 끼임 예방", "외출 동선"],
+  ["safety-air-quality-outing", "미세먼지 외출 기준", "미세먼지 외출 기준과 아기 호흡 관찰", "미세먼지 외출 기준", "아기 호흡", "외출 판단"],
+  ["safety-summer-heat-baby", "여름 아기 더위 대처", "여름 아기 더위 대처와 탈수 신호 확인", "여름 아기 더위 대처", "탈수 신호", "실내 온도"],
+  ["safety-winter-layering-baby", "겨울 아기 옷 겹쳐입기", "겨울 아기 옷 겹쳐입기와 땀 관찰", "겨울 아기 옷", "땀 관찰", "체온 조절"],
+  ["safety-hotel-baby-check", "아기와 숙소 점검", "아기와 숙소 점검과 침대 안전 확인", "아기와 숙소 점검", "침대 안전", "여행 준비"],
+  ["safety-emergency-bag", "아기 응급가방 구성", "아기 응급가방 구성과 병원 연락처 정리", "아기 응급가방", "병원 연락처", "응급 준비"],
+  ["safety-home-camera-boundary", "홈캠 사용 경계", "홈캠 사용 경계와 개인정보 보호 기준", "홈캠 사용 경계", "개인정보 보호", "돌봄 확인"],
+  ["safety-toy-age-label", "장난감 연령표시 확인", "장난감 연령표시와 작은 부품 점검", "장난감 연령표시", "작은 부품", "놀이 안전"],
+];
+
+const budgetSupportPlans: readonly PlanTuple[] = [
+  ["budget-first-year-baby-cost", "아기 첫해 지출표", "아기 첫해 지출표와 월별 고정비 정리", "아기 첫해 지출표", "월별 고정비", "육아 예산"],
+  ["budget-diaper-formula-compare", "기저귀 분유 비용 비교", "기저귀 분유 비용 비교와 구매 주기 계산", "기저귀 분유 비용", "구매 주기", "소모품 예산"],
+  ["budget-parent-benefit-calendar", "부모급여 지급일 달력", "부모급여 지급일 달력과 보육료 전환", "부모급여 지급일", "보육료 전환", "정부지원"],
+  ["budget-child-allowance-check", "아동수당 확인표", "아동수당 확인표와 계좌 변경 점검", "아동수당 확인표", "계좌 변경", "복지 신청"],
+  ["budget-daycare-extra-fee", "어린이집 추가비용 질문", "어린이집 추가비용과 특별활동비 확인", "어린이집 추가비용", "특별활동비", "보육 예산"],
+  ["budget-postpartum-helper-cost", "산후도우미 비용 계산", "산후도우미 비용 계산과 본인부담금 확인", "산후도우미 비용", "본인부담금", "지원 등급"],
+  ["budget-local-childbirth-cash", "출산축하금 주소지 확인", "출산축하금 주소지와 신청 기한 점검", "출산축하금 주소지", "신청 기한", "전입 기준"],
+  ["budget-medical-receipt-folder", "아기 의료비 영수증 파일", "아기 의료비 영수증 파일과 보험 청구 정리", "아기 의료비 영수증", "보험 청구", "병원비 관리"],
+  ["budget-used-baby-gear", "육아용품 중고 구매 기준", "육아용품 중고 구매 기준과 안전 확인", "육아용품 중고 구매", "안전 확인", "절약 예산"],
+  ["budget-family-help-cost", "가족 돌봄 사례비 정리", "가족 돌봄 사례비와 역할 경계 합의", "가족 돌봄 사례비", "역할 경계", "돌봄 비용"],
+  ["budget-vaccine-paid-list", "유료 예방접종 비용표", "유료 예방접종 비용표와 병원 상담 질문", "유료 예방접종 비용", "병원 상담", "접종 계획"],
+  ["budget-emergency-medical-fund", "아기 응급의료비 예비비", "아기 응급의료비 예비비와 야간진료 대비", "아기 응급의료비", "야간진료", "예비비"],
+  ["budget-childcare-leave-income", "육아휴직 소득공백 계산", "육아휴직 소득공백과 생활비 조정", "육아휴직 소득공백", "생활비 조정", "가계 계획"],
+  ["budget-insurance-premium-cap", "어린이보험료 상한 정하기", "어린이보험료 상한과 양육비 균형", "어린이보험료 상한", "양육비 균형", "보험 예산"],
+  ["budget-monthly-review-routine", "육아비 월말정산 루틴", "육아비 월말정산과 다음 달 구매 계획", "육아비 월말정산", "구매 계획", "가계 루틴"],
+];
+
+const insuranceAftercarePlans: readonly PlanTuple[] = [
+  ["insurance-child-hospitalization-claim", "어린이 입원비 청구 질문", "어린이 입원비 청구와 진단서 발급 기준", "어린이 입원비 청구", "진단서 발급", "보험금 서류"],
+  ["insurance-outpatient-claim-limit", "아기 통원비 청구 한도", "아기 통원비 청구 한도와 영수증 정리", "아기 통원비 청구", "영수증 정리", "보장 한도"],
+  ["insurance-rider-overlap-review", "어린이보험 특약 중복", "어린이보험 특약 중복과 보장 공백 비교", "어린이보험 특약 중복", "보장 공백", "증권 점검"],
+  ["insurance-premium-payment-day", "보험료 납입일 관리", "보험료 납입일 관리와 자동이체 계좌 확인", "보험료 납입일", "자동이체 계좌", "계약 유지"],
+  ["insurance-medical-document-fee", "보험서류 발급비용 확인", "보험서류 발급비용과 청구 실익 비교", "보험서류 발급비용", "청구 실익", "진료기록"],
+  ["insurance-claim-denied-note", "보험금 거절 메모", "보험금 거절 메모와 약관 근거 질문", "보험금 거절 메모", "약관 근거", "이의 절차"],
+  ["insurance-growth-checkup-rider", "발달검사 보장 질문", "발달검사 보장 질문과 검사비 청구 가능성", "발달검사 보장", "검사비 청구", "특약 확인"],
+  ["insurance-emergency-room-claim", "응급실 진료비 청구", "응급실 진료비 청구와 야간진료 서류", "응급실 진료비 청구", "야간진료 서류", "보험 청구"],
+  ["insurance-policy-beneficiary-check", "보험 수익자 확인", "보험 수익자 확인과 가족 정보 변경", "보험 수익자 확인", "가족 정보 변경", "계약 관리"],
+  ["insurance-annual-review-calendar", "어린이보험 연간점검", "어린이보험 연간점검과 의료이력 업데이트", "어린이보험 연간점검", "의료이력 업데이트", "보장 조정"],
+];
+
+const nextPregnancyPlans: readonly PlanTuple[] = [
+  ["next-pregnancy-after-csection", "제왕절개 후 다음 임신", "제왕절개 후 다음 임신과 회복 기간 상담", "제왕절개 후 다음 임신", "회복 기간 상담", "분만 계획"],
+  ["next-pregnancy-breastfeeding-period", "수유 중 생리와 임신", "수유 중 생리와 피임 상담 기준", "수유 중 생리", "피임 상담", "다음 임신"],
+  ["next-pregnancy-folic-acid-restart", "둘째 준비 엽산 시작", "둘째 준비 엽산 시작과 산전검사 확인", "둘째 준비 엽산", "산전검사 확인", "임신 준비"],
+  ["next-pregnancy-age-gap-plan", "터울 계획 체크리스트", "터울 계획 체크리스트와 육아 부담 계산", "터울 계획", "육아 부담", "가족 계획"],
+  ["next-pregnancy-postpartum-weight", "산후 체중과 다음 임신", "산후 체중과 다음 임신 전 건강 상담", "산후 체중", "건강 상담", "임신 준비"],
+  ["next-pregnancy-anemia-recheck", "둘째 전 빈혈 재검", "둘째 전 빈혈 재검과 철분 복용 상담", "둘째 전 빈혈 재검", "철분 복용", "혈액검사"],
+  ["next-pregnancy-thyroid-check", "출산 후 갑상선 검사", "출산 후 갑상선 검사와 다음 임신 준비", "출산 후 갑상선 검사", "다음 임신 준비", "호르몬 검사"],
+  ["next-pregnancy-diabetes-history", "임당 이력 다음 임신", "임당 이력 다음 임신과 혈당검사 시기", "임당 이력 다음 임신", "혈당검사 시기", "산전관리"],
+  ["next-pregnancy-preeclampsia-history", "임신중독증 이력 상담", "임신중독증 이력 상담과 재발 위험 질문", "임신중독증 이력", "재발 위험", "고위험 관리"],
+  ["next-pregnancy-loss-aftercare", "유산 후 다음 임신 준비", "유산 후 다음 임신 준비와 진료 질문", "유산 후 다음 임신", "진료 질문", "회복 확인"],
+  ["next-pregnancy-vaccine-check", "임신 전 예방접종 확인", "임신 전 예방접종 확인과 접종 간격", "임신 전 예방접종", "접종 간격", "임신 준비"],
+  ["next-pregnancy-dental-check", "임신 전 치과검진", "임신 전 치과검진과 치료 일정 조정", "임신 전 치과검진", "치료 일정", "건강 점검"],
+  ["next-pregnancy-medication-review", "임신 전 복용약 점검", "임신 전 복용약 점검과 주치의 상담", "임신 전 복용약", "주치의 상담", "약물 확인"],
+  ["next-pregnancy-budget-second-child", "둘째 출산예산 계산", "둘째 출산예산 계산과 육아휴직 소득공백", "둘째 출산예산", "소득공백", "가계 계획"],
+  ["next-pregnancy-first-child-care", "둘째 출산 첫째 돌봄", "둘째 출산 첫째 돌봄과 입원 기간 계획", "둘째 출산 첫째 돌봄", "입원 기간", "가족 지원"],
+];
+
 function tuplePlans(
   rows: readonly PlanTuple[],
   category: string,
@@ -750,9 +871,103 @@ const contentPlans: ContentPlan[] = [
   ...tuplePlans(supportAdminFollowupPlans, "정부지원", "/pregnancy/28", "checklist"),
   ...tuplePlans(insuranceClaimPlans, "태아보험", "/fetal-insurance", "comparison"),
   ...tuplePlans(familyHomePlans, "생활관리", "/pregnancy/36", "faq"),
+  ...tuplePlans(postpartumMindPlans, "생활관리", "/pregnancy/36", "warning"),
+  ...tuplePlans(babyObservationPlans, "출산준비", "/pregnancy/36", "checklist"),
+  ...tuplePlans(feedingWeaningPlans, "생활관리", "/pregnancy/36", "howto"),
+  ...tuplePlans(safetyTravelPlans, "생활관리", "/pregnancy/36", "checklist"),
+  ...tuplePlans(budgetSupportPlans, "정부지원", "/pregnancy/28", "comparison"),
+  ...tuplePlans(insuranceAftercarePlans, "태아보험", "/fetal-insurance", "comparison"),
+  ...tuplePlans(nextPregnancyPlans, "주차별 임신", "/pregnancy/4", "howto"),
 ];
 
+function sectionCopy(plan: ContentPlan) {
+  const support = plan.relatedKeywords[0];
+  const second = plan.relatedKeywords[1];
+  const expanded = plan.expandedKeywords[0];
+  const action = plan.decisionCriterion;
+
+  const shared = {
+    answerBody: [
+      `${plan.mainKeyword}는 ${plan.reader}가 ${plan.intent}는 상황에서 확인하는 주제입니다.`,
+      `핵심은 ${plan.angle}는 것입니다. ${action}를 기준으로 지금 확인할 것과 전문가에게 물어볼 것을 분리하면 판단 부담이 줄어듭니다.`,
+    ],
+    timingBody: [
+      `${support}, ${second}를 함께 보면 검색 의도를 더 정확하게 좁힐 수 있습니다.`,
+      "임신 주차, 출산 후 회복 단계, 아기 월령, 거주지 지원 기준에 따라 같은 키워드라도 실제 적용은 달라질 수 있습니다.",
+      "따라서 이 글은 최종 판단문이 아니라 진료 전 메모와 공식 신청 전 점검표로 사용하는 것이 적절합니다.",
+    ],
+    checklistBody: [
+      "첫째, 현재 주차나 월령과 실제 일정을 함께 적어 적용 가능한 항목인지 확인합니다.",
+      "둘째, 증상명이나 제도 이름만 보지 말고 필요한 서류, 확인 시기, 상담 예약 여부를 같이 확인합니다.",
+      "셋째, 보호자와 공유할 내용은 한 문장으로 정리해 병원이나 기관 문의가 쉬워지게 합니다.",
+    ],
+  };
+
+  if (plan.structure === "faq") {
+    return {
+      ...shared,
+      answerBody: [
+        `${plan.mainKeyword}는 바로 결론을 내리기보다 ${support}와 ${expanded}를 질문 형태로 나눠 보는 편이 안전합니다.`,
+        `이 글은 흔한 질문을 기준으로 ${plan.angle}는 방식으로 정리했습니다.`,
+      ],
+      timingBody: [
+        `먼저 ${support}가 지금 상황에 해당하는지 확인하고, 다음으로 ${second}를 기록합니다.`,
+        "질문이 반복된다면 같은 답을 찾기보다 날짜, 증상, 비용, 신청 상태처럼 바뀌는 조건을 따로 적어야 합니다.",
+        "답변이 모호한 항목은 진료기관, 보건소, 보험사, 복지 신청 창구 중 어느 곳에 물어볼지 분리해 둡니다.",
+      ],
+    };
+  }
+
+  if (plan.structure === "comparison") {
+    return {
+      ...shared,
+      answerBody: [
+        `${plan.mainKeyword}는 하나의 선택지가 맞는지보다 ${support}와 ${expanded}를 나란히 놓고 비교해야 하는 주제입니다.`,
+        `비교 기준은 ${action}입니다. 비용, 보장, 신청 가능성, 예외 조건을 같은 순서로 놓으면 과장된 표현을 걸러낼 수 있습니다.`,
+      ],
+      checklistBody: [
+        "비교 대상의 이름보다 적용 조건과 제외 조건을 먼저 적습니다.",
+        "금액이 있으면 월 비용, 1회 비용, 환급 가능성처럼 단위를 맞춥니다.",
+        "상담을 받을 때는 같은 질문을 반복해 답변 차이를 확인할 수 있게 메모합니다.",
+      ],
+    };
+  }
+
+  if (plan.structure === "warning") {
+    return {
+      ...shared,
+      answerBody: [
+        `${plan.mainKeyword}는 불안을 키우는 검색어가 되기 쉬워 ${support}와 ${expanded}를 기준으로 위험 신호와 관찰 항목을 나눠야 합니다.`,
+        `특히 ${action}인지 확인한 뒤, 갑작스럽거나 반복되는 변화는 블로그 결론 대신 진료 문의로 연결하는 편이 안전합니다.`,
+      ],
+      timingBody: [
+        "먼저 지금 바로 확인해야 할 신호인지, 하루 단위로 기록해도 되는 변화인지 구분합니다.",
+        `${second}가 동반되거나 평소와 다른 양상이 반복되면 검색을 이어가기보다 상담 경로를 정합니다.`,
+        "사진, 체온, 시간, 수유량, 통증 강도처럼 나중에 설명할 수 있는 기록을 남기면 진료 상담이 쉬워집니다.",
+      ],
+    };
+  }
+
+  if (plan.structure === "howto") {
+    return {
+      ...shared,
+      answerBody: [
+        `${plan.mainKeyword}는 한 번에 해결하기보다 ${support} 확인, ${expanded} 기록, 다음 행동 선택 순서로 나누는 편이 실용적입니다.`,
+        `이 글은 ${plan.angle}는 목표에 맞춰 실행 순서를 먼저 보여줍니다.`,
+      ],
+      checklistBody: [
+        "오늘 할 수 있는 기록과 다음 예약 때 확인할 질문을 분리합니다.",
+        "보호자에게 맡길 수 있는 일과 산모가 직접 확인해야 하는 일을 나눕니다.",
+        "공식 안내나 진료 답변을 확인한 뒤 메모를 업데이트합니다.",
+      ],
+    };
+  }
+
+  return shared;
+}
+
 function buildSections(plan: ContentPlan): BlogSection[] {
+  const copy = sectionCopy(plan);
   const coreChecklist = [
     `${plan.mainKeyword}와 관련해 최근에 달라진 몸 상태나 행정 상황을 날짜별로 적습니다.`,
     `${plan.relatedKeywords[0]} 확인이 필요한지 진료기관 또는 공식 안내 페이지에서 다시 확인합니다.`,
@@ -770,29 +985,18 @@ function buildSections(plan: ContentPlan): BlogSection[] {
     {
       id: "answer",
       heading: `${plan.mainKeyword} 한눈에 보는 결론`,
-      body: [
-        `${plan.mainKeyword}는 ${plan.reader}가 ${plan.intent}는 상황에서 자주 검색하는 주제입니다.`,
-        `핵심은 ${plan.angle}는 것입니다. 글을 읽은 뒤에는 ${plan.decisionCriterion}를 기준으로 지금 할 일과 확인할 질문을 나누면 됩니다.`,
-      ],
+      body: copy.answerBody,
       checklist: coreChecklist,
     },
     {
       id: "timing",
       heading: `${plan.mainKeyword} 확인 시기와 우선순위`,
-      body: [
-        `${plan.relatedKeywords.join(", ")}는 함께 확인하면 검색 의도를 더 정확히 해결할 수 있는 항목입니다.`,
-        "임신 주차, 검사 결과, 기존 질환, 거주지 지원 기준에 따라 같은 키워드라도 실제 대응은 달라질 수 있습니다.",
-        "따라서 이 글은 최종 판단문이 아니라 진료 전 메모와 공식 신청 전 점검표로 사용하는 것이 적절합니다.",
-      ],
+      body: copy.timingBody,
     },
     {
       id: "checklist",
       heading: `${plan.relatedKeywords[0]}까지 놓치지 않는 체크리스트`,
-      body: [
-        "첫째, 현재 주차와 예정일을 기준으로 적용되는 항목인지 확인합니다.",
-        "둘째, 증상이나 제도 이름만 보지 말고 필요한 서류, 검사 시기, 상담 예약 여부를 함께 확인합니다.",
-        "셋째, 배우자나 보호자와 공유할 내용은 한 문장으로 정리해 두면 병원이나 보건소 문의가 쉬워집니다.",
-      ],
+      body: copy.checklistBody,
       checklist: [
         "현재 임신 주차와 예정일을 적었다.",
         "공식 기관 또는 진료기관 확인이 필요한 항목을 표시했다.",
