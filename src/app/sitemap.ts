@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog",
     "/fetal-insurance",
     "/about",
+    "/contact",
     "/privacy",
     "/terms",
   ];
