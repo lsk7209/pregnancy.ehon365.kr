@@ -69,6 +69,25 @@ export default function HomePage() {
           태아보험 일반 가이드 보기
         </Link>
       </section>
+      <section className="rounded-xl border border-neutral-200 bg-white p-5">
+        <h2 className="text-xl font-bold text-ink">공식 정보와 함께 확인하세요</h2>
+        <p className="mt-2 leading-7 text-neutral-700">
+          주차별 변화와 지원 제도는 참고용으로 정리했습니다. 출혈, 통증, 발열, 태동 변화처럼 즉시 판단이 필요한
+          증상은 검색 정보로 해결하지 말고 의료기관에 문의해야 합니다. 지원금과 건강보험 항목은 신청 시점의
+          공식 안내가 우선입니다.
+        </p>
+        <div className="mt-4 flex flex-wrap gap-3">
+          <a href="https://www.mohw.go.kr" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-brand px-4 py-2 text-sm font-semibold text-brand hover:bg-brand-soft">
+            보건복지부 확인
+          </a>
+          <a href="https://www.nhis.or.kr" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-brand px-4 py-2 text-sm font-semibold text-brand hover:bg-brand-soft">
+            국민건강보험 확인
+          </a>
+          <Link href="/blog" className="rounded-lg bg-brand px-4 py-2 text-sm font-semibold text-white hover:opacity-90">
+            블로그 가이드 보기
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

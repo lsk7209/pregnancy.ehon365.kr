@@ -32,6 +32,29 @@ export default function BlogPage() {
         </p>
       </section>
 
+      <section className="rounded-xl border border-neutral-200 bg-white p-5">
+        <h2 className="text-xl font-bold text-ink">읽기 전 확인해야 할 기준</h2>
+        <p className="mt-2 leading-7 text-neutral-700">
+          임신·출산 정보는 개인의 건강 상태, 진료 기록, 지역 지원 제도에 따라 달라집니다.
+          이 블로그는 일반 정보와 체크리스트를 제공하며, 진단·투약·검사 일정·지원금 신청의 최종 판단은
+          담당 의료진과 공식 기관 안내를 우선해야 합니다.
+        </p>
+        <div className="mt-4 grid gap-3 sm:grid-cols-3">
+          <a href="https://www.mohw.go.kr" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-neutral-200 p-4 text-sm hover:border-brand">
+            <strong className="block text-ink">보건복지부</strong>
+            임신·출산 지원 정책의 공식 안내를 확인합니다.
+          </a>
+          <a href="https://www.nhis.or.kr" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-neutral-200 p-4 text-sm hover:border-brand">
+            <strong className="block text-ink">국민건강보험</strong>
+            건강보험 적용과 임신·출산 진료비 지원을 확인합니다.
+          </a>
+          <a href="https://www.bokjiro.go.kr" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-neutral-200 p-4 text-sm hover:border-brand">
+            <strong className="block text-ink">복지로</strong>
+            지역별 복지 서비스와 신청 조건을 확인합니다.
+          </a>
+        </div>
+      </section>
+
       <section className="grid gap-4 sm:grid-cols-2">
         {posts.map((post) => (
           <Link

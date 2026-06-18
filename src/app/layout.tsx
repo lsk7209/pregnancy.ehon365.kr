@@ -55,12 +55,16 @@ export default function RootLayout({
 
   return (
     <html lang="ko">
-      <body>
-        <Script
+      <head>
+        <script
           id="website-jsonld"
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteJsonLd).replace(/</g, "\\u003c"),
+          }}
         />
+      </head>
+      <body>
         <Header />
         <main className="mx-auto max-w-3xl px-4 py-6">{children}</main>
         <ComplianceFooter />
