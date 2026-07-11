@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { CoupangPartnersBanner } from "@/components/CoupangPartnersBanner";
 import { Header } from "@/components/layout/Header";
 import { ComplianceFooter } from "@/components/layout/ComplianceFooter";
 import {
@@ -67,6 +68,7 @@ export default function RootLayout({
       <body>
         <Header />
         <main className="mx-auto max-w-3xl px-4 py-6">{children}</main>
+        <CoupangPartnersBanner />
         <ComplianceFooter />
         {GA4_ID && (
           <>
