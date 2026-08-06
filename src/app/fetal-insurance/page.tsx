@@ -68,6 +68,67 @@ export default async function FetalInsurancePage() {
         </p>
       </section>
 
+      <section className="rounded-xl border border-neutral-200 bg-white p-5">
+        <h2 className="text-xl font-bold text-ink">설명서와 약관을 확인하는 순서</h2>
+        <p className="mt-2 text-neutral-700">
+          가입 가능 여부와 보장 범위는 보험사, 상품, 고지 내용과 계약 조건에
+          따라 달라질 수 있습니다. 상담 전에 상품설명서와 약관에서 확인할
+          항목을 같은 순서로 적어 두면 광고 문구와 실제 계약 내용을 구분하기
+          쉽습니다.
+        </p>
+        <ol className="mt-3 list-inside list-decimal space-y-2 text-neutral-700">
+          <li>보장 대상과 보장하지 않는 경우를 각각 확인합니다.</li>
+          <li>갱신 여부, 납입 기간, 만기, 해지 환급 관련 설명을 기록합니다.</li>
+          <li>출생 전후에 계약이나 특약이 어떻게 달라지는지 질문합니다.</li>
+          <li>설명받은 내용과 약관 문구가 다르면 가입 전에 다시 확인합니다.</li>
+        </ol>
+      </section>
+
+      <section className="rounded-xl border border-neutral-200 bg-white p-5">
+        <h2 className="text-xl font-bold text-ink">공식 확인 경로</h2>
+        <p className="mt-2 text-neutral-700">
+          아래 기관은 보험 소비자가 상품과 계약 내용을 확인할 때 참고할 수
+          있는 공식 안내 경로입니다. 링크는 특정 보험사나 상품을 추천하기
+          위한 것이 아니며, 실제 계약 전에는 제공받은 설명서와 약관을
+          우선 확인하세요.
+        </p>
+        <ul className="mt-3 list-inside list-disc space-y-2 text-neutral-700">
+          <li>
+            <a
+              href="https://www.fss.or.kr/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-brand underline"
+            >
+              금융감독원
+            </a>
+            에서 금융소비자 안내를 확인합니다.
+          </li>
+          <li>
+            <a
+              href="https://www.e-insmarket.or.kr/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-brand underline"
+            >
+              온라인 보험슈퍼마켓 보험다모아
+            </a>
+            에서 비교·공시 정보를 확인합니다.
+          </li>
+          <li>
+            <a
+              href="https://www.knia.or.kr/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-brand underline"
+            >
+              손해보험협회
+            </a>
+            의 소비자 안내도 함께 확인할 수 있습니다.
+          </li>
+        </ul>
+      </section>
+
       {offer && (
         <section className="rounded-xl border border-brand/40 bg-brand-soft/60 p-5">
           <h2 className="text-xl font-bold text-ink">무료 상담 연결</h2>
