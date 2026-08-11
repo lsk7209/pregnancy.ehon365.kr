@@ -6,6 +6,7 @@ import { cpaOffers, type CpaOffer } from "@/db/schema";
 import { fallbackFetalInsuranceOffer } from "@/lib/db-fallbacks";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/fetal-insurance" },
   title: "태아보험 일반 가이드",
   description:
     "태아보험의 기본 개념, 확인할 항목, 상담 전 준비할 내용을 정리한 일반 정보 페이지입니다.",

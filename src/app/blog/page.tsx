@@ -5,6 +5,7 @@ import { getBlogSchedule, getPublishedBlogPosts } from "@/lib/blog-posts";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/blog" },
   title: "블로그",
   description:
     "임신·출산 준비 과정에서 자주 확인하는 검사, 생활관리, 정부지원, 태아보험 일반 정보를 카드형 목록으로 정리했습니다.",

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/contact" },
   title: "문의하기",
   description:
     "임신 출산 준비 가이드의 정보 오류 제보, 광고 및 제휴 문의, 개인정보 관련 요청을 안내합니다.",

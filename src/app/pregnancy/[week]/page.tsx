@@ -31,6 +31,7 @@ export async function generateMetadata({
   if (!isValidWeek(week)) return {};
 
   return {
+    alternates: { canonical: `/pregnancy/${week}` },
     title: `임신 ${week}주 가이드`,
     description: `임신 ${week}주 태아 발달, 엄마 몸의 변화, 산전검사와 정부 지원 정보를 정리한 ${SITE_NAME} 주차별 가이드입니다.`,
   };

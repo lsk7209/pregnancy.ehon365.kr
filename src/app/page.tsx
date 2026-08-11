@@ -4,6 +4,7 @@ import { CORE_WEEKS } from "@/lib/week-data";
 import { SITE_NAME } from "@/lib/utils";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/" },
   title: "임신·출산 준비 종합 가이드",
   description:
     "임신 주차별 변화, 검사 일정, 정부 지원 정보를 한곳에서 확인하는 임신·출산 준비 가이드입니다.",
