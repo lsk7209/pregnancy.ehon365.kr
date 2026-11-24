@@ -1,4 +1,4 @@
-const DASHBOARD_BASE = "https://multi-dashboard-one.vercel.app";
+const DASHBOARD_BASE = "https://dashboard.item79.com";
 const SITE_URL = "https://pregnancy.ehon365.kr/";
 const SITE_KEY = "pregnancy-ehon365";
 const SLOT_KEY = "coupang-inline";
